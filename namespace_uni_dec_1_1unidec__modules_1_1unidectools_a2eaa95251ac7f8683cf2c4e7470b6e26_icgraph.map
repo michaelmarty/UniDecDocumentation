@@ -1,0 +1,9 @@
+<map id="UniDec.unidec_modules.unidectools.datachop" name="UniDec.unidec_modules.unidectools.datachop">
+<area shape="rect" id="node2" href="$namespace_uni_dec_1_1unidec__modules_1_1fft__test.html#a08fd2e51d33044c2110b75b73c639779" title="UniDec.unidec_modules.fft\l_test.calc_medians" alt="" coords="385,5,561,47"/>
+<area shape="rect" id="node3" href="$namespace_uni_dec_1_1unidec__modules_1_1fft__test.html#aaf70177ad7f2a621ab6bc0158362ec07" title="UniDec.unidec_modules.fft\l_test.fit_medians" alt="" coords="712,57,888,99"/>
+<area shape="rect" id="node5" href="$namespace_uni_dec_1_1unidec__modules_1_1unidectools.html#a7fce78c0432d6aad725800dc0d14b924" title="UniDec.unidec_modules.unidectools.calc\l_local_mins" alt="" coords="343,123,603,164"/>
+<area shape="rect" id="node7" href="$namespace_uni_dec_1_1unidec__modules_1_1unidectools.html#a006d1635def673dcf78c3df36bbebed0" title="UniDec.unidec_modules.unidectools.dataprep" alt="" coords="997,195,1284,222"/>
+<area shape="rect" id="node4" href="$namespace_uni_dec_1_1unidec__modules_1_1fft__test.html#a5cd66ebc21b0a881e98b96aff6f35774" title="UniDec.unidec_modules.fft\l_test.MALDI_baseline" alt="" coords="1053,57,1229,99"/>
+<area shape="rect" id="node6" href="$namespace_uni_dec_1_1unidec__modules_1_1unidectools.html#adacf1d9655b2b4c729c2eaf4d31d309f" title="UniDec.unidec_modules.unidectools.polynomial\l_background_subtract" alt="" coords="651,123,949,164"/>
+<area shape="rect" id="node8" href="$namespace_uni_dec_1_1unidec__modules_1_1unidectools.html#ae3726d03b5cd06c8f486914642ba708b" title="UniDec.unidec_modules.unidectools.savgol\l_background_subtract" alt="" coords="664,188,936,229"/>
+</map>

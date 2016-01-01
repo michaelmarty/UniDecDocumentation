@@ -1,0 +1,14 @@
+<map id="UniDec.GUniDec.UniDecApp.on_flip_tabbed" name="UniDec.GUniDec.UniDecApp.on_flip_tabbed">
+<area shape="rect" id="node2" href="$class_uni_dec_1_1_g_uni_dec_1_1_uni_dec_app.html#a6366ead3ca72598cf35b4f2bb130b125" title="UniDec.GUniDec.UniDecApp.remake\l_mainwindow" alt="" coords="260,196,496,237"/>
+<area shape="rect" id="node3" href="$class_uni_dec_1_1_g_uni_dec_1_1_uni_dec_app.html#a55d99c7a61b0e58484b7efd12fb536e5" title="UniDec.GUniDec.UniDecApp.on\l_replot" alt="" coords="275,261,481,303"/>
+<area shape="rect" id="node4" href="$class_uni_dec_1_1_g_uni_dec_1_1_uni_dec_app.html#a0cb3bacc29fcc5279c546f38f5cfc556" title="UniDec.GUniDec.UniDecApp.export\l_config" alt="" coords="857,59,1087,100"/>
+<area shape="rect" id="node5" href="$class_uni_dec_1_1_g_uni_dec_1_1_uni_dec_app.html#ad23bf7755ca52368d7e5c5ffb3527d6d" title="UniDec.GUniDec.UniDecApp.make\l_im_plots" alt="" coords="558,232,783,273"/>
+<area shape="rect" id="node6" href="$class_uni_dec_1_1_g_uni_dec_1_1_uni_dec_app.html#a461a31aa2caf2d9d8f3133221ca476a8" title="UniDec.GUniDec.UniDecApp.makeplot1" alt="" coords="845,137,1099,163"/>
+<area shape="rect" id="node7" href="$class_uni_dec_1_1datacollector_1_1_data_collector.html#a32fcfc547079586b05676930b20dbbb3" title="UniDec.datacollector.Data\lCollector.makeplot2" alt="" coords="885,213,1059,255"/>
+<area shape="rect" id="node8" href="$class_uni_dec_1_1_g_uni_dec_1_1_uni_dec_app.html#a4c8b6f6f71e623fa509d0fc1fcd8ff88" title="UniDec.GUniDec.UniDecApp.makeplot2" alt="" coords="845,289,1099,315"/>
+<area shape="rect" id="node9" href="$class_uni_dec_1_1_g_uni_dec_1_1_uni_dec_app.html#ac224a74a698b3844f578ffe240fc8f8d" title="UniDec.GUniDec.UniDecApp.makeplot5" alt="" coords="845,345,1099,371"/>
+<area shape="rect" id="node10" href="$class_uni_dec_1_1_g_uni_dec_1_1_uni_dec_app.html#a700decfef27e11fce17d2507edd1ca9a" title="UniDec.GUniDec.UniDecApp.makeplot3" alt="" coords="845,395,1099,422"/>
+<area shape="rect" id="node11" href="$class_uni_dec_1_1_g_uni_dec_1_1_uni_dec_app.html#a961667da7677e34308f337c01c8f6e82" title="UniDec.GUniDec.UniDecApp.makeplot4" alt="" coords="544,450,797,477"/>
+<area shape="rect" id="node12" href="$class_uni_dec_1_1_g_uni_dec_1_1_uni_dec_app.html#aa77986a59a171850595dc4d2636203c1" title="UniDec.GUniDec.UniDecApp.makeplot6" alt="" coords="544,501,797,527"/>
+<area shape="rect" id="node13" href="$class_uni_dec_1_1_g_uni_dec_1_1_uni_dec_app.html#ae3e59e695d4511bc8fe8e932caeaf512" title="UniDec.GUniDec.UniDecApp.make\l_cube_plot" alt="" coords="558,64,783,105"/>
+</map>

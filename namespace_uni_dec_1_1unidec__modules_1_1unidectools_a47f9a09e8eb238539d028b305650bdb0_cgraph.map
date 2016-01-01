@@ -1,0 +1,14 @@
+<map id="UniDec.unidec_modules.unidectools.windowed_fft" name="UniDec.unidec_modules.unidectools.windowed_fft">
+<area shape="rect" id="node2" href="$namespace_uni_dec_1_1unidec__modules_1_1unidectools.html#a534947b6ad59977af73a299ddf5e75f7" title="UniDec.unidec_modules.unidectools.ndis_std" alt="" coords="363,115,648,141"/>
+<area shape="rect" id="node3" href="$namespace_uni_dec_1_1unidec__modules_1_1unidectools.html#a60d2a47d3fdc40cca92e5460318a6c3f" title="UniDec.unidec_modules.unidectools.double\l_fft_diff" alt="" coords="368,166,643,207"/>
+<area shape="rect" id="node4" href="$namespace_uni_dec_1_1unidec__modules_1_1unidectools.html#a44066d6a5460480bea45249206d7841f" title="UniDec.unidec_modules.unidectools.linearize" alt="" coords="709,56,993,83"/>
+<area shape="rect" id="node10" href="$namespace_uni_dec_1_1unidec__modules_1_1unidectools.html#a173707751f120a58da6d0db8095fe318" title="UniDec.unidec_modules.unidectools.pad\l_two_power" alt="" coords="722,107,979,149"/>
+<area shape="rect" id="node11" href="$namespace_uni_dec_1_1unidec__modules_1_1unidectools.html#a87be737aaa09c5c7f1725b9c3711bb3d" title="UniDec.unidec_modules.unidectools.pad_data" alt="" coords="706,173,995,200"/>
+<area shape="rect" id="node12" href="$namespace_uni_dec_1_1unidec__modules_1_1unidectools.html#a23a6c8e7d5e757d010af360926648bb0" title="UniDec.unidec_modules.unidectools.fft" alt="" coords="727,224,974,251"/>
+<area shape="rect" id="node13" href="$namespace_uni_dec_1_1unidec__modules_1_1unidectools.html#a457ab122ec9601016ab45c6e8f29f477" title="UniDec.unidec_modules.unidectools.localmaxpos" alt="" coords="696,275,1005,301"/>
+<area shape="rect" id="node5" href="$namespace_uni_dec_1_1unidec__modules_1_1unidectools.html#a9db2f5ad0cabd51e0d1f91fccd414754" title="UniDec.unidec_modules.unidectools.nonlinear_axis" alt="" coords="1053,5,1372,32"/>
+<area shape="rect" id="node6" href="$namespace_uni_dec_1_1unidec__modules_1_1unidectools.html#a5981c884b0cb0e2a59819f075238b2c3" title="UniDec.unidec_modules.unidectools.lintegrate" alt="" coords="1068,56,1357,83"/>
+<area shape="rect" id="node9" href="$namespace_uni_dec_1_1unidec__modules_1_1unidectools.html#a3039288344c5d5da7e54ef292f32a2db" title="UniDec.unidec_modules.unidectools.linterpolate" alt="" coords="1063,107,1362,133"/>
+<area shape="rect" id="node7" href="$namespace_uni_dec_1_1unidec__modules_1_1unidectools.html#accfc6ed23958d9243e13a9dc686ec1e6" title="UniDec.unidec_modules.unidectools.nearest" alt="" coords="1420,27,1699,53"/>
+<area shape="rect" id="node8" href="$namespace_uni_dec_1_1unidec__modules_1_1unidectools.html#ae906df1e0fbcccee6411b1f15645bfb9" title="UniDec.unidec_modules.unidectools.linear\l_interpolation" alt="" coords="1426,78,1693,119"/>
+</map>
