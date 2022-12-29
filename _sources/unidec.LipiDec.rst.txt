@@ -1,0 +1,45 @@
+unidec.LipiDec package
+======================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   unidec.LipiDec.Infusion
+
+Submodules
+----------
+
+unidec.LipiDec.AddFeaturestoDF module
+-------------------------------------
+
+.. automodule:: unidec.LipiDec.AddFeaturestoDF
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.LipiDec.LipyDec module
+-----------------------------
+
+.. automodule:: unidec.LipiDec.LipyDec
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.LipiDec.SkyQuant module
+------------------------------
+
+.. automodule:: unidec.LipiDec.SkyQuant
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: unidec.LipiDec
+   :members:
+   :undoc-members:
+   :show-inheritance:

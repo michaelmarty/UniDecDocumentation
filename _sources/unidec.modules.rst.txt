@@ -1,0 +1,423 @@
+unidec.modules package
+======================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   unidec.modules.gui_elements
+   unidec.modules.isolated_packages
+   unidec.modules.tims_import_wizard
+
+Submodules
+----------
+
+unidec.modules.AutocorrWindow module
+------------------------------------
+
+.. automodule:: unidec.modules.AutocorrWindow
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.CDCal module
+---------------------------
+
+.. automodule:: unidec.modules.CDCal
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.CDEng module
+---------------------------
+
+.. automodule:: unidec.modules.CDEng
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.ChromEng module
+------------------------------
+
+.. automodule:: unidec.modules.ChromEng
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.ColorPlot module
+-------------------------------
+
+.. automodule:: unidec.modules.ColorPlot
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.DoubleDec module
+-------------------------------
+
+.. automodule:: unidec.modules.DoubleDec
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.Extract2D module
+-------------------------------
+
+.. automodule:: unidec.modules.Extract2D
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.GridDecon module
+-------------------------------
+
+.. automodule:: unidec.modules.GridDecon
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.GridDecon2 module
+--------------------------------
+
+.. automodule:: unidec.modules.GridDecon2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.IM\_functions module
+-----------------------------------
+
+.. automodule:: unidec.modules.IM_functions
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.IM\_windows module
+---------------------------------
+
+.. automodule:: unidec.modules.IM_windows
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.ManualSelectionWindow module
+-------------------------------------------
+
+.. automodule:: unidec.modules.ManualSelectionWindow
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.MassDefectExtractor module
+-----------------------------------------
+
+.. automodule:: unidec.modules.MassDefectExtractor
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.MassDefects module
+---------------------------------
+
+.. automodule:: unidec.modules.MassDefects
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.MassFitter module
+--------------------------------
+
+.. automodule:: unidec.modules.MassFitter
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.MassSpecBuilder module
+-------------------------------------
+
+.. automodule:: unidec.modules.MassSpecBuilder
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.NanodiscBuilder module
+-------------------------------------
+
+.. automodule:: unidec.modules.NanodiscBuilder
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.PlotAnimations module
+------------------------------------
+
+.. automodule:: unidec.modules.PlotAnimations
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.PlotBase module
+------------------------------
+
+.. automodule:: unidec.modules.PlotBase
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.PlottingWindow module
+------------------------------------
+
+.. automodule:: unidec.modules.PlottingWindow
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.SubDiv module
+----------------------------
+
+.. automodule:: unidec.modules.SubDiv
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.UniFit module
+----------------------------
+
+.. automodule:: unidec.modules.UniFit
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.UniList module
+-----------------------------
+
+.. automodule:: unidec.modules.UniList
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.biopolymertools module
+-------------------------------------
+
+.. automodule:: unidec.modules.biopolymertools
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.data\_reader module
+----------------------------------
+
+.. automodule:: unidec.modules.data_reader
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.fft\_window module
+---------------------------------
+
+.. automodule:: unidec.modules.fft_window
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.fitting module
+-----------------------------
+
+.. automodule:: unidec.modules.fitting
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.hdf5\_tools module
+---------------------------------
+
+.. automodule:: unidec.modules.hdf5_tools
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.hramtools module
+-------------------------------
+
+.. automodule:: unidec.modules.hramtools
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.html\_writer module
+----------------------------------
+
+.. automodule:: unidec.modules.html_writer
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.i2ms\_importer module
+------------------------------------
+
+.. automodule:: unidec.modules.i2ms_importer
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.isotopetools module
+----------------------------------
+
+.. automodule:: unidec.modules.isotopetools
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.mainwindow module
+--------------------------------
+
+.. automodule:: unidec.modules.mainwindow
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.masstools module
+-------------------------------
+
+.. automodule:: unidec.modules.masstools
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.matchtools module
+--------------------------------
+
+.. automodule:: unidec.modules.matchtools
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.miscwindows module
+---------------------------------
+
+.. automodule:: unidec.modules.miscwindows
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.mzMLimporter module
+----------------------------------
+
+.. automodule:: unidec.modules.mzMLimporter
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.mzXML\_importer module
+-------------------------------------
+
+.. automodule:: unidec.modules.mzXML_importer
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.mzmlparse\_auto module
+-------------------------------------
+
+.. automodule:: unidec.modules.mzmlparse_auto
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.nativez module
+-----------------------------
+
+.. automodule:: unidec.modules.nativez
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.peakstructure module
+-----------------------------------
+
+.. automodule:: unidec.modules.peakstructure
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.peakwidthtools module
+------------------------------------
+
+.. automodule:: unidec.modules.peakwidthtools
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.plateplot module
+-------------------------------
+
+.. automodule:: unidec.modules.plateplot
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.plot1d module
+----------------------------
+
+.. automodule:: unidec.modules.plot1d
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.plot2d module
+----------------------------
+
+.. automodule:: unidec.modules.plot2d
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.plot3d module
+----------------------------
+
+.. automodule:: unidec.modules.plot3d
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.plot\_waterfall module
+-------------------------------------
+
+.. automodule:: unidec.modules.plot_waterfall
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.unidec\_enginebase module
+----------------------------------------
+
+.. automodule:: unidec.modules.unidec_enginebase
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.unidec\_presbase module
+--------------------------------------
+
+.. automodule:: unidec.modules.unidec_presbase
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.unidecstructure module
+-------------------------------------
+
+.. automodule:: unidec.modules.unidecstructure
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: unidec.modules
+   :members:
+   :undoc-members:
+   :show-inheritance:

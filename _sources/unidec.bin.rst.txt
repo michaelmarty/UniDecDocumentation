@@ -1,0 +1,10 @@
+unidec.bin package
+==================
+
+Module contents
+---------------
+
+.. automodule:: unidec.bin
+   :members:
+   :undoc-members:
+   :show-inheritance:

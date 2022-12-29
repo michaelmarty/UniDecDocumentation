@@ -1,0 +1,53 @@
+unidec.LipiDec.Infusion package
+===============================
+
+Submodules
+----------
+
+unidec.LipiDec.Infusion.Formulas module
+---------------------------------------
+
+.. automodule:: unidec.LipiDec.Infusion.Formulas
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.LipiDec.Infusion.LipiDecEng module
+-----------------------------------------
+
+.. automodule:: unidec.LipiDec.Infusion.LipiDecEng
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.LipiDec.Infusion.LipiDec\_DataBaseGenerator module
+---------------------------------------------------------
+
+.. automodule:: unidec.LipiDec.Infusion.LipiDec_DataBaseGenerator
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.LipiDec.Infusion.ShotgunLipiDec module
+---------------------------------------------
+
+.. automodule:: unidec.LipiDec.Infusion.ShotgunLipiDec
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.LipiDec.Infusion.ShotgunLipiDecMTM module
+------------------------------------------------
+
+.. automodule:: unidec.LipiDec.Infusion.ShotgunLipiDecMTM
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: unidec.LipiDec.Infusion
+   :members:
+   :undoc-members:
+   :show-inheritance:

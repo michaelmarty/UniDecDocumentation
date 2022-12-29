@@ -1,0 +1,96 @@
+unidec package
+==============
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   unidec.LipiDec
+   unidec.iFAMS
+   unidec.metaunidec
+   unidec.modules
+
+Submodules
+----------
+
+unidec.DataCollector module
+---------------------------
+
+.. automodule:: unidec.DataCollector
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.GUniDec module
+---------------------
+
+.. automodule:: unidec.GUniDec
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.ImportWizard module
+--------------------------
+
+.. automodule:: unidec.ImportWizard
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.Launcher module
+----------------------
+
+.. automodule:: unidec.Launcher
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.MetaUniDec module
+------------------------
+
+.. automodule:: unidec.MetaUniDec
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.UniChrom module
+----------------------
+
+.. automodule:: unidec.UniChrom
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.UniDecCD module
+----------------------
+
+.. automodule:: unidec.UniDecCD
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.engine module
+--------------------
+
+.. automodule:: unidec.engine
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.tools module
+-------------------
+
+.. automodule:: unidec.tools
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: unidec
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,53 @@
+unidec.metaunidec.meta\_import\_wizard package
+==============================================
+
+Submodules
+----------
+
+unidec.metaunidec.meta\_import\_wizard.MetaTagTypes module
+----------------------------------------------------------
+
+.. automodule:: unidec.metaunidec.meta_import_wizard.MetaTagTypes
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.metaunidec.meta\_import\_wizard.meta\_data\_importer module
+------------------------------------------------------------------
+
+.. automodule:: unidec.metaunidec.meta_import_wizard.meta_data_importer
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.metaunidec.meta\_import\_wizard.meta\_import\_wizard module
+------------------------------------------------------------------
+
+.. automodule:: unidec.metaunidec.meta_import_wizard.meta_import_wizard
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.metaunidec.meta\_import\_wizard.meta\_import\_wizard\_grid module
+------------------------------------------------------------------------
+
+.. automodule:: unidec.metaunidec.meta_import_wizard.meta_import_wizard_grid
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.metaunidec.meta\_import\_wizard.meta\_import\_wizard\_treectrl module
+----------------------------------------------------------------------------
+
+.. automodule:: unidec.metaunidec.meta_import_wizard.meta_import_wizard_treectrl
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: unidec.metaunidec.meta_import_wizard
+   :members:
+   :undoc-members:
+   :show-inheritance:

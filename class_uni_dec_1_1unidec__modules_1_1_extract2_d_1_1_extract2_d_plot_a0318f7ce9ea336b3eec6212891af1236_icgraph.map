@@ -1,9 +1,0 @@
-<map id="UniDec.unidec_modules.Extract2D.Extract2DPlot.makeplot" name="UniDec.unidec_modules.Extract2D.Extract2DPlot.makeplot">
-<area shape="rect" id="node2" href="$class_uni_dec_1_1unidec__modules_1_1_extract2_d_1_1_extract2_d_plot.html#a6af8b9ab8bb5ca755acaaf111454fc3e" title="UniDec.unidec_modules.Extract2\lD.Extract2DPlot.on_back" alt="" coords="280,5,495,47"/>
-<area shape="rect" id="node3" href="$class_uni_dec_1_1unidec__modules_1_1_extract2_d_1_1_extract2_d_plot.html#a6d4c5c70d173ef71c4bc8c2920dc1053" title="UniDec.unidec_modules.Extract2\lD.Extract2DPlot.on_next" alt="" coords="280,71,495,112"/>
-<area shape="rect" id="node4" href="$class_uni_dec_1_1unidec__modules_1_1_grid_decon_1_1_grid_decon_window.html#aea1818c100f5be3e93d653105215a8e7" title="UniDec.unidec_modules.Grid\lDecon.GridDeconWindow.extract" alt="" coords="280,136,495,177"/>
-<area shape="rect" id="node6" href="$class_uni_dec_1_1unidec__modules_1_1_grid_decon_1_1_grid_decon_window.html#a5e6f7dfd9f444e30cae04fd2308c2030" title="UniDec.unidec_modules.Grid\lDecon.GridDeconWindow.deconvolve" alt="" coords="269,201,505,243"/>
-<area shape="rect" id="node7" href="$class_uni_dec_1_1unidec__modules_1_1_mass_defects_1_1_mass_defect_window.html#af05aa55fe6eb81b344fa6c1e1379ffed" title="UniDec.unidec_modules.Mass\lDefects.MassDefectWindow.on_back" alt="" coords="268,267,507,308"/>
-<area shape="rect" id="node8" href="$class_uni_dec_1_1unidec__modules_1_1_mass_defects_1_1_mass_defect_window.html#ae3b8cd82bd0a5801cfaf56ff79a90749" title="UniDec.unidec_modules.Mass\lDefects.MassDefectWindow.on_next" alt="" coords="270,332,505,373"/>
-<area shape="rect" id="node5" href="$class_uni_dec_1_1unidec__modules_1_1nativez_1_1_native_z.html#a14f588747a9be5a3ece7f15195762e58" title="UniDec.unidec_modules.nativez.\lNativeZ.initialize_interface" alt="" coords="555,136,765,177"/>
-</map>

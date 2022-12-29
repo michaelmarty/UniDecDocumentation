@@ -1,0 +1,29 @@
+unidec.iFAMS package
+====================
+
+Submodules
+----------
+
+unidec.iFAMS.iFAMSfun module
+----------------------------
+
+.. automodule:: unidec.iFAMS.iFAMSfun
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.iFAMS.wxiFAMS module
+---------------------------
+
+.. automodule:: unidec.iFAMS.wxiFAMS
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: unidec.iFAMS
+   :members:
+   :undoc-members:
+   :show-inheritance:

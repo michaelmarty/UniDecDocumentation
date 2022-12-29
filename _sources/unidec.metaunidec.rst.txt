@@ -1,0 +1,94 @@
+unidec.metaunidec package
+=========================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   unidec.metaunidec.gui_elements
+   unidec.metaunidec.meta_import_wizard
+
+Submodules
+----------
+
+unidec.metaunidec.image\_plotter module
+---------------------------------------
+
+.. automodule:: unidec.metaunidec.image_plotter
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.metaunidec.imzml\_reader module
+--------------------------------------
+
+.. automodule:: unidec.metaunidec.imzml_reader
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.metaunidec.metafft module
+--------------------------------
+
+.. automodule:: unidec.metaunidec.metafft
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.metaunidec.mudeng module
+-------------------------------
+
+.. automodule:: unidec.metaunidec.mudeng
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.metaunidec.mudhelp module
+--------------------------------
+
+.. automodule:: unidec.metaunidec.mudhelp
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.metaunidec.mudstruct module
+----------------------------------
+
+.. automodule:: unidec.metaunidec.mudstruct
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.metaunidec.mudview module
+--------------------------------
+
+.. automodule:: unidec.metaunidec.mudview
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.metaunidec.test\_MUD module
+----------------------------------
+
+.. automodule:: unidec.metaunidec.test_MUD
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.metaunidec.ultrameta module
+----------------------------------
+
+.. automodule:: unidec.metaunidec.ultrameta
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: unidec.metaunidec
+   :members:
+   :undoc-members:
+   :show-inheritance:

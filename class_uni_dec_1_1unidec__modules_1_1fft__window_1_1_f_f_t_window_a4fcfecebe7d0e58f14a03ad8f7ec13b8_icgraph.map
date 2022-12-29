@@ -1,7 +1,0 @@
-<map id="UniDec.unidec_modules.fft_window.FFTWindow.makeplot" name="UniDec.unidec_modules.fft_window.FFTWindow.makeplot">
-<area shape="rect" id="node2" href="$class_uni_dec_1_1unidec__modules_1_1_grid_decon_1_1_grid_decon_window.html#aea1818c100f5be3e93d653105215a8e7" title="UniDec.unidec_modules.Grid\lDecon.GridDeconWindow.extract" alt="" coords="267,5,481,47"/>
-<area shape="rect" id="node4" href="$class_uni_dec_1_1unidec__modules_1_1_grid_decon_1_1_grid_decon_window.html#a5e6f7dfd9f444e30cae04fd2308c2030" title="UniDec.unidec_modules.Grid\lDecon.GridDeconWindow.deconvolve" alt="" coords="256,71,492,112"/>
-<area shape="rect" id="node5" href="$class_uni_dec_1_1unidec__modules_1_1_mass_defects_1_1_mass_defect_window.html#af05aa55fe6eb81b344fa6c1e1379ffed" title="UniDec.unidec_modules.Mass\lDefects.MassDefectWindow.on_back" alt="" coords="255,136,493,177"/>
-<area shape="rect" id="node6" href="$class_uni_dec_1_1unidec__modules_1_1_mass_defects_1_1_mass_defect_window.html#ae3b8cd82bd0a5801cfaf56ff79a90749" title="UniDec.unidec_modules.Mass\lDefects.MassDefectWindow.on_next" alt="" coords="257,201,491,243"/>
-<area shape="rect" id="node3" href="$class_uni_dec_1_1unidec__modules_1_1nativez_1_1_native_z.html#a14f588747a9be5a3ece7f15195762e58" title="UniDec.unidec_modules.nativez.\lNativeZ.initialize_interface" alt="" coords="541,5,752,47"/>
-</map>

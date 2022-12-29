@@ -1,0 +1,785 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>unidec &#8212; UniDec 6.0.0.a2 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="unidec package" href="unidec.html" />
+    <link rel="prev" title="UniDec: Universal Deconvolution of Mass and Ion Mobility Spectra" href="readme.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="unidec.html" title="unidec package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="readme.html" title="UniDec: Universal Deconvolution of Mass and Ion Mobility Spectra"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">UniDec 6.0.0.a2 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">unidec</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="unidec">
+<h1>unidec<a class="headerlink" href="#unidec" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="unidec.html">unidec package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="unidec.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="unidec.LipiDec.html">unidec.LipiDec package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="unidec.LipiDec.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.LipiDec.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.LipiDec.html#module-unidec.LipiDec.AddFeaturestoDF">unidec.LipiDec.AddFeaturestoDF module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.LipiDec.html#module-unidec.LipiDec.LipyDec">unidec.LipiDec.LipyDec module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.LipiDec.html#module-unidec.LipiDec.SkyQuant">unidec.LipiDec.SkyQuant module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.LipiDec.html#module-unidec.LipiDec">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.iFAMS.html">unidec.iFAMS package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="unidec.iFAMS.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.iFAMS.html#module-unidec.iFAMS.iFAMSfun">unidec.iFAMS.iFAMSfun module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.iFAMS.html#module-unidec.iFAMS.wxiFAMS">unidec.iFAMS.wxiFAMS module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.iFAMS.html#module-unidec.iFAMS">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.metaunidec.html">unidec.metaunidec package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="unidec.metaunidec.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.metaunidec.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.metaunidec.html#module-unidec.metaunidec.image_plotter">unidec.metaunidec.image_plotter module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.metaunidec.html#module-unidec.metaunidec.imzml_reader">unidec.metaunidec.imzml_reader module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.metaunidec.html#module-unidec.metaunidec.metafft">unidec.metaunidec.metafft module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.metaunidec.html#module-unidec.metaunidec.mudeng">unidec.metaunidec.mudeng module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.metaunidec.html#module-unidec.metaunidec.mudhelp">unidec.metaunidec.mudhelp module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.metaunidec.html#module-unidec.metaunidec.mudstruct">unidec.metaunidec.mudstruct module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.metaunidec.html#module-unidec.metaunidec.mudview">unidec.metaunidec.mudview module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.metaunidec.html#module-unidec.metaunidec.test_MUD">unidec.metaunidec.test_MUD module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.metaunidec.html#module-unidec.metaunidec.ultrameta">unidec.metaunidec.ultrameta module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.metaunidec.html#module-unidec.metaunidec">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.modules.html">unidec.modules package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.AutocorrWindow">unidec.modules.AutocorrWindow module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.CDCal">unidec.modules.CDCal module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.CDEng">unidec.modules.CDEng module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.ChromEng">unidec.modules.ChromEng module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.ColorPlot">unidec.modules.ColorPlot module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.DoubleDec">unidec.modules.DoubleDec module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.Extract2D">unidec.modules.Extract2D module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.GridDecon">unidec.modules.GridDecon module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.GridDecon2">unidec.modules.GridDecon2 module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.IM_functions">unidec.modules.IM_functions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.IM_windows">unidec.modules.IM_windows module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.ManualSelectionWindow">unidec.modules.ManualSelectionWindow module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.MassDefectExtractor">unidec.modules.MassDefectExtractor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.MassDefects">unidec.modules.MassDefects module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.MassFitter">unidec.modules.MassFitter module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.MassSpecBuilder">unidec.modules.MassSpecBuilder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.NanodiscBuilder">unidec.modules.NanodiscBuilder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.PlotAnimations">unidec.modules.PlotAnimations module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.PlotBase">unidec.modules.PlotBase module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.PlottingWindow">unidec.modules.PlottingWindow module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.SubDiv">unidec.modules.SubDiv module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.UniFit">unidec.modules.UniFit module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.UniList">unidec.modules.UniList module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.biopolymertools">unidec.modules.biopolymertools module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.data_reader">unidec.modules.data_reader module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.fft_window">unidec.modules.fft_window module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.fitting">unidec.modules.fitting module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.hdf5_tools">unidec.modules.hdf5_tools module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.hramtools">unidec.modules.hramtools module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.html_writer">unidec.modules.html_writer module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.i2ms_importer">unidec.modules.i2ms_importer module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.isotopetools">unidec.modules.isotopetools module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.mainwindow">unidec.modules.mainwindow module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.masstools">unidec.modules.masstools module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.matchtools">unidec.modules.matchtools module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.miscwindows">unidec.modules.miscwindows module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.mzMLimporter">unidec.modules.mzMLimporter module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.mzXML_importer">unidec.modules.mzXML_importer module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.mzmlparse_auto">unidec.modules.mzmlparse_auto module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.nativez">unidec.modules.nativez module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.peakstructure">unidec.modules.peakstructure module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.peakwidthtools">unidec.modules.peakwidthtools module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.plateplot">unidec.modules.plateplot module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.plot1d">unidec.modules.plot1d module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.plot2d">unidec.modules.plot2d module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.plot3d">unidec.modules.plot3d module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.plot_waterfall">unidec.modules.plot_waterfall module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.unidec_enginebase">unidec.modules.unidec_enginebase module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.unidec_presbase">unidec.modules.unidec_presbase module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules.unidecstructure">unidec.modules.unidecstructure module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.html#module-unidec.modules">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="unidec.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unidec.html#module-unidec.DataCollector">unidec.DataCollector module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.DataCollector.DCDropTarget"><code class="docutils literal notranslate"><span class="pre">DCDropTarget</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DCDropTarget.OnDropFiles"><code class="docutils literal notranslate"><span class="pre">DCDropTarget.OnDropFiles()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector"><code class="docutils literal notranslate"><span class="pre">DataCollector</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.check_cmaps"><code class="docutils literal notranslate"><span class="pre">DataCollector.check_cmaps()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.load"><code class="docutils literal notranslate"><span class="pre">DataCollector.load()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.load_x_from_peaks"><code class="docutils literal notranslate"><span class="pre">DataCollector.load_x_from_peaks()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.make_grid_plots"><code class="docutils literal notranslate"><span class="pre">DataCollector.make_grid_plots()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.make_shade_plot"><code class="docutils literal notranslate"><span class="pre">DataCollector.make_shade_plot()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.makeplot2"><code class="docutils literal notranslate"><span class="pre">DataCollector.makeplot2()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.menu_fcmaps"><code class="docutils literal notranslate"><span class="pre">DataCollector.menu_fcmaps()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.menu_xcmaps"><code class="docutils literal notranslate"><span class="pre">DataCollector.menu_xcmaps()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.on_2dgrid"><code class="docutils literal notranslate"><span class="pre">DataCollector.on_2dgrid()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.on_absolute_path"><code class="docutils literal notranslate"><span class="pre">DataCollector.on_absolute_path()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.on_add_x"><code class="docutils literal notranslate"><span class="pre">DataCollector.on_add_x()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.on_add_y"><code class="docutils literal notranslate"><span class="pre">DataCollector.on_add_y()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.on_animate"><code class="docutils literal notranslate"><span class="pre">DataCollector.on_animate()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.on_animate2"><code class="docutils literal notranslate"><span class="pre">DataCollector.on_animate2()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.on_autocorr"><code class="docutils literal notranslate"><span class="pre">DataCollector.on_autocorr()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.on_choose_dir"><code class="docutils literal notranslate"><span class="pre">DataCollector.on_choose_dir()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.on_defect"><code class="docutils literal notranslate"><span class="pre">DataCollector.on_defect()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.on_doubledec"><code class="docutils literal notranslate"><span class="pre">DataCollector.on_doubledec()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.on_export"><code class="docutils literal notranslate"><span class="pre">DataCollector.on_export()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.on_fitting"><code class="docutils literal notranslate"><span class="pre">DataCollector.on_fitting()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.on_hdf5_open"><code class="docutils literal notranslate"><span class="pre">DataCollector.on_hdf5_open()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.on_kd_fit"><code class="docutils literal notranslate"><span class="pre">DataCollector.on_kd_fit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.on_load"><code class="docutils literal notranslate"><span class="pre">DataCollector.on_load()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.on_local_path"><code class="docutils literal notranslate"><span class="pre">DataCollector.on_local_path()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.on_motion"><code class="docutils literal notranslate"><span class="pre">DataCollector.on_motion()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.on_msms_norm"><code class="docutils literal notranslate"><span class="pre">DataCollector.on_msms_norm()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.on_run"><code class="docutils literal notranslate"><span class="pre">DataCollector.on_run()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.on_save"><code class="docutils literal notranslate"><span class="pre">DataCollector.on_save()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.on_save_fig"><code class="docutils literal notranslate"><span class="pre">DataCollector.on_save_fig()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.on_save_figPDF"><code class="docutils literal notranslate"><span class="pre">DataCollector.on_save_figPDF()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.on_ylabel"><code class="docutils literal notranslate"><span class="pre">DataCollector.on_ylabel()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.open_hdf5"><code class="docutils literal notranslate"><span class="pre">DataCollector.open_hdf5()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.shade_plots"><code class="docutils literal notranslate"><span class="pre">DataCollector.shade_plots()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.update_get"><code class="docutils literal notranslate"><span class="pre">DataCollector.update_get()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.DataCollector.update_set"><code class="docutils literal notranslate"><span class="pre">DataCollector.update_set()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.DataCollector.ListCtrlPanel"><code class="docutils literal notranslate"><span class="pre">ListCtrlPanel</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.ListCtrlPanel.on_popup_four"><code class="docutils literal notranslate"><span class="pre">ListCtrlPanel.on_popup_four()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.ListCtrlPanel.on_popup_one"><code class="docutils literal notranslate"><span class="pre">ListCtrlPanel.on_popup_one()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.ListCtrlPanel.on_popup_three"><code class="docutils literal notranslate"><span class="pre">ListCtrlPanel.on_popup_three()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.ListCtrlPanel.on_popup_two"><code class="docutils literal notranslate"><span class="pre">ListCtrlPanel.on_popup_two()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.ListCtrlPanel.on_right_click"><code class="docutils literal notranslate"><span class="pre">ListCtrlPanel.on_right_click()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.DataCollector.XValueListCtrl"><code class="docutils literal notranslate"><span class="pre">XValueListCtrl</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.XValueListCtrl.add_line"><code class="docutils literal notranslate"><span class="pre">XValueListCtrl.add_line()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.XValueListCtrl.clear_list"><code class="docutils literal notranslate"><span class="pre">XValueListCtrl.clear_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.XValueListCtrl.get_list"><code class="docutils literal notranslate"><span class="pre">XValueListCtrl.get_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.XValueListCtrl.get_maxes"><code class="docutils literal notranslate"><span class="pre">XValueListCtrl.get_maxes()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.XValueListCtrl.populate"><code class="docutils literal notranslate"><span class="pre">XValueListCtrl.populate()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.DataCollector.YValueListCtrl"><code class="docutils literal notranslate"><span class="pre">YValueListCtrl</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.YValueListCtrl.add_line"><code class="docutils literal notranslate"><span class="pre">YValueListCtrl.add_line()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.YValueListCtrl.clear_list"><code class="docutils literal notranslate"><span class="pre">YValueListCtrl.clear_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.YValueListCtrl.get_list"><code class="docutils literal notranslate"><span class="pre">YValueListCtrl.get_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.DataCollector.YValueListCtrl.populate"><code class="docutils literal notranslate"><span class="pre">YValueListCtrl.populate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="unidec.html#module-unidec.GUniDec">unidec.GUniDec module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp"><code class="docutils literal notranslate"><span class="pre">UniDecApp</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.after_unidec_run"><code class="docutils literal notranslate"><span class="pre">UniDecApp.after_unidec_run()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.init"><code class="docutils literal notranslate"><span class="pre">UniDecApp.init()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.make_cube_plot"><code class="docutils literal notranslate"><span class="pre">UniDecApp.make_cube_plot()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.make_im_plots"><code class="docutils literal notranslate"><span class="pre">UniDecApp.make_im_plots()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.makeplot1"><code class="docutils literal notranslate"><span class="pre">UniDecApp.makeplot1()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.makeplot3"><code class="docutils literal notranslate"><span class="pre">UniDecApp.makeplot3()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.makeplot5"><code class="docutils literal notranslate"><span class="pre">UniDecApp.makeplot5()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.makeplot6"><code class="docutils literal notranslate"><span class="pre">UniDecApp.makeplot6()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_2d_grid"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_2d_grid()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_additional_parameters"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_additional_parameters()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_auto"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_auto()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_autoformat"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_autoformat()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_batch"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_batch()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_batch2"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_batch2()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_batch_raw"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_batch_raw()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_calibrate"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_calibrate()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_center_of_mass"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_center_of_mass()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_charge_plot"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_charge_plot()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_color_plot1d"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_color_plot1d()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_data_collector"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_data_collector()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_dataprep_button"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_dataprep_button()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_delete"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_delete()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_ex"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_ex()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_export_params"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_export_params()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_fft_window"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_fft_window()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_file_name"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_file_name()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_fit_masses"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_fit_masses()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_flip_mode"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_flip_mode()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_flip_tabbed"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_flip_tabbed()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_flip_twave"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_flip_twave()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_full"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_full()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_grid_decon"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_grid_decon()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_iFAMS"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_iFAMS()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_im_extract"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_im_extract()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_im_tools"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_im_tools()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_import_wizard"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_import_wizard()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_integrate"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_integrate()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_kendrick"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_kendrick()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_label_avg_charge_states"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_label_avg_charge_states()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_label_max_charge_states"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_label_max_charge_states()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_left_click"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_left_click()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_load_everything"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_load_everything()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_load_state"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_load_state()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_mass_process"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_mass_process()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_mass_tools"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_mass_tools()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_mql"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_mql()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_nativez_tools"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_nativez_tools()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_navia"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_navia()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_nmsgsb_report"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_nmsgsb_report()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_open"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_open()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_open_file"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_open_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_open_kernel"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_open_kernel()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_paste_spectrum"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_paste_spectrum()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_pdf_report"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_pdf_report()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_pick_peaks"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_pick_peaks()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_plot_composite"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_plot_composite()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_plot_isotope_distribution"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_plot_isotope_distribution()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_plot_nativeccs"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_plot_nativeccs()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_plot_offsets"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_plot_offsets()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_plot_peaks"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_plot_peaks()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_raw_open"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_raw_open()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_redo"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_redo()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_replot"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_replot()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_save_state"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_save_state()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_score"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_score()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_score2"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_score2()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_score_FDR"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_score_FDR()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_score_label"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_score_label()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_score_window"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_score_window()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_smash"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_smash()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_super_batch"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_super_batch()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_undo"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_undo()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_unidec_button"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_unidec_button()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_unidec_path"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_unidec_path()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_write_hdf5"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_write_hdf5()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.on_zerocharge_mass"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_zerocharge_mass()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.plot_integral"><code class="docutils literal notranslate"><span class="pre">UniDecApp.plot_integral()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.GUniDec.UniDecApp.remake_mainwindow"><code class="docutils literal notranslate"><span class="pre">UniDecApp.remake_mainwindow()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="unidec.html#module-unidec.ImportWizard">unidec.ImportWizard module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.ImportWizard.ImportWizard"><code class="docutils literal notranslate"><span class="pre">ImportWizard</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.ImportWizard.ImportWizard.add_file"><code class="docutils literal notranslate"><span class="pre">ImportWizard.add_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.ImportWizard.ImportWizard.auto"><code class="docutils literal notranslate"><span class="pre">ImportWizard.auto()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.ImportWizard.ImportWizard.close"><code class="docutils literal notranslate"><span class="pre">ImportWizard.close()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.ImportWizard.ImportWizard.export_file"><code class="docutils literal notranslate"><span class="pre">ImportWizard.export_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.ImportWizard.ImportWizard.export_then_load"><code class="docutils literal notranslate"><span class="pre">ImportWizard.export_then_load()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.ImportWizard.ImportWizard.get_folder_path"><code class="docutils literal notranslate"><span class="pre">ImportWizard.get_folder_path()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.ImportWizard.ImportWizard.on_folder_path_change"><code class="docutils literal notranslate"><span class="pre">ImportWizard.on_folder_path_change()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.ImportWizard.ImportWizard.setup_frame"><code class="docutils literal notranslate"><span class="pre">ImportWizard.setup_frame()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="unidec.html#module-unidec.Launcher">unidec.Launcher module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.Launcher.Lview"><code class="docutils literal notranslate"><span class="pre">Lview</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.Launcher.Lview.button1"><code class="docutils literal notranslate"><span class="pre">Lview.button1()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.Launcher.Lview.button2"><code class="docutils literal notranslate"><span class="pre">Lview.button2()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.Launcher.Lview.button3"><code class="docutils literal notranslate"><span class="pre">Lview.button3()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.Launcher.Lview.button4"><code class="docutils literal notranslate"><span class="pre">Lview.button4()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.Launcher.Lview.button5"><code class="docutils literal notranslate"><span class="pre">Lview.button5()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.Launcher.Lview.button6"><code class="docutils literal notranslate"><span class="pre">Lview.button6()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.Launcher.Lview.button7"><code class="docutils literal notranslate"><span class="pre">Lview.button7()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.Launcher.Lview.button8"><code class="docutils literal notranslate"><span class="pre">Lview.button8()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.Launcher.Lview.button9"><code class="docutils literal notranslate"><span class="pre">Lview.button9()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.Launcher.Shell"><code class="docutils literal notranslate"><span class="pre">Shell</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.Launcher.UniDecLauncher"><code class="docutils literal notranslate"><span class="pre">UniDecLauncher</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.Launcher.UniDecLauncher.init"><code class="docutils literal notranslate"><span class="pre">UniDecLauncher.init()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.Launcher.UniDecLauncher.on_close"><code class="docutils literal notranslate"><span class="pre">UniDecLauncher.on_close()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.Launcher.run_launcher"><code class="docutils literal notranslate"><span class="pre">run_launcher()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="unidec.html#module-unidec.MetaUniDec">unidec.MetaUniDec module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.export_vars"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.export_vars()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.export_vars_dialog"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.export_vars_dialog()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.import_vars"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.import_vars()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.make2dplots"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.make2dplots()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.make_top"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.make_top()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.make_waterfall_plots"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.make_waterfall_plots()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.makeplot1"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.makeplot1()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.makeplot2_mud"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.makeplot2_mud()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.makeplot3"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.makeplot3()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.makeplot5"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.makeplot5()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.makeplot6"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.makeplot6()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.makeplot7"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.makeplot7()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.makeplot8"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.makeplot8()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.makeplot9"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.makeplot9()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_2d_grid"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_2d_grid()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_animate_2d"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_animate_2d()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_animate_2d_mass"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_animate_2d_mass()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_animate_2d_mz"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_animate_2d_mz()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_animate_annotated_mass"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_animate_annotated_mass()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_animate_annotated_mz"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_animate_annotated_mz()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_animate_mass"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_animate_mass()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_animate_mz"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_animate_mz()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_auto"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_auto()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_autocorr2"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_autocorr2()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_autocorr_window_mud"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_autocorr_window_mud()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_charge_states_mud"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_charge_states_mud()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_color_change"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_color_change()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_dataprep_button"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_dataprep_button()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_delete_spectrum"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_delete_spectrum()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_export_params"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_export_params()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_fft_window"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_fft_window()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_fft_window2"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_fft_window2()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_filter_peaks_MUD"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_filter_peaks_MUD()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_full"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_full()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_ignore"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_ignore()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_isolate"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_isolate()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_kendrick"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_kendrick()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_mass_tools"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_mass_tools()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_pick_peaks"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_pick_peaks()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_pick_scanpeaks"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_pick_scanpeaks()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_plot_composite"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_plot_composite()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_redo"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_redo()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_repopulate"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_repopulate()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_undo"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_undo()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.on_unidec_button"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.on_unidec_button()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.plot_sums"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.plot_sums()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.recolor_spectra"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.recolor_spectra()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.recursive_repack_hdf5"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.recursive_repack_hdf5()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.rename_var1"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.rename_var1()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.rename_var2"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.rename_var2()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.MetaUniDecBase.repack_hdf5"><code class="docutils literal notranslate"><span class="pre">MetaUniDecBase.repack_hdf5()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp"><code class="docutils literal notranslate"><span class="pre">UniDecApp</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.add_files"><code class="docutils literal notranslate"><span class="pre">UniDecApp.add_files()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.init"><code class="docutils literal notranslate"><span class="pre">UniDecApp.init()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.make_image_plot"><code class="docutils literal notranslate"><span class="pre">UniDecApp.make_image_plot()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.makeplot6"><code class="docutils literal notranslate"><span class="pre">UniDecApp.makeplot6()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.makeplot8"><code class="docutils literal notranslate"><span class="pre">UniDecApp.makeplot8()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.makeplot9"><code class="docutils literal notranslate"><span class="pre">UniDecApp.makeplot9()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.new_file"><code class="docutils literal notranslate"><span class="pre">UniDecApp.new_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_add_file"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_add_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_additional_filters"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_additional_filters()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_additional_parameters"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_additional_parameters()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_additional_plotting"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_additional_plotting()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_animate_help"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_animate_help()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_auto_import_help"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_auto_import_help()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_auto_match_help"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_auto_match_help()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_autocorr_help"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_autocorr_help()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_autoformat"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_autoformat()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_baseline_help"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_baseline_help()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_batch_config"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_batch_config()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_batch_cre"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_batch_cre()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_batch_extract"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_batch_extract()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_batch_help"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_batch_help()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_batch_run"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_batch_run()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_data_collector"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_data_collector()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_data_processing"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_data_processing()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_delete"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_delete()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_exp_fit"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_exp_fit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_fft_help"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_fft_help()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_fit"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_fit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_flip_tabbed"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_flip_tabbed()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_getting_started"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_getting_started()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_hdf5_to_imzml"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_hdf5_to_imzml()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_imaging_viewer"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_imaging_viewer()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_import_multiple_scans"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_import_multiple_scans()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_import_multiple_times"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_import_multiple_times()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_import_mzml"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_import_mzml()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_import_mzml_scans"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_import_mzml_scans()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_import_window"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_import_window()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_imzml_to_hdf5"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_imzml_to_hdf5()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_left_click"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_left_click()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_lin_fit"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_lin_fit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_new_file"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_new_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_oligomer_help"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_oligomer_help()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_open"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_open()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_open_csv"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_open_csv()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_paste_spectrum"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_paste_spectrum()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_peak_selection"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_peak_selection()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_peak_width_tool_help"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_peak_width_tool_help()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_peak_window"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_peak_window()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_plate_viewer"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_plate_viewer()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_plot_window"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_plot_window()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_presets_help"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_presets_help()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_replot"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_replot()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_sig_fit"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_sig_fit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_ultra_meta"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_ultra_meta()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_unidec_parameters"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_unidec_parameters()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.on_wizard"><code class="docutils literal notranslate"><span class="pre">UniDecApp.on_wizard()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.open_csv"><code class="docutils literal notranslate"><span class="pre">UniDecApp.open_csv()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.open_file"><code class="docutils literal notranslate"><span class="pre">UniDecApp.open_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.peak_plots"><code class="docutils literal notranslate"><span class="pre">UniDecApp.peak_plots()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.MetaUniDec.UniDecApp.remake_mainwindow"><code class="docutils literal notranslate"><span class="pre">UniDecApp.remake_mainwindow()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="unidec.html#module-unidec.UniChrom">unidec.UniChrom module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp"><code class="docutils literal notranslate"><span class="pre">ChromApp</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.batch_run"><code class="docutils literal notranslate"><span class="pre">ChromApp.batch_run()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.export_selection"><code class="docutils literal notranslate"><span class="pre">ChromApp.export_selection()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.get_from_gui"><code class="docutils literal notranslate"><span class="pre">ChromApp.get_from_gui()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.init"><code class="docutils literal notranslate"><span class="pre">ChromApp.init()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.load_to_gui"><code class="docutils literal notranslate"><span class="pre">ChromApp.load_to_gui()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.make_selection"><code class="docutils literal notranslate"><span class="pre">ChromApp.make_selection()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.makeplotc"><code class="docutils literal notranslate"><span class="pre">ChromApp.makeplotc()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.on_batch_chrom1"><code class="docutils literal notranslate"><span class="pre">ChromApp.on_batch_chrom1()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.on_batch_chrom_dirs"><code class="docutils literal notranslate"><span class="pre">ChromApp.on_batch_chrom_dirs()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.on_chrom_peaks"><code class="docutils literal notranslate"><span class="pre">ChromApp.on_chrom_peaks()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.on_clear_spectra"><code class="docutils literal notranslate"><span class="pre">ChromApp.on_clear_spectra()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.on_delete"><code class="docutils literal notranslate"><span class="pre">ChromApp.on_delete()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.on_list_add"><code class="docutils literal notranslate"><span class="pre">ChromApp.on_list_add()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.on_manual_add"><code class="docutils literal notranslate"><span class="pre">ChromApp.on_manual_add()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.on_open"><code class="docutils literal notranslate"><span class="pre">ChromApp.on_open()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.on_open_dir"><code class="docutils literal notranslate"><span class="pre">ChromApp.on_open_dir()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.on_open_file"><code class="docutils literal notranslate"><span class="pre">ChromApp.on_open_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.on_open_hdf5"><code class="docutils literal notranslate"><span class="pre">ChromApp.on_open_hdf5()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.on_open_ud"><code class="docutils literal notranslate"><span class="pre">ChromApp.on_open_ud()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.on_pick_peaks_individual"><code class="docutils literal notranslate"><span class="pre">ChromApp.on_pick_peaks_individual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.on_replot"><code class="docutils literal notranslate"><span class="pre">ChromApp.on_replot()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.on_selection"><code class="docutils literal notranslate"><span class="pre">ChromApp.on_selection()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.on_single_charge_states"><code class="docutils literal notranslate"><span class="pre">ChromApp.on_single_charge_states()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.on_single_delete"><code class="docutils literal notranslate"><span class="pre">ChromApp.on_single_delete()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.on_single_differences"><code class="docutils literal notranslate"><span class="pre">ChromApp.on_single_differences()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.on_single_label_masses"><code class="docutils literal notranslate"><span class="pre">ChromApp.on_single_label_masses()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.on_sliding_window"><code class="docutils literal notranslate"><span class="pre">ChromApp.on_sliding_window()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.on_timepart"><code class="docutils literal notranslate"><span class="pre">ChromApp.on_timepart()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.on_unidec_run"><code class="docutils literal notranslate"><span class="pre">ChromApp.on_unidec_run()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.open_file"><code class="docutils literal notranslate"><span class="pre">ChromApp.open_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.open_hdf5_file"><code class="docutils literal notranslate"><span class="pre">ChromApp.open_hdf5_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.peak_plots"><code class="docutils literal notranslate"><span class="pre">ChromApp.peak_plots()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.plot_chrom_shading"><code class="docutils literal notranslate"><span class="pre">ChromApp.plot_chrom_shading()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.plot_single_mass"><code class="docutils literal notranslate"><span class="pre">ChromApp.plot_single_mass()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.plot_single_mz"><code class="docutils literal notranslate"><span class="pre">ChromApp.plot_single_mz()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.plot_single_pks"><code class="docutils literal notranslate"><span class="pre">ChromApp.plot_single_pks()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.quick_auto"><code class="docutils literal notranslate"><span class="pre">ChromApp.quick_auto()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.select_all"><code class="docutils literal notranslate"><span class="pre">ChromApp.select_all()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniChrom.ChromApp.update_hdf5"><code class="docutils literal notranslate"><span class="pre">ChromApp.update_hdf5()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="unidec.html#module-unidec.UniDecCD">unidec.UniDecCD module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.UniDecCD.UniDecCDApp"><code class="docutils literal notranslate"><span class="pre">UniDecCDApp</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniDecCD.UniDecCDApp.init"><code class="docutils literal notranslate"><span class="pre">UniDecCDApp.init()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniDecCD.UniDecCDApp.make_mzmass_plot"><code class="docutils literal notranslate"><span class="pre">UniDecCDApp.make_mzmass_plot()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniDecCD.UniDecCDApp.make_mzmass_plot_continuous"><code class="docutils literal notranslate"><span class="pre">UniDecCDApp.make_mzmass_plot_continuous()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniDecCD.UniDecCDApp.makeplot1"><code class="docutils literal notranslate"><span class="pre">UniDecCDApp.makeplot1()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniDecCD.UniDecCDApp.makeplot3"><code class="docutils literal notranslate"><span class="pre">UniDecCDApp.makeplot3()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniDecCD.UniDecCDApp.on_batch"><code class="docutils literal notranslate"><span class="pre">UniDecCDApp.on_batch()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniDecCD.UniDecCDApp.on_calibrate"><code class="docutils literal notranslate"><span class="pre">UniDecCDApp.on_calibrate()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniDecCD.UniDecCDApp.on_compare"><code class="docutils literal notranslate"><span class="pre">UniDecCDApp.on_compare()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniDecCD.UniDecCDApp.on_compare2"><code class="docutils literal notranslate"><span class="pre">UniDecCDApp.on_compare2()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniDecCD.UniDecCDApp.on_compare_proc"><code class="docutils literal notranslate"><span class="pre">UniDecCDApp.on_compare_proc()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniDecCD.UniDecCDApp.on_dataprep_button"><code class="docutils literal notranslate"><span class="pre">UniDecCDApp.on_dataprep_button()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniDecCD.UniDecCDApp.on_exe_mode"><code class="docutils literal notranslate"><span class="pre">UniDecCDApp.on_exe_mode()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniDecCD.UniDecCDApp.on_open"><code class="docutils literal notranslate"><span class="pre">UniDecCDApp.on_open()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniDecCD.UniDecCDApp.on_open_file"><code class="docutils literal notranslate"><span class="pre">UniDecCDApp.on_open_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniDecCD.UniDecCDApp.on_peak_width_tool"><code class="docutils literal notranslate"><span class="pre">UniDecCDApp.on_peak_width_tool()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniDecCD.UniDecCDApp.on_pick_peaks"><code class="docutils literal notranslate"><span class="pre">UniDecCDApp.on_pick_peaks()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniDecCD.UniDecCDApp.on_refresh"><code class="docutils literal notranslate"><span class="pre">UniDecCDApp.on_refresh()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniDecCD.UniDecCDApp.on_replot"><code class="docutils literal notranslate"><span class="pre">UniDecCDApp.on_replot()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniDecCD.UniDecCDApp.on_smash"><code class="docutils literal notranslate"><span class="pre">UniDecCDApp.on_smash()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniDecCD.UniDecCDApp.on_stori"><code class="docutils literal notranslate"><span class="pre">UniDecCDApp.on_stori()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniDecCD.UniDecCDApp.on_unidec_button"><code class="docutils literal notranslate"><span class="pre">UniDecCDApp.on_unidec_button()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniDecCD.UniDecCDApp.plotkernel"><code class="docutils literal notranslate"><span class="pre">UniDecCDApp.plotkernel()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniDecCD.UniDecCDApp.plotnoise"><code class="docutils literal notranslate"><span class="pre">UniDecCDApp.plotnoise()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.UniDecCD.UniDecCDApp.remake_mainwindow"><code class="docutils literal notranslate"><span class="pre">UniDecCDApp.remake_mainwindow()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="unidec.html#module-unidec.engine">unidec.engine module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.engine.UniDec"><code class="docutils literal notranslate"><span class="pre">UniDec</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.autocorrelation"><code class="docutils literal notranslate"><span class="pre">UniDec.autocorrelation()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.autointegrate"><code class="docutils literal notranslate"><span class="pre">UniDec.autointegrate()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.autorun"><code class="docutils literal notranslate"><span class="pre">UniDec.autorun()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.center_of_mass"><code class="docutils literal notranslate"><span class="pre">UniDec.center_of_mass()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.convolve_peaks"><code class="docutils literal notranslate"><span class="pre">UniDec.convolve_peaks()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.dscore"><code class="docutils literal notranslate"><span class="pre">UniDec.dscore()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.estimate_FDR"><code class="docutils literal notranslate"><span class="pre">UniDec.estimate_FDR()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.estimate_areas"><code class="docutils literal notranslate"><span class="pre">UniDec.estimate_areas()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.export_params"><code class="docutils literal notranslate"><span class="pre">UniDec.export_params()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.filter_peaks"><code class="docutils literal notranslate"><span class="pre">UniDec.filter_peaks()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.fit_all_masses"><code class="docutils literal notranslate"><span class="pre">UniDec.fit_all_masses()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.gen_html_report"><code class="docutils literal notranslate"><span class="pre">UniDec.gen_html_report()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.get_charge_peaks"><code class="docutils literal notranslate"><span class="pre">UniDec.get_charge_peaks()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.get_mzstack"><code class="docutils literal notranslate"><span class="pre">UniDec.get_mzstack()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.get_spectrum_peaks"><code class="docutils literal notranslate"><span class="pre">UniDec.get_spectrum_peaks()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.get_zstack"><code class="docutils literal notranslate"><span class="pre">UniDec.get_zstack()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.integrate"><code class="docutils literal notranslate"><span class="pre">UniDec.integrate()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.kendrick_continuous"><code class="docutils literal notranslate"><span class="pre">UniDec.kendrick_continuous()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.kendrick_peaks"><code class="docutils literal notranslate"><span class="pre">UniDec.kendrick_peaks()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.label_plot_correct"><code class="docutils literal notranslate"><span class="pre">UniDec.label_plot_correct()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.load_state"><code class="docutils literal notranslate"><span class="pre">UniDec.load_state()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.make_plot"><code class="docutils literal notranslate"><span class="pre">UniDec.make_plot()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.mass_grid_to_f_grid"><code class="docutils literal notranslate"><span class="pre">UniDec.mass_grid_to_f_grid()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.normalize_peaks"><code class="docutils literal notranslate"><span class="pre">UniDec.normalize_peaks()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.open_file"><code class="docutils literal notranslate"><span class="pre">UniDec.open_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.open_test_spectrum"><code class="docutils literal notranslate"><span class="pre">UniDec.open_test_spectrum()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.pass_data_in"><code class="docutils literal notranslate"><span class="pre">UniDec.pass_data_in()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.pick_peaks"><code class="docutils literal notranslate"><span class="pre">UniDec.pick_peaks()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.pks_csscore"><code class="docutils literal notranslate"><span class="pre">UniDec.pks_csscore()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.pks_fscore"><code class="docutils literal notranslate"><span class="pre">UniDec.pks_fscore()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.pks_mscore"><code class="docutils literal notranslate"><span class="pre">UniDec.pks_mscore()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.pks_uscore"><code class="docutils literal notranslate"><span class="pre">UniDec.pks_uscore()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.process_data"><code class="docutils literal notranslate"><span class="pre">UniDec.process_data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.process_mass_data"><code class="docutils literal notranslate"><span class="pre">UniDec.process_mass_data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.raw_process"><code class="docutils literal notranslate"><span class="pre">UniDec.raw_process()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.run_unidec"><code class="docutils literal notranslate"><span class="pre">UniDec.run_unidec()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.save_state"><code class="docutils literal notranslate"><span class="pre">UniDec.save_state()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.score_minimum"><code class="docutils literal notranslate"><span class="pre">UniDec.score_minimum()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.setup_peaks"><code class="docutils literal notranslate"><span class="pre">UniDec.setup_peaks()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.html#unidec.engine.UniDec.unidec_imports"><code class="docutils literal notranslate"><span class="pre">UniDec.unidec_imports()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="unidec.html#module-unidec.tools">unidec.tools module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.FD_gauss_wavelet"><code class="docutils literal notranslate"><span class="pre">FD_gauss_wavelet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.auto_noise_level"><code class="docutils literal notranslate"><span class="pre">auto_noise_level()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.auto_peak_width"><code class="docutils literal notranslate"><span class="pre">auto_peak_width()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.autocorr"><code class="docutils literal notranslate"><span class="pre">autocorr()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.average_bin_size"><code class="docutils literal notranslate"><span class="pre">average_bin_size()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.broaden"><code class="docutils literal notranslate"><span class="pre">broaden()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.cal_data"><code class="docutils literal notranslate"><span class="pre">cal_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.calc_FWHM"><code class="docutils literal notranslate"><span class="pre">calc_FWHM()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.calc_local_mins"><code class="docutils literal notranslate"><span class="pre">calc_local_mins()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.cconv"><code class="docutils literal notranslate"><span class="pre">cconv()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.center_of_mass"><code class="docutils literal notranslate"><span class="pre">center_of_mass()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.color_map_array"><code class="docutils literal notranslate"><span class="pre">color_map_array()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.combine"><code class="docutils literal notranslate"><span class="pre">combine()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.combine_all"><code class="docutils literal notranslate"><span class="pre">combine_all()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.commonprefix"><code class="docutils literal notranslate"><span class="pre">commonprefix()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.continuous_wavelet_transform"><code class="docutils literal notranslate"><span class="pre">continuous_wavelet_transform()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.conv_peak_shape_kernel"><code class="docutils literal notranslate"><span class="pre">conv_peak_shape_kernel()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.correlation_integration"><code class="docutils literal notranslate"><span class="pre">correlation_integration()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.data_extract"><code class="docutils literal notranslate"><span class="pre">data_extract()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.data_extract_grid"><code class="docutils literal notranslate"><span class="pre">data_extract_grid()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.datachop"><code class="docutils literal notranslate"><span class="pre">datachop()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.datacompsub"><code class="docutils literal notranslate"><span class="pre">datacompsub()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.dataexport"><code class="docutils literal notranslate"><span class="pre">dataexport()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.dataexportbin"><code class="docutils literal notranslate"><span class="pre">dataexportbin()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.dataprep"><code class="docutils literal notranslate"><span class="pre">dataprep()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.datasimpsub"><code class="docutils literal notranslate"><span class="pre">datasimpsub()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.decimal_formatter"><code class="docutils literal notranslate"><span class="pre">decimal_formatter()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.detectoreff"><code class="docutils literal notranslate"><span class="pre">detectoreff()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.double_fft_diff"><code class="docutils literal notranslate"><span class="pre">double_fft_diff()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.extract_from_data_matrix"><code class="docutils literal notranslate"><span class="pre">extract_from_data_matrix()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.fake_log"><code class="docutils literal notranslate"><span class="pre">fake_log()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.fft"><code class="docutils literal notranslate"><span class="pre">fft()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.fft_diff"><code class="docutils literal notranslate"><span class="pre">fft_diff()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.fft_process"><code class="docutils literal notranslate"><span class="pre">fft_process()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.fix_double_zeros"><code class="docutils literal notranslate"><span class="pre">fix_double_zeros()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.fix_textpos"><code class="docutils literal notranslate"><span class="pre">fix_textpos()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.gaussian_backgroud_subtract"><code class="docutils literal notranslate"><span class="pre">gaussian_backgroud_subtract()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.get_glyco_indexes"><code class="docutils literal notranslate"><span class="pre">get_glyco_indexes()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.get_importer"><code class="docutils literal notranslate"><span class="pre">get_importer()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.get_luminance"><code class="docutils literal notranslate"><span class="pre">get_luminance()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.get_max_time"><code class="docutils literal notranslate"><span class="pre">get_max_time()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.get_polarity"><code class="docutils literal notranslate"><span class="pre">get_polarity()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.get_tvalue"><code class="docutils literal notranslate"><span class="pre">get_tvalue()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.get_z_offset"><code class="docutils literal notranslate"><span class="pre">get_z_offset()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.get_zvalue"><code class="docutils literal notranslate"><span class="pre">get_zvalue()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.gsmooth"><code class="docutils literal notranslate"><span class="pre">gsmooth()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.header_test"><code class="docutils literal notranslate"><span class="pre">header_test()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.index_to_oname"><code class="docutils literal notranslate"><span class="pre">index_to_oname()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.integrate"><code class="docutils literal notranslate"><span class="pre">integrate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.intensitythresh"><code class="docutils literal notranslate"><span class="pre">intensitythresh()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.intensitythresh_del"><code class="docutils literal notranslate"><span class="pre">intensitythresh_del()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.intensitythresh_sub"><code class="docutils literal notranslate"><span class="pre">intensitythresh_sub()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.interp_pos"><code class="docutils literal notranslate"><span class="pre">interp_pos()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.interp_val"><code class="docutils literal notranslate"><span class="pre">interp_val()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.isempty"><code class="docutils literal notranslate"><span class="pre">isempty()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.kendrick_analysis"><code class="docutils literal notranslate"><span class="pre">kendrick_analysis()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.lengths"><code class="docutils literal notranslate"><span class="pre">lengths()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.limit_data"><code class="docutils literal notranslate"><span class="pre">limit_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.linear_axis"><code class="docutils literal notranslate"><span class="pre">linear_axis()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.linear_interpolation"><code class="docutils literal notranslate"><span class="pre">linear_interpolation()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.linearize"><code class="docutils literal notranslate"><span class="pre">linearize()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.lintegrate"><code class="docutils literal notranslate"><span class="pre">lintegrate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.linterpolate"><code class="docutils literal notranslate"><span class="pre">linterpolate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.load_mz_file"><code class="docutils literal notranslate"><span class="pre">load_mz_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.localmax"><code class="docutils literal notranslate"><span class="pre">localmax()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.localmax2"><code class="docutils literal notranslate"><span class="pre">localmax2()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.localmaxpos"><code class="docutils literal notranslate"><span class="pre">localmaxpos()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.make_all_matches"><code class="docutils literal notranslate"><span class="pre">make_all_matches()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.make_alpha_cmap"><code class="docutils literal notranslate"><span class="pre">make_alpha_cmap()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.make_isolated_match"><code class="docutils literal notranslate"><span class="pre">make_isolated_match()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.make_peak_shape"><code class="docutils literal notranslate"><span class="pre">make_peak_shape()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.make_peaks_mztab"><code class="docutils literal notranslate"><span class="pre">make_peaks_mztab()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.make_peaks_mztab_spectrum"><code class="docutils literal notranslate"><span class="pre">make_peaks_mztab_spectrum()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.makeconvspecies"><code class="docutils literal notranslate"><span class="pre">makeconvspecies()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.makespecfun"><code class="docutils literal notranslate"><span class="pre">makespecfun()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.mass_weighted_average"><code class="docutils literal notranslate"><span class="pre">mass_weighted_average()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.match"><code class="docutils literal notranslate"><span class="pre">match()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.match_dirs_recursive"><code class="docutils literal notranslate"><span class="pre">match_dirs_recursive()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.match_files"><code class="docutils literal notranslate"><span class="pre">match_files()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.match_files_recursive"><code class="docutils literal notranslate"><span class="pre">match_files_recursive()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.mergedata"><code class="docutils literal notranslate"><span class="pre">mergedata()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.mergedata2d"><code class="docutils literal notranslate"><span class="pre">mergedata2d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.mergedata2dexact"><code class="docutils literal notranslate"><span class="pre">mergedata2dexact()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.mergepeaks"><code class="docutils literal notranslate"><span class="pre">mergepeaks()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.nearest"><code class="docutils literal notranslate"><span class="pre">nearest()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.nearestunsorted"><code class="docutils literal notranslate"><span class="pre">nearestunsorted()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.noise_level2"><code class="docutils literal notranslate"><span class="pre">noise_level2()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.nonlinear_axis"><code class="docutils literal notranslate"><span class="pre">nonlinear_axis()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.nonlinearize"><code class="docutils literal notranslate"><span class="pre">nonlinearize()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.nonlinstickconv"><code class="docutils literal notranslate"><span class="pre">nonlinstickconv()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.normalize"><code class="docutils literal notranslate"><span class="pre">normalize()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.normalize_extracts"><code class="docutils literal notranslate"><span class="pre">normalize_extracts()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.pad_data"><code class="docutils literal notranslate"><span class="pre">pad_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.pad_data_length"><code class="docutils literal notranslate"><span class="pre">pad_data_length()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.pad_two_power"><code class="docutils literal notranslate"><span class="pre">pad_two_power()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.pair_glyco_matches"><code class="docutils literal notranslate"><span class="pre">pair_glyco_matches()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.peakdetect"><code class="docutils literal notranslate"><span class="pre">peakdetect()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.peakdetect_nonlinear"><code class="docutils literal notranslate"><span class="pre">peakdetect_nonlinear()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.peaks_error_FWHM"><code class="docutils literal notranslate"><span class="pre">peaks_error_FWHM()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.peaks_error_mean"><code class="docutils literal notranslate"><span class="pre">peaks_error_mean()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.polydispersity_index"><code class="docutils literal notranslate"><span class="pre">polydispersity_index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.polynomial_background_subtract"><code class="docutils literal notranslate"><span class="pre">polynomial_background_subtract()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.predict_charge"><code class="docutils literal notranslate"><span class="pre">predict_charge()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.remove_middle_zeros"><code class="docutils literal notranslate"><span class="pre">remove_middle_zeros()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.remove_noise"><code class="docutils literal notranslate"><span class="pre">remove_noise()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.removeduplicates"><code class="docutils literal notranslate"><span class="pre">removeduplicates()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.round_to_nearest"><code class="docutils literal notranslate"><span class="pre">round_to_nearest()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.safedivide"><code class="docutils literal notranslate"><span class="pre">safedivide()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.safedivide1"><code class="docutils literal notranslate"><span class="pre">safedivide1()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.savetxt"><code class="docutils literal notranslate"><span class="pre">savetxt()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.savgol"><code class="docutils literal notranslate"><span class="pre">savgol()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.savgol_background_subtract"><code class="docutils literal notranslate"><span class="pre">savgol_background_subtract()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.simchargefit"><code class="docutils literal notranslate"><span class="pre">simchargefit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.simp_string_to_value"><code class="docutils literal notranslate"><span class="pre">simp_string_to_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.simple_extract"><code class="docutils literal notranslate"><span class="pre">simple_extract()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.simple_mass_defect"><code class="docutils literal notranslate"><span class="pre">simple_mass_defect()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.single_cwt"><code class="docutils literal notranslate"><span class="pre">single_cwt()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.smartdecode"><code class="docutils literal notranslate"><span class="pre">smartdecode()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.solve_for_mass"><code class="docutils literal notranslate"><span class="pre">solve_for_mass()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.sparse"><code class="docutils literal notranslate"><span class="pre">sparse()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.stepmax"><code class="docutils literal notranslate"><span class="pre">stepmax()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.stickconv"><code class="docutils literal notranslate"><span class="pre">stickconv()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.sticks_only"><code class="docutils literal notranslate"><span class="pre">sticks_only()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.string_to_int"><code class="docutils literal notranslate"><span class="pre">string_to_int()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.string_to_value"><code class="docutils literal notranslate"><span class="pre">string_to_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.subtract_and_divide"><code class="docutils literal notranslate"><span class="pre">subtract_and_divide()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.unidec_call"><code class="docutils literal notranslate"><span class="pre">unidec_call()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.unsparse"><code class="docutils literal notranslate"><span class="pre">unsparse()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.waters_convert2"><code class="docutils literal notranslate"><span class="pre">waters_convert2()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.weighted_avg"><code class="docutils literal notranslate"><span class="pre">weighted_avg()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.weighted_std"><code class="docutils literal notranslate"><span class="pre">weighted_std()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.wide_sse"><code class="docutils literal notranslate"><span class="pre">wide_sse()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.win_autocorr_grid"><code class="docutils literal notranslate"><span class="pre">win_autocorr_grid()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.win_fft_diff"><code class="docutils literal notranslate"><span class="pre">win_fft_diff()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.win_fft_grid"><code class="docutils literal notranslate"><span class="pre">win_fft_grid()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.win_fft_grid_single"><code class="docutils literal notranslate"><span class="pre">win_fft_grid_single()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.windowed_autocorr"><code class="docutils literal notranslate"><span class="pre">windowed_autocorr()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.windowed_fft"><code class="docutils literal notranslate"><span class="pre">windowed_fft()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.windowed_fft_single"><code class="docutils literal notranslate"><span class="pre">windowed_fft_single()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.zip_folder"><code class="docutils literal notranslate"><span class="pre">zip_folder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.html#unidec.tools.zipdir"><code class="docutils literal notranslate"><span class="pre">zipdir()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="unidec.html#module-unidec">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="readme.html"
+                          title="previous chapter">UniDec: Universal Deconvolution of Mass and Ion Mobility Spectra</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="unidec.html"
+                          title="next chapter">unidec package</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/modules.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="unidec.html" title="unidec package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="readme.html" title="UniDec: Universal Deconvolution of Mass and Ion Mobility Spectra"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">UniDec 6.0.0.a2 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">unidec</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, Michael Marty.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.0.0.
+    </div>
+  </body>
+</html>

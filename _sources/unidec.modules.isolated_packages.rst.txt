@@ -1,0 +1,133 @@
+unidec.modules.isolated\_packages package
+=========================================
+
+Submodules
+----------
+
+unidec.modules.isolated\_packages.FileDialogs module
+----------------------------------------------------
+
+.. automodule:: unidec.modules.isolated_packages.FileDialogs
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.isolated\_packages.MD\_Fitter module
+---------------------------------------------------
+
+.. automodule:: unidec.modules.isolated_packages.MD_Fitter
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.isolated\_packages.MD\_compare module
+----------------------------------------------------
+
+.. automodule:: unidec.modules.isolated_packages.MD_compare
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.isolated\_packages.NoZoomSpan module
+---------------------------------------------------
+
+.. automodule:: unidec.modules.isolated_packages.NoZoomSpan
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.isolated\_packages.ZoomBox module
+------------------------------------------------
+
+.. automodule:: unidec.modules.isolated_packages.ZoomBox
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.isolated\_packages.ZoomCommon module
+---------------------------------------------------
+
+.. automodule:: unidec.modules.isolated_packages.ZoomCommon
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.isolated\_packages.ZoomSpan module
+-------------------------------------------------
+
+.. automodule:: unidec.modules.isolated_packages.ZoomSpan
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.isolated\_packages.biopolymer\_calculator module
+---------------------------------------------------------------
+
+.. automodule:: unidec.modules.isolated_packages.biopolymer_calculator
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.isolated\_packages.mql\_tool module
+--------------------------------------------------
+
+.. automodule:: unidec.modules.isolated_packages.mql_tool
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.isolated\_packages.navia\_importer module
+--------------------------------------------------------
+
+.. automodule:: unidec.modules.isolated_packages.navia_importer
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.isolated\_packages.preset\_manager module
+--------------------------------------------------------
+
+.. automodule:: unidec.modules.isolated_packages.preset_manager
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.isolated\_packages.score\_window module
+------------------------------------------------------
+
+.. automodule:: unidec.modules.isolated_packages.score_window
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.isolated\_packages.spreadsheet module
+----------------------------------------------------
+
+.. automodule:: unidec.modules.isolated_packages.spreadsheet
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.isolated\_packages.texmaker module
+-------------------------------------------------
+
+.. automodule:: unidec.modules.isolated_packages.texmaker
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.isolated\_packages.texmaker\_nmsgsb module
+---------------------------------------------------------
+
+.. automodule:: unidec.modules.isolated_packages.texmaker_nmsgsb
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: unidec.modules.isolated_packages
+   :members:
+   :undoc-members:
+   :show-inheritance:

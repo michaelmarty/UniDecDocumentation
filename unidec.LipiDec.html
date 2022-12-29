@@ -1,0 +1,535 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>unidec.LipiDec package &#8212; UniDec 6.0.0.a2 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="unidec.LipiDec.Infusion package" href="unidec.LipiDec.Infusion.html" />
+    <link rel="prev" title="unidec package" href="unidec.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="unidec.LipiDec.Infusion.html" title="unidec.LipiDec.Infusion package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="unidec.html" title="unidec package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">UniDec 6.0.0.a2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >unidec</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="unidec.html" accesskey="U">unidec package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">unidec.LipiDec package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="unidec-lipidec-package">
+<h1>unidec.LipiDec package<a class="headerlink" href="#unidec-lipidec-package" title="Permalink to this heading">¶</a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="unidec.LipiDec.Infusion.html">unidec.LipiDec.Infusion package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="unidec.LipiDec.Infusion.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unidec.LipiDec.Infusion.html#module-unidec.LipiDec.Infusion.Formulas">unidec.LipiDec.Infusion.Formulas module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.Formulas.get_count"><code class="docutils literal notranslate"><span class="pre">get_count()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="unidec.LipiDec.Infusion.html#module-unidec.LipiDec.Infusion.LipiDecEng">unidec.LipiDec.Infusion.LipiDecEng module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDecEng.LipiDec"><code class="docutils literal notranslate"><span class="pre">LipiDec</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDecEng.LipiDec.apply_ratio"><code class="docutils literal notranslate"><span class="pre">LipiDec.apply_ratio()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDecEng.LipiDec.cleanup_db"><code class="docutils literal notranslate"><span class="pre">LipiDec.cleanup_db()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDecEng.LipiDec.correct_peaks"><code class="docutils literal notranslate"><span class="pre">LipiDec.correct_peaks()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDecEng.LipiDec.detect_coalescence"><code class="docutils literal notranslate"><span class="pre">LipiDec.detect_coalescence()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDecEng.LipiDec.find_alternates"><code class="docutils literal notranslate"><span class="pre">LipiDec.find_alternates()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDecEng.LipiDec.find_good_species"><code class="docutils literal notranslate"><span class="pre">LipiDec.find_good_species()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDecEng.LipiDec.find_initial_matches"><code class="docutils literal notranslate"><span class="pre">LipiDec.find_initial_matches()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDecEng.LipiDec.find_isotope_matches"><code class="docutils literal notranslate"><span class="pre">LipiDec.find_isotope_matches()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDecEng.LipiDec.find_matches"><code class="docutils literal notranslate"><span class="pre">LipiDec.find_matches()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDecEng.LipiDec.find_missing_peaks"><code class="docutils literal notranslate"><span class="pre">LipiDec.find_missing_peaks()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDecEng.LipiDec.get_peaks"><code class="docutils literal notranslate"><span class="pre">LipiDec.get_peaks()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDecEng.LipiDec.make_spectrum"><code class="docutils literal notranslate"><span class="pre">LipiDec.make_spectrum()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDecEng.LipiDec.plot_hits"><code class="docutils literal notranslate"><span class="pre">LipiDec.plot_hits()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDecEng.LipiDec.run_decon"><code class="docutils literal notranslate"><span class="pre">LipiDec.run_decon()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDecEng.LipiDec.sort_df"><code class="docutils literal notranslate"><span class="pre">LipiDec.sort_df()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDecEng.LipiDecRunner"><code class="docutils literal notranslate"><span class="pre">LipiDecRunner</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDecEng.LipiDecRunner.make_plot"><code class="docutils literal notranslate"><span class="pre">LipiDecRunner.make_plot()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDecEng.LipiDecRunner.run"><code class="docutils literal notranslate"><span class="pre">LipiDecRunner.run()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDecEng.matcher"><code class="docutils literal notranslate"><span class="pre">matcher()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="unidec.LipiDec.Infusion.html#module-unidec.LipiDec.Infusion.LipiDec_DataBaseGenerator">unidec.LipiDec.Infusion.LipiDec_DataBaseGenerator module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDec_DataBaseGenerator.adduct_mass"><code class="docutils literal notranslate"><span class="pre">adduct_mass()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDec_DataBaseGenerator.construct_mol"><code class="docutils literal notranslate"><span class="pre">construct_mol()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDec_DataBaseGenerator.find_basemods"><code class="docutils literal notranslate"><span class="pre">find_basemods()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDec_DataBaseGenerator.get_subs"><code class="docutils literal notranslate"><span class="pre">get_subs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDec_DataBaseGenerator.make_adduct_db"><code class="docutils literal notranslate"><span class="pre">make_adduct_db()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDec_DataBaseGenerator.make_subs_list"><code class="docutils literal notranslate"><span class="pre">make_subs_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDec_DataBaseGenerator.massfromsmiles"><code class="docutils literal notranslate"><span class="pre">massfromsmiles()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDec_DataBaseGenerator.massfromstruct"><code class="docutils literal notranslate"><span class="pre">massfromstruct()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="unidec.LipiDec.Infusion.html#unidec.LipiDec.Infusion.LipiDec_DataBaseGenerator.sum_comp_only"><code class="docutils literal notranslate"><span class="pre">sum_comp_only()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="unidec.LipiDec.Infusion.html#module-unidec.LipiDec.Infusion.ShotgunLipiDec">unidec.LipiDec.Infusion.ShotgunLipiDec module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unidec.LipiDec.Infusion.html#module-unidec.LipiDec.Infusion.ShotgunLipiDecMTM">unidec.LipiDec.Infusion.ShotgunLipiDecMTM module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unidec.LipiDec.Infusion.html#module-unidec.LipiDec.Infusion">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-unidec.LipiDec.AddFeaturestoDF">
+<span id="unidec-lipidec-addfeaturestodf-module"></span><h2>unidec.LipiDec.AddFeaturestoDF module<a class="headerlink" href="#module-unidec.LipiDec.AddFeaturestoDF" title="Permalink to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.LipiDec.AddFeaturestoDF.fill_out_df">
+<span class="sig-prename descclassname"><span class="pre">unidec.LipiDec.AddFeaturestoDF.</span></span><span class="sig-name descname"><span class="pre">fill_out_df</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.AddFeaturestoDF.fill_out_df" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.LipiDec.AddFeaturestoDF.get_overall_tails">
+<span class="sig-prename descclassname"><span class="pre">unidec.LipiDec.AddFeaturestoDF.</span></span><span class="sig-name descname"><span class="pre">get_overall_tails</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.AddFeaturestoDF.get_overall_tails" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.LipiDec.AddFeaturestoDF.isotope_ratios">
+<span class="sig-prename descclassname"><span class="pre">unidec.LipiDec.AddFeaturestoDF.</span></span><span class="sig-name descname"><span class="pre">isotope_ratios</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.AddFeaturestoDF.isotope_ratios" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.LipiDec.AddFeaturestoDF.kendrick_analysis">
+<span class="sig-prename descclassname"><span class="pre">unidec.LipiDec.AddFeaturestoDF.</span></span><span class="sig-name descname"><span class="pre">kendrick_analysis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mz</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">charge</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.AddFeaturestoDF.kendrick_analysis" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.LipiDec.AddFeaturestoDF.mass_defect_df">
+<span class="sig-prename descclassname"><span class="pre">unidec.LipiDec.AddFeaturestoDF.</span></span><span class="sig-name descname"><span class="pre">mass_defect_df</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ref_col</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Reference</span> <span class="pre">m/z'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ex_col</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Average</span> <span class="pre">Mz'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z_col</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Charge'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.AddFeaturestoDF.mass_defect_df" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.LipiDec.AddFeaturestoDF.parse_names">
+<span class="sig-prename descclassname"><span class="pre">unidec.LipiDec.AddFeaturestoDF.</span></span><span class="sig-name descname"><span class="pre">parse_names</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namecolumn</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Metabolite</span> <span class="pre">name'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parse_adduct</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.AddFeaturestoDF.parse_names" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.LipiDec.AddFeaturestoDF.set_tails">
+<span class="sig-prename descclassname"><span class="pre">unidec.LipiDec.AddFeaturestoDF.</span></span><span class="sig-name descname"><span class="pre">set_tails</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Metabolite</span> <span class="pre">name'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.AddFeaturestoDF.set_tails" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-unidec.LipiDec.LipyDec">
+<span id="unidec-lipidec-lipydec-module"></span><h2>unidec.LipiDec.LipyDec module<a class="headerlink" href="#module-unidec.LipiDec.LipyDec" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipDropTarget">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.LipiDec.LipyDec.</span></span><span class="sig-name descname"><span class="pre">LipDropTarget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">window</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipDropTarget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">FileDropTarget</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipDropTarget.OnDropFiles">
+<span class="sig-name descname"><span class="pre">OnDropFiles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filenames</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipDropTarget.OnDropFiles" title="Permalink to this definition">¶</a></dt>
+<dd><p>When files are dropped, either open a single file or run in batch.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.LipiDec.LipyDec.</span></span><span class="sig-name descname"><span class="pre">LipyDecWindow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">engine</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Frame</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow.check_only">
+<span class="sig-name descname"><span class="pre">check_only</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow.check_only" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow.check_only2">
+<span class="sig-name descname"><span class="pre">check_only2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow.check_only2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow.check_only3">
+<span class="sig-name descname"><span class="pre">check_only3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow.check_only3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow.color_class_checkbox">
+<span class="sig-name descname"><span class="pre">color_class_checkbox</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">white</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow.color_class_checkbox" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow.color_length_checkbox">
+<span class="sig-name descname"><span class="pre">color_length_checkbox</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">white</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow.color_length_checkbox" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow.color_unsat_checkbox">
+<span class="sig-name descname"><span class="pre">color_unsat_checkbox</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">white</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow.color_unsat_checkbox" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow.find_active_plot">
+<span class="sig-name descname"><span class="pre">find_active_plot</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow.find_active_plot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow.find_mouse_species">
+<span class="sig-name descname"><span class="pre">find_mouse_species</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xpos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ypos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow.find_mouse_species" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow.fold_plot">
+<span class="sig-name descname"><span class="pre">fold_plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow.fold_plot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow.load_check2">
+<span class="sig-name descname"><span class="pre">load_check2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_refresh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow.load_check2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow.load_check3">
+<span class="sig-name descname"><span class="pre">load_check3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_refresh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow.load_check3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow.load_checkboxes">
+<span class="sig-name descname"><span class="pre">load_checkboxes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow.load_checkboxes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow.make_plot_4">
+<span class="sig-name descname"><span class="pre">make_plot_4</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow.make_plot_4" title="Permalink to this definition">¶</a></dt>
+<dd><p>fold = self.df2[“FoldChange”+self.normname].to_numpy()
+avga = self.df2[“AvgA_0”].to_numpy()
+self.plot4.scatterplottop(avga, fold, color = self.colors)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow.make_plot_5">
+<span class="sig-name descname"><span class="pre">make_plot_5</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow.make_plot_5" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow.make_plots">
+<span class="sig-name descname"><span class="pre">make_plots</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow.make_plots" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow.md_plot">
+<span class="sig-name descname"><span class="pre">md_plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow.md_plot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow.on_close">
+<span class="sig-name descname"><span class="pre">on_close</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow.on_close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Close the window.
+:param e: Unused event
+:return: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow.on_motion">
+<span class="sig-name descname"><span class="pre">on_motion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xpos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ypos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow.on_motion" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow.on_open">
+<span class="sig-name descname"><span class="pre">on_open</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow.on_open" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow.on_open_file">
+<span class="sig-name descname"><span class="pre">on_open_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow.on_open_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow.on_save_fig">
+<span class="sig-name descname"><span class="pre">on_save_fig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow.on_save_fig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the figures in self.directory as PNGs.
+:param e: Unused event
+:return: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow.on_save_fig_pdf">
+<span class="sig-name descname"><span class="pre">on_save_fig_pdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow.on_save_fig_pdf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the figures in self.directory as PDFs.
+:param e: Unused event
+:return: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow.process_df">
+<span class="sig-name descname"><span class="pre">process_df</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow.process_df" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow.rt_plot">
+<span class="sig-name descname"><span class="pre">rt_plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow.rt_plot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow.update_check2">
+<span class="sig-name descname"><span class="pre">update_check2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow.update_check2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow.update_check3">
+<span class="sig-name descname"><span class="pre">update_check3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow.update_check3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.LipiDec.LipyDec.LipyDecWindow.update_checks">
+<span class="sig-name descname"><span class="pre">update_checks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_refresh2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_refresh3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.LipyDec.LipyDecWindow.update_checks" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-unidec.LipiDec.SkyQuant">
+<span id="unidec-lipidec-skyquant-module"></span><h2>unidec.LipiDec.SkyQuant module<a class="headerlink" href="#module-unidec.LipiDec.SkyQuant" title="Permalink to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.LipiDec.SkyQuant.calc_fold_changes_all">
+<span class="sig-prename descclassname"><span class="pre">unidec.LipiDec.SkyQuant.</span></span><span class="sig-name descname"><span class="pre">calc_fold_changes_all</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g0</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n0</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.SkyQuant.calc_fold_changes_all" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.LipiDec.SkyQuant.filter_skyline">
+<span class="sig-prename descclassname"><span class="pre">unidec.LipiDec.SkyQuant.</span></span><span class="sig-name descname"><span class="pre">filter_skyline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.SkyQuant.filter_skyline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.LipiDec.SkyQuant.find_file_headers">
+<span class="sig-prename descclassname"><span class="pre">unidec.LipiDec.SkyQuant.</span></span><span class="sig-name descname"><span class="pre">find_file_headers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.SkyQuant.find_file_headers" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.LipiDec.SkyQuant.find_std_class">
+<span class="sig-prename descclassname"><span class="pre">unidec.LipiDec.SkyQuant.</span></span><span class="sig-name descname"><span class="pre">find_std_class</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.SkyQuant.find_std_class" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.LipiDec.SkyQuant.full_processing">
+<span class="sig-prename descclassname"><span class="pre">unidec.LipiDec.SkyQuant.</span></span><span class="sig-name descname"><span class="pre">full_processing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.SkyQuant.full_processing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.LipiDec.SkyQuant.int_filter">
+<span class="sig-prename descclassname"><span class="pre">unidec.LipiDec.SkyQuant.</span></span><span class="sig-name descname"><span class="pre">int_filter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'N3'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g0</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.SkyQuant.int_filter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.LipiDec.SkyQuant.norm_to_std">
+<span class="sig-prename descclassname"><span class="pre">unidec.LipiDec.SkyQuant.</span></span><span class="sig-name descname"><span class="pre">norm_to_std</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">col_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.SkyQuant.norm_to_std" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.LipiDec.SkyQuant.rel_quant">
+<span class="sig-prename descclassname"><span class="pre">unidec.LipiDec.SkyQuant.</span></span><span class="sig-name descname"><span class="pre">rel_quant</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngroups</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nreps</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.SkyQuant.rel_quant" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.LipiDec.SkyQuant.sd_filter">
+<span class="sig-prename descclassname"><span class="pre">unidec.LipiDec.SkyQuant.</span></span><span class="sig-name descname"><span class="pre">sd_filter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.SkyQuant.sd_filter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.LipiDec.SkyQuant.set_avg_rt_mz">
+<span class="sig-prename descclassname"><span class="pre">unidec.LipiDec.SkyQuant.</span></span><span class="sig-name descname"><span class="pre">set_avg_rt_mz</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.SkyQuant.set_avg_rt_mz" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.LipiDec.SkyQuant.set_avg_std">
+<span class="sig-prename descclassname"><span class="pre">unidec.LipiDec.SkyQuant.</span></span><span class="sig-name descname"><span class="pre">set_avg_std</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">areas</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.SkyQuant.set_avg_std" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.LipiDec.SkyQuant.set_colors">
+<span class="sig-prename descclassname"><span class="pre">unidec.LipiDec.SkyQuant.</span></span><span class="sig-name descname"><span class="pre">set_colors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.SkyQuant.set_colors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.LipiDec.SkyQuant.set_stds">
+<span class="sig-prename descclassname"><span class="pre">unidec.LipiDec.SkyQuant.</span></span><span class="sig-name descname"><span class="pre">set_stds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.SkyQuant.set_stds" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.LipiDec.SkyQuant.translate">
+<span class="sig-prename descclassname"><span class="pre">unidec.LipiDec.SkyQuant.</span></span><span class="sig-name descname"><span class="pre">translate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.LipiDec.SkyQuant.translate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-unidec.LipiDec">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-unidec.LipiDec" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">unidec.LipiDec package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-unidec.LipiDec.AddFeaturestoDF">unidec.LipiDec.AddFeaturestoDF module</a><ul>
+<li><a class="reference internal" href="#unidec.LipiDec.AddFeaturestoDF.fill_out_df"><code class="docutils literal notranslate"><span class="pre">fill_out_df()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.AddFeaturestoDF.get_overall_tails"><code class="docutils literal notranslate"><span class="pre">get_overall_tails()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.AddFeaturestoDF.isotope_ratios"><code class="docutils literal notranslate"><span class="pre">isotope_ratios()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.AddFeaturestoDF.kendrick_analysis"><code class="docutils literal notranslate"><span class="pre">kendrick_analysis()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.AddFeaturestoDF.mass_defect_df"><code class="docutils literal notranslate"><span class="pre">mass_defect_df()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.AddFeaturestoDF.parse_names"><code class="docutils literal notranslate"><span class="pre">parse_names()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.AddFeaturestoDF.set_tails"><code class="docutils literal notranslate"><span class="pre">set_tails()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-unidec.LipiDec.LipyDec">unidec.LipiDec.LipyDec module</a><ul>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipDropTarget"><code class="docutils literal notranslate"><span class="pre">LipDropTarget</span></code></a><ul>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipDropTarget.OnDropFiles"><code class="docutils literal notranslate"><span class="pre">LipDropTarget.OnDropFiles()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow</span></code></a><ul>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow.check_only"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow.check_only()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow.check_only2"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow.check_only2()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow.check_only3"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow.check_only3()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow.color_class_checkbox"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow.color_class_checkbox()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow.color_length_checkbox"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow.color_length_checkbox()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow.color_unsat_checkbox"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow.color_unsat_checkbox()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow.find_active_plot"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow.find_active_plot()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow.find_mouse_species"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow.find_mouse_species()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow.fold_plot"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow.fold_plot()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow.load_check2"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow.load_check2()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow.load_check3"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow.load_check3()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow.load_checkboxes"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow.load_checkboxes()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow.make_plot_4"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow.make_plot_4()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow.make_plot_5"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow.make_plot_5()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow.make_plots"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow.make_plots()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow.md_plot"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow.md_plot()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow.on_close"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow.on_close()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow.on_motion"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow.on_motion()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow.on_open"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow.on_open()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow.on_open_file"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow.on_open_file()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow.on_save_fig"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow.on_save_fig()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow.on_save_fig_pdf"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow.on_save_fig_pdf()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow.process_df"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow.process_df()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow.rt_plot"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow.rt_plot()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow.update_check2"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow.update_check2()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow.update_check3"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow.update_check3()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.LipyDec.LipyDecWindow.update_checks"><code class="docutils literal notranslate"><span class="pre">LipyDecWindow.update_checks()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-unidec.LipiDec.SkyQuant">unidec.LipiDec.SkyQuant module</a><ul>
+<li><a class="reference internal" href="#unidec.LipiDec.SkyQuant.calc_fold_changes_all"><code class="docutils literal notranslate"><span class="pre">calc_fold_changes_all()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.SkyQuant.filter_skyline"><code class="docutils literal notranslate"><span class="pre">filter_skyline()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.SkyQuant.find_file_headers"><code class="docutils literal notranslate"><span class="pre">find_file_headers()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.SkyQuant.find_std_class"><code class="docutils literal notranslate"><span class="pre">find_std_class()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.SkyQuant.full_processing"><code class="docutils literal notranslate"><span class="pre">full_processing()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.SkyQuant.int_filter"><code class="docutils literal notranslate"><span class="pre">int_filter()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.SkyQuant.norm_to_std"><code class="docutils literal notranslate"><span class="pre">norm_to_std()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.SkyQuant.rel_quant"><code class="docutils literal notranslate"><span class="pre">rel_quant()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.SkyQuant.sd_filter"><code class="docutils literal notranslate"><span class="pre">sd_filter()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.SkyQuant.set_avg_rt_mz"><code class="docutils literal notranslate"><span class="pre">set_avg_rt_mz()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.SkyQuant.set_avg_std"><code class="docutils literal notranslate"><span class="pre">set_avg_std()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.SkyQuant.set_colors"><code class="docutils literal notranslate"><span class="pre">set_colors()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.SkyQuant.set_stds"><code class="docutils literal notranslate"><span class="pre">set_stds()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.LipiDec.SkyQuant.translate"><code class="docutils literal notranslate"><span class="pre">translate()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-unidec.LipiDec">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="unidec.html"
+                          title="previous chapter">unidec package</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="unidec.LipiDec.Infusion.html"
+                          title="next chapter">unidec.LipiDec.Infusion package</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/unidec.LipiDec.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="unidec.LipiDec.Infusion.html" title="unidec.LipiDec.Infusion package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="unidec.html" title="unidec package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">UniDec 6.0.0.a2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >unidec</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="unidec.html" >unidec package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">unidec.LipiDec package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, Michael Marty.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.0.0.
+    </div>
+  </body>
+</html>

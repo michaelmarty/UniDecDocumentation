@@ -1,0 +1,45 @@
+unidec.metaunidec.gui\_elements package
+=======================================
+
+Submodules
+----------
+
+unidec.metaunidec.gui\_elements.list\_ctrls module
+--------------------------------------------------
+
+.. automodule:: unidec.metaunidec.gui_elements.list_ctrls
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.metaunidec.gui\_elements.ud\_cont\_meta module
+-----------------------------------------------------
+
+.. automodule:: unidec.metaunidec.gui_elements.ud_cont_meta
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.metaunidec.gui\_elements.ud\_menu\_meta module
+-----------------------------------------------------
+
+.. automodule:: unidec.metaunidec.gui_elements.ud_menu_meta
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.metaunidec.gui\_elements.um\_list\_ctrl module
+-----------------------------------------------------
+
+.. automodule:: unidec.metaunidec.gui_elements.um_list_ctrl
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: unidec.metaunidec.gui_elements
+   :members:
+   :undoc-members:
+   :show-inheritance:

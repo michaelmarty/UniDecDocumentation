@@ -1,0 +1,77 @@
+unidec.modules.gui\_elements package
+====================================
+
+Submodules
+----------
+
+unidec.modules.gui\_elements.CDWindow module
+--------------------------------------------
+
+.. automodule:: unidec.modules.gui_elements.CDWindow
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.gui\_elements.CD\_controls module
+------------------------------------------------
+
+.. automodule:: unidec.modules.gui_elements.CD_controls
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.gui\_elements.CD\_menu module
+--------------------------------------------
+
+.. automodule:: unidec.modules.gui_elements.CD_menu
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.gui\_elements.ChromWindow module
+-----------------------------------------------
+
+.. automodule:: unidec.modules.gui_elements.ChromWindow
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.gui\_elements.mainwindow\_base module
+----------------------------------------------------
+
+.. automodule:: unidec.modules.gui_elements.mainwindow_base
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.gui\_elements.peaklistsort module
+------------------------------------------------
+
+.. automodule:: unidec.modules.gui_elements.peaklistsort
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.gui\_elements.ud\_controls module
+------------------------------------------------
+
+.. automodule:: unidec.modules.gui_elements.ud_controls
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.gui\_elements.ud\_menu module
+--------------------------------------------
+
+.. automodule:: unidec.modules.gui_elements.ud_menu
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: unidec.modules.gui_elements
+   :members:
+   :undoc-members:
+   :show-inheritance:

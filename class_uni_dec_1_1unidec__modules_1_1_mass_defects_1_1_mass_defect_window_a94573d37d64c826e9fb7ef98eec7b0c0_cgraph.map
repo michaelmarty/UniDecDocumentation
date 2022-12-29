@@ -1,6 +1,0 @@
-<map id="UniDec.unidec_modules.MassDefects.MassDefectWindow.makeplot" name="UniDec.unidec_modules.MassDefects.MassDefectWindow.makeplot">
-<area shape="rect" id="node2" href="$class_uni_dec_1_1unidec__modules_1_1_extract2_d_1_1_extract2_d_plot.html#a9d0fc6253f6e451c31001496e4e4f3af" title="UniDec.unidec_modules.Extract2\lD.Extract2DPlot.getfromgui" alt="" coords="313,5,528,47"/>
-<area shape="rect" id="node3" href="$class_uni_dec_1_1unidec__modules_1_1fft__window_1_1_f_f_t_window.html#ab4b9107a3f4581dfbfc87e895f4abb4d" title="UniDec.unidec_modules.fft\l_window.FFTWindow.getfromgui" alt="" coords="317,71,525,112"/>
-<area shape="rect" id="node4" href="$class_uni_dec_1_1unidec__modules_1_1_grid_decon_1_1_grid_decon_window.html#ab36f96c88a962d64b2f0b3126af374a9" title="UniDec.unidec_modules.Grid\lDecon.GridDeconWindow.getfromgui" alt="" coords="303,136,538,177"/>
-<area shape="rect" id="node5" href="$class_uni_dec_1_1unidec__modules_1_1_mass_defects_1_1_mass_defect_window.html#ae13b14a55176c3948e790ce3f14bb491" title="UniDec.unidec_modules.Mass\lDefects.MassDefectWindow.getfromgui" alt="" coords="296,201,545,243"/>
-</map>
