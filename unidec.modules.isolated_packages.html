@@ -695,7 +695,7 @@ with the span range</p>
 <span id="unidec-modules-isolated-packages-spreadsheet-module"></span><h2>unidec.modules.isolated_packages.spreadsheet module<a class="headerlink" href="#module-unidec.modules.isolated_packages.spreadsheet" title="Permalink to this heading">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.MyGrid">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.modules.isolated_packages.spreadsheet.</span></span><span class="sig-name descname"><span class="pre">MyGrid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.modules.isolated_packages.spreadsheet.</span></span><span class="sig-name descname"><span class="pre">MyGrid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">panel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Grid</span></code></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.MyGrid.add_cols">
@@ -708,8 +708,18 @@ with the span range</p>
 <dd></dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.MyGrid.add_line">
+<span class="sig-name descname"><span class="pre">add_line</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.add_line" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.MyGrid.add_rows">
-<span class="sig-name descname"><span class="pre">add_rows</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.add_rows" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">add_rows</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.add_rows" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.MyGrid.clear_all">
+<span class="sig-name descname"><span class="pre">clear_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.clear_all" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -739,8 +749,23 @@ with the span range</p>
 <dd></dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.MyGrid.fill_empty">
+<span class="sig-name descname"><span class="pre">fill_empty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fillvalue</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'0'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.fill_empty" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.MyGrid.get_col_headers">
 <span class="sig-name descname"><span class="pre">get_col_headers</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.get_col_headers" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.MyGrid.get_df">
+<span class="sig-name descname"><span class="pre">get_df</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.get_df" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.MyGrid.get_list">
+<span class="sig-name descname"><span class="pre">get_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.get_list" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -787,6 +812,31 @@ If there is no selection, returns selected cell’s start_row=end_row, start_col
 <dd></dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.MyGrid.remove_empty">
+<span class="sig-name descname"><span class="pre">remove_empty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col_header</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.remove_empty" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.MyGrid.rename_col">
+<span class="sig-name descname"><span class="pre">rename_col</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.rename_col" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.MyGrid.set_col_headers">
+<span class="sig-name descname"><span class="pre">set_col_headers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">headers</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.set_col_headers" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.MyGrid.set_df">
+<span class="sig-name descname"><span class="pre">set_df</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.set_df" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.MyGrid.set_row_values">
+<span class="sig-name descname"><span class="pre">set_row_values</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.set_row_values" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.MyGrid.undo">
 <span class="sig-name descname"><span class="pre">undo</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.undo" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -801,7 +851,7 @@ If there is no selection, returns selected cell’s start_row=end_row, start_col
 
 <dl class="py class">
 <dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.SpreadsheetPanel">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.modules.isolated_packages.spreadsheet.</span></span><span class="sig-name descname"><span class="pre">SpreadsheetPanel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">panel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nrows</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ncolumns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.SpreadsheetPanel" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.modules.isolated_packages.spreadsheet.</span></span><span class="sig-name descname"><span class="pre">SpreadsheetPanel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">panel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nrows</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ncolumns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.SpreadsheetPanel" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.SpreadsheetPanel.add_col">
@@ -1014,13 +1064,18 @@ Note: I would like to remove this but can’t figure out how to get LaTeX to wor
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid"><code class="docutils literal notranslate"><span class="pre">MyGrid</span></code></a><ul>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.add_cols"><code class="docutils literal notranslate"><span class="pre">MyGrid.add_cols()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.add_history"><code class="docutils literal notranslate"><span class="pre">MyGrid.add_history()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.add_line"><code class="docutils literal notranslate"><span class="pre">MyGrid.add_line()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.add_rows"><code class="docutils literal notranslate"><span class="pre">MyGrid.add_rows()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.clear_all"><code class="docutils literal notranslate"><span class="pre">MyGrid.clear_all()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.copy"><code class="docutils literal notranslate"><span class="pre">MyGrid.copy()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.cut"><code class="docutils literal notranslate"><span class="pre">MyGrid.cut()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.delete"><code class="docutils literal notranslate"><span class="pre">MyGrid.delete()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.delete_cols"><code class="docutils literal notranslate"><span class="pre">MyGrid.delete_cols()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.delete_rows"><code class="docutils literal notranslate"><span class="pre">MyGrid.delete_rows()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.fill_empty"><code class="docutils literal notranslate"><span class="pre">MyGrid.fill_empty()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.get_col_headers"><code class="docutils literal notranslate"><span class="pre">MyGrid.get_col_headers()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.get_df"><code class="docutils literal notranslate"><span class="pre">MyGrid.get_df()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.get_list"><code class="docutils literal notranslate"><span class="pre">MyGrid.get_list()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.get_selected_cells"><code class="docutils literal notranslate"><span class="pre">MyGrid.get_selected_cells()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.get_selection"><code class="docutils literal notranslate"><span class="pre">MyGrid.get_selection()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.get_table"><code class="docutils literal notranslate"><span class="pre">MyGrid.get_table()</span></code></a></li>
@@ -1029,6 +1084,11 @@ Note: I would like to remove this but can’t figure out how to get LaTeX to wor
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.on_key"><code class="docutils literal notranslate"><span class="pre">MyGrid.on_key()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.on_label_right_click"><code class="docutils literal notranslate"><span class="pre">MyGrid.on_label_right_click()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.paste"><code class="docutils literal notranslate"><span class="pre">MyGrid.paste()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.remove_empty"><code class="docutils literal notranslate"><span class="pre">MyGrid.remove_empty()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.rename_col"><code class="docutils literal notranslate"><span class="pre">MyGrid.rename_col()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.set_col_headers"><code class="docutils literal notranslate"><span class="pre">MyGrid.set_col_headers()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.set_df"><code class="docutils literal notranslate"><span class="pre">MyGrid.set_df()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.set_row_values"><code class="docutils literal notranslate"><span class="pre">MyGrid.set_row_values()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.undo"><code class="docutils literal notranslate"><span class="pre">MyGrid.undo()</span></code></a></li>
 </ul>
 </li>
