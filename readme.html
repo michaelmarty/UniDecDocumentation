@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>UniDec: Universal Deconvolution of Mass and Ion Mobility Spectra &#8212; UniDec 6.0.0.a2 documentation</title>
+    <title>UniDec: Universal Deconvolution of Mass and Ion Mobility Spectra &#8212; UniDec 6.0.0.b2 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/classic.css" />
     
@@ -34,7 +34,7 @@
         <li class="right" >
           <a href="index.html" title="Welcome to UniDec’s documentation!"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">UniDec 6.0.0.a2 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">UniDec 6.0.0.b2 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">UniDec: Universal Deconvolution of Mass and Ion Mobility Spectra</a></li> 
       </ul>
     </div>  
@@ -186,7 +186,13 @@ eng.pick_peaks()</p>
 <p>Major changes to code structure to enable PyPI distribution. Changed to more conventional Python package structure with unidec top directory. Renamed unidec_modules to modeuls, unidec_src to src, and unidec_bin to bin. Renamed some top level windows and moved all to main folder. For example, unidectools.py has been moved from modules to the top level and renamed as tools.py, and unidec.py has been renamed as engine.py.</p>
 <p>Improved command line tools. Added -o option for file output in unidec. Included new entry points and smoothed out command line interface. Now you can use unidec to lanuch python -m unidec in the scripts folder. Similarly, gunidec will launch python -m unidec.Launcher. If you have Python and the scripts folder configured in your system path, command line tools will be much easier to use.</p>
 <p>Added a new mode to the Oligomer and Mass Tools, Site Mode. Here, you can specify specific binding sites and which potential species could be bound in that site. Any number of rows (species) or columns (sites) can be added as long as your memory can handle the possible combinations. Use 0s and 1s to incidate whether each species can be bound at each site. You can copy/paste from excel or open a CSV or XLSX file.</p>
+<p>Added the first build of the <strong>UniDec Processing Pipeline</strong> tool to help with batch processing and analysis for large sample sets. More details to come.</p>
 <p>Added new experimental HTML report generator. Found in File &gt; Save Figure Presets. Test this out and let me know what you’d like to see in it.</p>
+<p>Added a color plot option to the right click of the peak panel. Check it out!</p>
+<p>Added FWHM and error to the Copy All Full right click option in the peak panel.</p>
+<p><strong>Changed default behavior for zooming such that it does not zoom out when plots are replotted.</strong> This is a major change that I think will be more intuitive. If you want to zoom out, you can still click once on the plot as usual.</p>
+<p>Removed the ability to manually integrate peaks. Now, only auto integration is allowed. If you want to have this added back in, let me know, but it seemed to be causing more trouble than it was worth.</p>
+<p>Various bug fixes including fixing EPS export and bugs on Export2D. Fixed import of tab delimited files. Resized manual file menu. Improved window stretching in oligomer and mass tools. Broken plot peaks on UniDecCD. Bug on selecting alternative matches not propagating. Updated background color to blue on alternative matches to avoid confusion with RYG scheme. Fixed labeling bug with isolated match names.</p>
 <p>v.5.2.1</p>
 <p>UniDec and UniChrom now try to read the polarity from the data and set the adduct appropriately. Check that this is working!</p>
 <p>Added right click for zoom on UniChrom TIC.</p>
@@ -765,12 +771,12 @@ the above. In these cases, copyright and/or license information is inline.</p>
         <li class="right" >
           <a href="index.html" title="Welcome to UniDec’s documentation!"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">UniDec 6.0.0.a2 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">UniDec 6.0.0.b2 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">UniDec: Universal Deconvolution of Mass and Ion Mobility Spectra</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2022, Michael Marty.
+        &#169; Copyright 2023, University of Arizona.
       Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.0.0.
     </div>
   </body>

@@ -55,6 +55,14 @@ unidec.MetaUniDec module
    :undoc-members:
    :show-inheritance:
 
+unidec.UPP module
+-----------------
+
+.. automodule:: unidec.UPP
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 unidec.UniChrom module
 ----------------------
 
@@ -67,6 +75,14 @@ unidec.UniDecCD module
 ----------------------
 
 .. automodule:: unidec.UniDecCD
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.batch module
+-------------------
+
+.. automodule:: unidec.batch
    :members:
    :undoc-members:
    :show-inheritance:

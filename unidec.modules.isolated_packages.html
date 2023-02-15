@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>unidec.modules.isolated_packages package &#8212; UniDec 6.0.0.a2 documentation</title>
+    <title>unidec.modules.isolated_packages package &#8212; UniDec 6.0.0.b2 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/classic.css" />
     
@@ -34,7 +34,7 @@
         <li class="right" >
           <a href="unidec.modules.gui_elements.html" title="unidec.modules.gui_elements package"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">UniDec 6.0.0.a2 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">UniDec 6.0.0.b2 documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="modules.html" >unidec</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="unidec.html" >unidec package</a> &#187;</li>
           <li class="nav-item nav-item-3"><a href="unidec.modules.html" accesskey="U">unidec.modules package</a> &#187;</li>
@@ -229,7 +229,7 @@ self.SetMenuBar(menu_bar)</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="unidec.modules.isolated_packages.NoZoomSpan.NoZoomSpan">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.modules.isolated_packages.NoZoomSpan.</span></span><span class="sig-name descname"><span class="pre">NoZoomSpan</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">axes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">onselect</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minspan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useblit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rectprops</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">zoombutton</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">onmove_callback</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.NoZoomSpan.NoZoomSpan" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dd><p>Bases: <a class="reference internal" href="#unidec.modules.isolated_packages.ZoomCommon.ZoomCommon" title="unidec.modules.isolated_packages.ZoomCommon.ZoomCommon"><code class="xref py py-class docutils literal notranslate"><span class="pre">ZoomCommon</span></code></a></p>
 <p>Expansion of matplotlib embed in wx example by John Bender and Edward
 Abraham, see <a class="reference external" href="https://www.scipy.org/Matplotlib_figure_in_a_wx_panel">https://www.scipy.org/Matplotlib_figure_in_a_wx_panel</a></p>
 <p>This version allows the user to zoom in on the figure using either
@@ -339,6 +339,11 @@ with the span range</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.isolated_packages.ZoomBox.ZoomBox.initialize">
+<span class="sig-name descname"><span class="pre">initialize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.ZoomBox.ZoomBox.initialize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.isolated_packages.ZoomBox.ZoomBox.new_axes">
 <span class="sig-name descname"><span class="pre">new_axes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">axes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rectprops</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.ZoomBox.ZoomBox.new_axes" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -429,6 +434,11 @@ with the span range</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.isolated_packages.ZoomCommon.ZoomCommon.set_auto_ylim">
+<span class="sig-name descname"><span class="pre">set_auto_ylim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xmin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xmax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">draw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.ZoomCommon.ZoomCommon.set_auto_ylim" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.isolated_packages.ZoomCommon.ZoomCommon.set_manual">
 <span class="sig-name descname"><span class="pre">set_manual</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xmin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xmax</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.ZoomCommon.ZoomCommon.set_manual" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -436,6 +446,16 @@ with the span range</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.isolated_packages.ZoomCommon.ZoomCommon.set_manual_y">
 <span class="sig-name descname"><span class="pre">set_manual_y</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ymin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ymax</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.ZoomCommon.ZoomCommon.set_manual_y" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.isolated_packages.ZoomCommon.ZoomCommon.set_xlim">
+<span class="sig-name descname"><span class="pre">set_xlim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xmin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xmax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">draw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.ZoomCommon.ZoomCommon.set_xlim" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.isolated_packages.ZoomCommon.ZoomCommon.set_ylim">
+<span class="sig-name descname"><span class="pre">set_ylim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ymin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ymax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">draw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.ZoomCommon.ZoomCommon.set_ylim" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -694,6 +714,44 @@ with the span range</p>
 <section id="module-unidec.modules.isolated_packages.spreadsheet">
 <span id="unidec-modules-isolated-packages-spreadsheet-module"></span><h2>unidec.modules.isolated_packages.spreadsheet module<a class="headerlink" href="#module-unidec.modules.isolated_packages.spreadsheet" title="Permalink to this heading">¶</a></h2>
 <dl class="py class">
+<dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.CutomGridCellAutoWrapStringRenderer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.modules.isolated_packages.spreadsheet.</span></span><span class="sig-name descname"><span class="pre">CutomGridCellAutoWrapStringRenderer</span></span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.CutomGridCellAutoWrapStringRenderer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">GridCellRenderer</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.CutomGridCellAutoWrapStringRenderer.Clone">
+<span class="sig-name descname"><span class="pre">Clone</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">GridCellRenderer</span></span></span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.CutomGridCellAutoWrapStringRenderer.Clone" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function must be implemented in derived classes to return a copy
+of itself.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.CutomGridCellAutoWrapStringRenderer.Draw">
+<span class="sig-name descname"><span class="pre">Draw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rect</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">row</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isSelected</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.CutomGridCellAutoWrapStringRenderer.Draw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw the given cell on the provided DC inside the given rectangle
+using the style specified by the attribute and the default or selected
+state corresponding to the isSelected value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.CutomGridCellAutoWrapStringRenderer.GetBestSize">
+<span class="sig-name descname"><span class="pre">GetBestSize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">grid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">row</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">col</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">wx.Size</span></span></span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.CutomGridCellAutoWrapStringRenderer.GetBestSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the preferred size of the cell for its contents.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.MyApp">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.modules.isolated_packages.spreadsheet.</span></span><span class="sig-name descname"><span class="pre">MyApp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">redirect</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useBestVisual</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clearSigInt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.MyApp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">App</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">InspectionMixin</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.MyApp.OnInit">
+<span class="sig-name descname"><span class="pre">OnInit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.MyApp.OnInit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
 <dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.MyGrid">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.modules.isolated_packages.spreadsheet.</span></span><span class="sig-name descname"><span class="pre">MyGrid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">panel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Grid</span></code></p>
@@ -715,6 +773,11 @@ with the span range</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.MyGrid.add_rows">
 <span class="sig-name descname"><span class="pre">add_rows</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.add_rows" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.MyGrid.autoscale_column_width">
+<span class="sig-name descname"><span class="pre">autoscale_column_width</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.autoscale_column_width" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -807,13 +870,18 @@ If there is no selection, returns selected cell’s start_row=end_row, start_col
 <dd></dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.MyGrid.open_link">
+<span class="sig-name descname"><span class="pre">open_link</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.open_link" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.MyGrid.paste">
 <span class="sig-name descname"><span class="pre">paste</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.paste" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.isolated_packages.spreadsheet.MyGrid.remove_empty">
-<span class="sig-name descname"><span class="pre">remove_empty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col_header</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.remove_empty" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">remove_empty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col_header</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.remove_empty" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -964,6 +1032,7 @@ Note: I would like to remove this but can’t figure out how to get LaTeX to wor
 <li><a class="reference internal" href="#module-unidec.modules.isolated_packages.ZoomBox">unidec.modules.isolated_packages.ZoomBox module</a><ul>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.ZoomBox.ZoomBox"><code class="docutils literal notranslate"><span class="pre">ZoomBox</span></code></a><ul>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.ZoomBox.ZoomBox.ignore"><code class="docutils literal notranslate"><span class="pre">ZoomBox.ignore()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.isolated_packages.ZoomBox.ZoomBox.initialize"><code class="docutils literal notranslate"><span class="pre">ZoomBox.initialize()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.ZoomBox.ZoomBox.new_axes"><code class="docutils literal notranslate"><span class="pre">ZoomBox.new_axes()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.ZoomBox.ZoomBox.onmove"><code class="docutils literal notranslate"><span class="pre">ZoomBox.onmove()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.ZoomBox.ZoomBox.press"><code class="docutils literal notranslate"><span class="pre">ZoomBox.press()</span></code></a></li>
@@ -985,8 +1054,11 @@ Note: I would like to remove this but can’t figure out how to get LaTeX to wor
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.ZoomCommon.ZoomCommon.label"><code class="docutils literal notranslate"><span class="pre">ZoomCommon.label()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.ZoomCommon.ZoomCommon.peakdetect"><code class="docutils literal notranslate"><span class="pre">ZoomCommon.peakdetect()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.ZoomCommon.ZoomCommon.set_active"><code class="docutils literal notranslate"><span class="pre">ZoomCommon.set_active()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.isolated_packages.ZoomCommon.ZoomCommon.set_auto_ylim"><code class="docutils literal notranslate"><span class="pre">ZoomCommon.set_auto_ylim()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.ZoomCommon.ZoomCommon.set_manual"><code class="docutils literal notranslate"><span class="pre">ZoomCommon.set_manual()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.ZoomCommon.ZoomCommon.set_manual_y"><code class="docutils literal notranslate"><span class="pre">ZoomCommon.set_manual_y()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.isolated_packages.ZoomCommon.ZoomCommon.set_xlim"><code class="docutils literal notranslate"><span class="pre">ZoomCommon.set_xlim()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.isolated_packages.ZoomCommon.ZoomCommon.set_ylim"><code class="docutils literal notranslate"><span class="pre">ZoomCommon.set_ylim()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.ZoomCommon.ZoomCommon.switch_label"><code class="docutils literal notranslate"><span class="pre">ZoomCommon.switch_label()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.ZoomCommon.ZoomCommon.update_background"><code class="docutils literal notranslate"><span class="pre">ZoomCommon.update_background()</span></code></a></li>
 </ul>
@@ -1061,11 +1133,22 @@ Note: I would like to remove this but can’t figure out how to get LaTeX to wor
 </ul>
 </li>
 <li><a class="reference internal" href="#module-unidec.modules.isolated_packages.spreadsheet">unidec.modules.isolated_packages.spreadsheet module</a><ul>
+<li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.CutomGridCellAutoWrapStringRenderer"><code class="docutils literal notranslate"><span class="pre">CutomGridCellAutoWrapStringRenderer</span></code></a><ul>
+<li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.CutomGridCellAutoWrapStringRenderer.Clone"><code class="docutils literal notranslate"><span class="pre">CutomGridCellAutoWrapStringRenderer.Clone()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.CutomGridCellAutoWrapStringRenderer.Draw"><code class="docutils literal notranslate"><span class="pre">CutomGridCellAutoWrapStringRenderer.Draw()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.CutomGridCellAutoWrapStringRenderer.GetBestSize"><code class="docutils literal notranslate"><span class="pre">CutomGridCellAutoWrapStringRenderer.GetBestSize()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyApp"><code class="docutils literal notranslate"><span class="pre">MyApp</span></code></a><ul>
+<li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyApp.OnInit"><code class="docutils literal notranslate"><span class="pre">MyApp.OnInit()</span></code></a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid"><code class="docutils literal notranslate"><span class="pre">MyGrid</span></code></a><ul>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.add_cols"><code class="docutils literal notranslate"><span class="pre">MyGrid.add_cols()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.add_history"><code class="docutils literal notranslate"><span class="pre">MyGrid.add_history()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.add_line"><code class="docutils literal notranslate"><span class="pre">MyGrid.add_line()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.add_rows"><code class="docutils literal notranslate"><span class="pre">MyGrid.add_rows()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.autoscale_column_width"><code class="docutils literal notranslate"><span class="pre">MyGrid.autoscale_column_width()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.clear_all"><code class="docutils literal notranslate"><span class="pre">MyGrid.clear_all()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.copy"><code class="docutils literal notranslate"><span class="pre">MyGrid.copy()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.cut"><code class="docutils literal notranslate"><span class="pre">MyGrid.cut()</span></code></a></li>
@@ -1083,6 +1166,7 @@ Note: I would like to remove this but can’t figure out how to get LaTeX to wor
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.on_change"><code class="docutils literal notranslate"><span class="pre">MyGrid.on_change()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.on_key"><code class="docutils literal notranslate"><span class="pre">MyGrid.on_key()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.on_label_right_click"><code class="docutils literal notranslate"><span class="pre">MyGrid.on_label_right_click()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.open_link"><code class="docutils literal notranslate"><span class="pre">MyGrid.open_link()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.paste"><code class="docutils literal notranslate"><span class="pre">MyGrid.paste()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.remove_empty"><code class="docutils literal notranslate"><span class="pre">MyGrid.remove_empty()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.isolated_packages.spreadsheet.MyGrid.rename_col"><code class="docutils literal notranslate"><span class="pre">MyGrid.rename_col()</span></code></a></li>
@@ -1162,7 +1246,7 @@ Note: I would like to remove this but can’t figure out how to get LaTeX to wor
         <li class="right" >
           <a href="unidec.modules.gui_elements.html" title="unidec.modules.gui_elements package"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">UniDec 6.0.0.a2 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">UniDec 6.0.0.b2 documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="modules.html" >unidec</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="unidec.html" >unidec package</a> &#187;</li>
           <li class="nav-item nav-item-3"><a href="unidec.modules.html" >unidec.modules package</a> &#187;</li>
@@ -1170,7 +1254,7 @@ Note: I would like to remove this but can’t figure out how to get LaTeX to wor
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2022, Michael Marty.
+        &#169; Copyright 2023, University of Arizona.
       Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.0.0.
     </div>
   </body>

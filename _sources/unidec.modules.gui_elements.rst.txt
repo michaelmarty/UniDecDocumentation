@@ -4,6 +4,14 @@ unidec.modules.gui\_elements package
 Submodules
 ----------
 
+unidec.modules.gui\_elements.CDMenu module
+------------------------------------------
+
+.. automodule:: unidec.modules.gui_elements.CDMenu
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 unidec.modules.gui\_elements.CDWindow module
 --------------------------------------------
 
@@ -16,14 +24,6 @@ unidec.modules.gui\_elements.CD\_controls module
 ------------------------------------------------
 
 .. automodule:: unidec.modules.gui_elements.CD_controls
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-unidec.modules.gui\_elements.CD\_menu module
---------------------------------------------
-
-.. automodule:: unidec.modules.gui_elements.CD_menu
    :members:
    :undoc-members:
    :show-inheritance:

@@ -9,7 +9,9 @@ Subpackages
 
    unidec.modules.gui_elements
    unidec.modules.isolated_packages
+   unidec.modules.thermo_reader
    unidec.modules.tims_import_wizard
+   unidec.modules.waters_importer
 
 Submodules
 ----------

@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>unidec.modules.gui_elements package &#8212; UniDec 6.0.0.a2 documentation</title>
+    <title>unidec.modules.gui_elements package &#8212; UniDec 6.0.0.b2 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/classic.css" />
     
@@ -34,7 +34,7 @@
         <li class="right" >
           <a href="unidec.modules.html" title="unidec.modules package"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">UniDec 6.0.0.a2 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">UniDec 6.0.0.b2 documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="modules.html" >unidec</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="unidec.html" >unidec package</a> &#187;</li>
           <li class="nav-item nav-item-3"><a href="unidec.modules.html" accesskey="U">unidec.modules package</a> &#187;</li>
@@ -51,6 +51,98 @@
 <h1>unidec.modules.gui_elements package<a class="headerlink" href="#unidec-modules-gui-elements-package" title="Permalink to this heading">¶</a></h1>
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-unidec.modules.gui_elements.CDMenu">
+<span id="unidec-modules-gui-elements-cdmenu-module"></span><h2>unidec.modules.gui_elements.CDMenu module<a class="headerlink" href="#module-unidec.modules.gui_elements.CDMenu" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="unidec.modules.gui_elements.CDMenu.CDMenu">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.modules.gui_elements.CDMenu.</span></span><span class="sig-name descname"><span class="pre">CDMenu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pres</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tabbed</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.CDMenu.CDMenu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Menu</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.gui_elements.CDMenu.CDMenu.add_to_recent">
+<span class="sig-name descname"><span class="pre">add_to_recent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.CDMenu.CDMenu.add_to_recent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.gui_elements.CDMenu.CDMenu.load_example_data">
+<span class="sig-name descname"><span class="pre">load_example_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.CDMenu.CDMenu.load_example_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="unidec.modules.gui_elements.CDMenu.CDMenu.menuLoad">
+<span class="sig-name descname"><span class="pre">menuLoad</span></span><a class="headerlink" href="#unidec.modules.gui_elements.CDMenu.CDMenu.menuLoad" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>self.menuLoadEverything = self.filemenu.Append(wx.ID_ANY, “Load Prior State for Current File    Ctrl+L”,</dt><dd><p>“Load past deconvolution results from the current opened file”)</p>
+</dd>
+</dl>
+<p>self.menuLoadState = self.filemenu.Append(wx.ID_ANY, “Load Zip State File”, “Load state from zip file”)
+self.menuSaveState = self.filemenu.Append(wx.ID_ANY, “Save Zip State File       Ctrl+S”,</p>
+<blockquote>
+<div><p>“Save program state to fresh folder”)</p>
+</div></blockquote>
+<p>self.filemenu.AppendSeparator()</p>
+<dl class="simple">
+<dt>self.menuLoadDefault = self.filemenu.Append(wx.ID_ANY, “Load Default Config File”,</dt><dd><p>“Load in default configuration file”)</p>
+</dd>
+<dt>self.menuSaveDefault = self.filemenu.Append(wx.ID_ANY, “Save Default Config File”,</dt><dd><p>“Save default configuration file”)</p>
+</dd>
+</dl>
+<p># Default Submenu</p>
+<dl class="simple">
+<dt>self.menuDefault2 = self.defaultmenu.Append(1001, “UniDec Default”,</dt><dd><p>“General Default. Similar to High-Resolution Native.”)</p>
+</dd>
+<dt>self.menuDefault0 = self.defaultmenu.Append(999, “Low-resolution Native”,</dt><dd><p>“General defaults for low-resolution native MS”)</p>
+</dd>
+<dt>self.menuDefault1 = self.defaultmenu.Append(1000, “High-resolution Native”,</dt><dd><p>“Defaults for high-resolution data (Exactive EMR).”)</p>
+</dd>
+<dt>self.menuDefault3 = self.defaultmenu.Append(1002, “Isotopic Resolution”,</dt><dd><p>“Defaults for isotopically resolved data.”)</p>
+</dd>
+<dt>self.menuDefault4 = self.defaultmenu.Append(1003, “Nanodiscs”,</dt><dd><p>“Defaults for POPC Nanodiscs.”)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.gui_elements.CDMenu.CDMenu.menu_501_503">
+<span class="sig-name descname"><span class="pre">menu_501_503</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.CDMenu.CDMenu.menu_501_503" title="Permalink to this definition">¶</a></dt>
+<dd><p>Menu function to adjust the intensity scale.
+:param event: wx Event
+:return: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.gui_elements.CDMenu.CDMenu.menu_601_602">
+<span class="sig-name descname"><span class="pre">menu_601_602</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.CDMenu.CDMenu.menu_601_602" title="Permalink to this definition">¶</a></dt>
+<dd><p>Menu function to adjust the intensity scale.
+:param event: wx Event
+:return: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.gui_elements.CDMenu.CDMenu.on_custom_defaults">
+<span class="sig-name descname"><span class="pre">on_custom_defaults</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.CDMenu.CDMenu.on_custom_defaults" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.gui_elements.CDMenu.CDMenu.on_defaults">
+<span class="sig-name descname"><span class="pre">on_defaults</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.CDMenu.CDMenu.on_defaults" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resets the configuration to a default predefined in the unidecstructure file.
+:param e: Menu event
+:return: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.gui_elements.CDMenu.CDMenu.on_example_data">
+<span class="sig-name descname"><span class="pre">on_example_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.CDMenu.CDMenu.on_example_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.gui_elements.CDMenu.CDMenu.update_recent">
+<span class="sig-name descname"><span class="pre">update_recent</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.CDMenu.CDMenu.update_recent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </section>
 <section id="module-unidec.modules.gui_elements.CDWindow">
 <span id="unidec-modules-gui-elements-cdwindow-module"></span><h2>unidec.modules.gui_elements.CDWindow module<a class="headerlink" href="#module-unidec.modules.gui_elements.CDWindow" title="Permalink to this heading">¶</a></h2>
@@ -171,98 +263,6 @@
 </dd></dl>
 
 </section>
-<section id="module-unidec.modules.gui_elements.CD_menu">
-<span id="unidec-modules-gui-elements-cd-menu-module"></span><h2>unidec.modules.gui_elements.CD_menu module<a class="headerlink" href="#module-unidec.modules.gui_elements.CD_menu" title="Permalink to this heading">¶</a></h2>
-<dl class="py class">
-<dt class="sig sig-object py" id="unidec.modules.gui_elements.CD_menu.CD_menu">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.modules.gui_elements.CD_menu.</span></span><span class="sig-name descname"><span class="pre">CD_menu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pres</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tabbed</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.CD_menu.CD_menu" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Menu</span></code></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="unidec.modules.gui_elements.CD_menu.CD_menu.add_to_recent">
-<span class="sig-name descname"><span class="pre">add_to_recent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.CD_menu.CD_menu.add_to_recent" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="unidec.modules.gui_elements.CD_menu.CD_menu.load_example_data">
-<span class="sig-name descname"><span class="pre">load_example_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.CD_menu.CD_menu.load_example_data" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="unidec.modules.gui_elements.CD_menu.CD_menu.menuLoad">
-<span class="sig-name descname"><span class="pre">menuLoad</span></span><a class="headerlink" href="#unidec.modules.gui_elements.CD_menu.CD_menu.menuLoad" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="simple">
-<dt>self.menuLoadEverything = self.filemenu.Append(wx.ID_ANY, “Load Prior State for Current File    Ctrl+L”,</dt><dd><p>“Load past deconvolution results from the current opened file”)</p>
-</dd>
-</dl>
-<p>self.menuLoadState = self.filemenu.Append(wx.ID_ANY, “Load Zip State File”, “Load state from zip file”)
-self.menuSaveState = self.filemenu.Append(wx.ID_ANY, “Save Zip State File       Ctrl+S”,</p>
-<blockquote>
-<div><p>“Save program state to fresh folder”)</p>
-</div></blockquote>
-<p>self.filemenu.AppendSeparator()</p>
-<dl class="simple">
-<dt>self.menuLoadDefault = self.filemenu.Append(wx.ID_ANY, “Load Default Config File”,</dt><dd><p>“Load in default configuration file”)</p>
-</dd>
-<dt>self.menuSaveDefault = self.filemenu.Append(wx.ID_ANY, “Save Default Config File”,</dt><dd><p>“Save default configuration file”)</p>
-</dd>
-</dl>
-<p># Default Submenu</p>
-<dl class="simple">
-<dt>self.menuDefault2 = self.defaultmenu.Append(1001, “UniDec Default”,</dt><dd><p>“General Default. Similar to High-Resolution Native.”)</p>
-</dd>
-<dt>self.menuDefault0 = self.defaultmenu.Append(999, “Low-resolution Native”,</dt><dd><p>“General defaults for low-resolution native MS”)</p>
-</dd>
-<dt>self.menuDefault1 = self.defaultmenu.Append(1000, “High-resolution Native”,</dt><dd><p>“Defaults for high-resolution data (Exactive EMR).”)</p>
-</dd>
-<dt>self.menuDefault3 = self.defaultmenu.Append(1002, “Isotopic Resolution”,</dt><dd><p>“Defaults for isotopically resolved data.”)</p>
-</dd>
-<dt>self.menuDefault4 = self.defaultmenu.Append(1003, “Nanodiscs”,</dt><dd><p>“Defaults for POPC Nanodiscs.”)</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="unidec.modules.gui_elements.CD_menu.CD_menu.menu_501_503">
-<span class="sig-name descname"><span class="pre">menu_501_503</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.CD_menu.CD_menu.menu_501_503" title="Permalink to this definition">¶</a></dt>
-<dd><p>Menu function to adjust the intensity scale.
-:param event: wx Event
-:return: None</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="unidec.modules.gui_elements.CD_menu.CD_menu.menu_601_602">
-<span class="sig-name descname"><span class="pre">menu_601_602</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.CD_menu.CD_menu.menu_601_602" title="Permalink to this definition">¶</a></dt>
-<dd><p>Menu function to adjust the intensity scale.
-:param event: wx Event
-:return: None</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="unidec.modules.gui_elements.CD_menu.CD_menu.on_custom_defaults">
-<span class="sig-name descname"><span class="pre">on_custom_defaults</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.CD_menu.CD_menu.on_custom_defaults" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="unidec.modules.gui_elements.CD_menu.CD_menu.on_defaults">
-<span class="sig-name descname"><span class="pre">on_defaults</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.CD_menu.CD_menu.on_defaults" title="Permalink to this definition">¶</a></dt>
-<dd><p>Resets the configuration to a default predefined in the unidecstructure file.
-:param e: Menu event
-:return: None</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="unidec.modules.gui_elements.CD_menu.CD_menu.on_example_data">
-<span class="sig-name descname"><span class="pre">on_example_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.CD_menu.CD_menu.on_example_data" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="unidec.modules.gui_elements.CD_menu.CD_menu.update_recent">
-<span class="sig-name descname"><span class="pre">update_recent</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.CD_menu.CD_menu.update_recent" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-</section>
 <section id="module-unidec.modules.gui_elements.ChromWindow">
 <span id="unidec-modules-gui-elements-chromwindow-module"></span><h2>unidec.modules.gui_elements.ChromWindow module<a class="headerlink" href="#module-unidec.modules.gui_elements.ChromWindow" title="Permalink to this heading">¶</a></h2>
 <dl class="py class">
@@ -310,6 +310,13 @@ self.menuSaveState = self.filemenu.Append(wx.ID_ANY, “Save Zip State File     
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.modules.gui_elements.mainwindow_base.</span></span><span class="sig-name descname"><span class="pre">MainwindowBase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">iconfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tabbed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Frame</span></code></p>
 <p>Main UniDec GUI Window.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.gui_elements.mainwindow_base.MainwindowBase.bind_peakpanel">
+<span class="sig-name descname"><span class="pre">bind_peakpanel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">meta</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.bind_peakpanel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bind peakpanel events to presenter functions.
+:return:</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.gui_elements.mainwindow_base.MainwindowBase.clear_all_plots">
 <span class="sig-name descname"><span class="pre">clear_all_plots</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.clear_all_plots" title="Permalink to this definition">¶</a></dt>
@@ -419,6 +426,14 @@ self.menuSaveState = self.filemenu.Append(wx.ID_ANY, “Save Zip State File     
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.gui_elements.mainwindow_base.MainwindowBase.reset_zoom">
+<span class="sig-name descname"><span class="pre">reset_zoom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.reset_zoom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset zoom on all plots.
+:param e: wx Event
+:return: None</p>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.gui_elements.mainwindow_base.MainwindowBase.save_all_figures">
 <span class="sig-name descname"><span class="pre">save_all_figures</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">extension</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extension2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">e</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">header</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.save_all_figures" title="Permalink to this definition">¶</a></dt>
 <dd><p>Save All of the Figures. Will name as header+extension2+_FigureX.+exetension
@@ -502,6 +517,22 @@ diff = p.diff</p>
 <dt class="sig sig-object py" id="unidec.modules.gui_elements.peaklistsort.PeakListCtrlPanel.on_column_click">
 <span class="sig-name descname"><span class="pre">on_column_click</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.peaklistsort.PeakListCtrlPanel.on_column_click" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.gui_elements.peaklistsort.PeakListCtrlPanel.on_popup_color_peaks">
+<span class="sig-name descname"><span class="pre">on_popup_color_peaks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.peaklistsort.PeakListCtrlPanel.on_popup_color_peaks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the selected items and adds it self.selection2. Triggers EVT_COLOR_PEAKS.
+:param event:
+:return:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.gui_elements.peaklistsort.PeakListCtrlPanel.on_popup_color_peaks_all">
+<span class="sig-name descname"><span class="pre">on_popup_color_peaks_all</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.peaklistsort.PeakListCtrlPanel.on_popup_color_peaks_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the selected items and adds it self.selection2. Triggers EVT_COLOR_PEAKS.
+:param event:
+:return:</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.gui_elements.peaklistsort.PeakListCtrlPanel.on_popup_consec_diff">
@@ -913,6 +944,21 @@ possible file naming issues are avoided.
     <ul>
 <li><a class="reference internal" href="#">unidec.modules.gui_elements package</a><ul>
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-unidec.modules.gui_elements.CDMenu">unidec.modules.gui_elements.CDMenu module</a><ul>
+<li><a class="reference internal" href="#unidec.modules.gui_elements.CDMenu.CDMenu"><code class="docutils literal notranslate"><span class="pre">CDMenu</span></code></a><ul>
+<li><a class="reference internal" href="#unidec.modules.gui_elements.CDMenu.CDMenu.add_to_recent"><code class="docutils literal notranslate"><span class="pre">CDMenu.add_to_recent()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.gui_elements.CDMenu.CDMenu.load_example_data"><code class="docutils literal notranslate"><span class="pre">CDMenu.load_example_data()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.gui_elements.CDMenu.CDMenu.menuLoad"><code class="docutils literal notranslate"><span class="pre">CDMenu.menuLoad</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.gui_elements.CDMenu.CDMenu.menu_501_503"><code class="docutils literal notranslate"><span class="pre">CDMenu.menu_501_503()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.gui_elements.CDMenu.CDMenu.menu_601_602"><code class="docutils literal notranslate"><span class="pre">CDMenu.menu_601_602()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.gui_elements.CDMenu.CDMenu.on_custom_defaults"><code class="docutils literal notranslate"><span class="pre">CDMenu.on_custom_defaults()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.gui_elements.CDMenu.CDMenu.on_defaults"><code class="docutils literal notranslate"><span class="pre">CDMenu.on_defaults()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.gui_elements.CDMenu.CDMenu.on_example_data"><code class="docutils literal notranslate"><span class="pre">CDMenu.on_example_data()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.gui_elements.CDMenu.CDMenu.update_recent"><code class="docutils literal notranslate"><span class="pre">CDMenu.update_recent()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a class="reference internal" href="#module-unidec.modules.gui_elements.CDWindow">unidec.modules.gui_elements.CDWindow module</a><ul>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.CDWindow.CDMainwindow"><code class="docutils literal notranslate"><span class="pre">CDMainwindow</span></code></a><ul>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.CDWindow.CDMainwindow.setup_main_panel"><code class="docutils literal notranslate"><span class="pre">CDMainwindow.setup_main_panel()</span></code></a></li>
@@ -945,21 +991,6 @@ possible file naming issues are avoided.
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#module-unidec.modules.gui_elements.CD_menu">unidec.modules.gui_elements.CD_menu module</a><ul>
-<li><a class="reference internal" href="#unidec.modules.gui_elements.CD_menu.CD_menu"><code class="docutils literal notranslate"><span class="pre">CD_menu</span></code></a><ul>
-<li><a class="reference internal" href="#unidec.modules.gui_elements.CD_menu.CD_menu.add_to_recent"><code class="docutils literal notranslate"><span class="pre">CD_menu.add_to_recent()</span></code></a></li>
-<li><a class="reference internal" href="#unidec.modules.gui_elements.CD_menu.CD_menu.load_example_data"><code class="docutils literal notranslate"><span class="pre">CD_menu.load_example_data()</span></code></a></li>
-<li><a class="reference internal" href="#unidec.modules.gui_elements.CD_menu.CD_menu.menuLoad"><code class="docutils literal notranslate"><span class="pre">CD_menu.menuLoad</span></code></a></li>
-<li><a class="reference internal" href="#unidec.modules.gui_elements.CD_menu.CD_menu.menu_501_503"><code class="docutils literal notranslate"><span class="pre">CD_menu.menu_501_503()</span></code></a></li>
-<li><a class="reference internal" href="#unidec.modules.gui_elements.CD_menu.CD_menu.menu_601_602"><code class="docutils literal notranslate"><span class="pre">CD_menu.menu_601_602()</span></code></a></li>
-<li><a class="reference internal" href="#unidec.modules.gui_elements.CD_menu.CD_menu.on_custom_defaults"><code class="docutils literal notranslate"><span class="pre">CD_menu.on_custom_defaults()</span></code></a></li>
-<li><a class="reference internal" href="#unidec.modules.gui_elements.CD_menu.CD_menu.on_defaults"><code class="docutils literal notranslate"><span class="pre">CD_menu.on_defaults()</span></code></a></li>
-<li><a class="reference internal" href="#unidec.modules.gui_elements.CD_menu.CD_menu.on_example_data"><code class="docutils literal notranslate"><span class="pre">CD_menu.on_example_data()</span></code></a></li>
-<li><a class="reference internal" href="#unidec.modules.gui_elements.CD_menu.CD_menu.update_recent"><code class="docutils literal notranslate"><span class="pre">CD_menu.update_recent()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
 <li><a class="reference internal" href="#module-unidec.modules.gui_elements.ChromWindow">unidec.modules.gui_elements.ChromWindow module</a><ul>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.ChromWindow.ChromDropTarget"><code class="docutils literal notranslate"><span class="pre">ChromDropTarget</span></code></a><ul>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.ChromWindow.ChromDropTarget.OnDropFiles"><code class="docutils literal notranslate"><span class="pre">ChromDropTarget.OnDropFiles()</span></code></a></li>
@@ -975,6 +1006,7 @@ possible file naming issues are avoided.
 </li>
 <li><a class="reference internal" href="#module-unidec.modules.gui_elements.mainwindow_base">unidec.modules.gui_elements.mainwindow_base module</a><ul>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase"><code class="docutils literal notranslate"><span class="pre">MainwindowBase</span></code></a><ul>
+<li><a class="reference internal" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.bind_peakpanel"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.bind_peakpanel()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.clear_all_plots"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.clear_all_plots()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.clear_plots"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.clear_plots()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.export_gui_to_config"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.export_gui_to_config()</span></code></a></li>
@@ -991,6 +1023,7 @@ possible file naming issues are avoided.
 <li><a class="reference internal" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.on_save_figure_pdf"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.on_save_figure_pdf()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.on_save_figure_png"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.on_save_figure_png()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.on_save_figure_small"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.on_save_figure_small()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.reset_zoom"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.reset_zoom()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.save_all_figures"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.save_all_figures()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.setup_shortcuts"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.setup_shortcuts()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.shrink_all_figures"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.shrink_all_figures()</span></code></a></li>
@@ -1006,6 +1039,8 @@ possible file naming issues are avoided.
 <li><a class="reference internal" href="#unidec.modules.gui_elements.peaklistsort.PeakListCtrlPanel.clear_list"><code class="docutils literal notranslate"><span class="pre">PeakListCtrlPanel.clear_list()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.peaklistsort.PeakListCtrlPanel.fix_text_color"><code class="docutils literal notranslate"><span class="pre">PeakListCtrlPanel.fix_text_color()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.peaklistsort.PeakListCtrlPanel.on_column_click"><code class="docutils literal notranslate"><span class="pre">PeakListCtrlPanel.on_column_click()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.gui_elements.peaklistsort.PeakListCtrlPanel.on_popup_color_peaks"><code class="docutils literal notranslate"><span class="pre">PeakListCtrlPanel.on_popup_color_peaks()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.gui_elements.peaklistsort.PeakListCtrlPanel.on_popup_color_peaks_all"><code class="docutils literal notranslate"><span class="pre">PeakListCtrlPanel.on_popup_color_peaks_all()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.peaklistsort.PeakListCtrlPanel.on_popup_consec_diff"><code class="docutils literal notranslate"><span class="pre">PeakListCtrlPanel.on_popup_consec_diff()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.peaklistsort.PeakListCtrlPanel.on_popup_eight"><code class="docutils literal notranslate"><span class="pre">PeakListCtrlPanel.on_popup_eight()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.peaklistsort.PeakListCtrlPanel.on_popup_eleven"><code class="docutils literal notranslate"><span class="pre">PeakListCtrlPanel.on_popup_eleven()</span></code></a></li>
@@ -1132,7 +1167,7 @@ possible file naming issues are avoided.
         <li class="right" >
           <a href="unidec.modules.html" title="unidec.modules package"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">UniDec 6.0.0.a2 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">UniDec 6.0.0.b2 documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="modules.html" >unidec</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="unidec.html" >unidec package</a> &#187;</li>
           <li class="nav-item nav-item-3"><a href="unidec.modules.html" >unidec.modules package</a> &#187;</li>
@@ -1140,7 +1175,7 @@ possible file naming issues are avoided.
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2022, Michael Marty.
+        &#169; Copyright 2023, University of Arizona.
       Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.0.0.
     </div>
   </body>
