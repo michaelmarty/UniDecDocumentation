@@ -123,6 +123,8 @@
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.import_config_to_gui"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.import_config_to_gui()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.launch"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.launch()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.onFocus"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.onFocus()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.onIdle"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.onIdle()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.onResize"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.onResize()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.on_about"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.on_about()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.on_defaults"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.on_defaults()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.on_exit"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.on_exit()</span></code></a></li>
@@ -134,6 +136,7 @@
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.on_save_figure_png"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.on_save_figure_png()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.on_save_figure_small"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.on_save_figure_small()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.reset_zoom"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.reset_zoom()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.resize"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.resize()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.save_all_figures"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.save_all_figures()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.setup_shortcuts"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.setup_shortcuts()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.shrink_all_figures"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.shrink_all_figures()</span></code></a></li>
@@ -398,6 +401,7 @@
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.copy"><code class="docutils literal notranslate"><span class="pre">MyGrid.copy()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.cut"><code class="docutils literal notranslate"><span class="pre">MyGrid.cut()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.delete"><code class="docutils literal notranslate"><span class="pre">MyGrid.delete()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.delete_all"><code class="docutils literal notranslate"><span class="pre">MyGrid.delete_all()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.delete_cols"><code class="docutils literal notranslate"><span class="pre">MyGrid.delete_cols()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.delete_rows"><code class="docutils literal notranslate"><span class="pre">MyGrid.delete_rows()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.fill_empty"><code class="docutils literal notranslate"><span class="pre">MyGrid.fill_empty()</span></code></a></li>
@@ -405,19 +409,30 @@
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.get_df"><code class="docutils literal notranslate"><span class="pre">MyGrid.get_df()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.get_list"><code class="docutils literal notranslate"><span class="pre">MyGrid.get_list()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.get_selected_cells"><code class="docutils literal notranslate"><span class="pre">MyGrid.get_selected_cells()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.get_selected_rows"><code class="docutils literal notranslate"><span class="pre">MyGrid.get_selected_rows()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.get_selection"><code class="docutils literal notranslate"><span class="pre">MyGrid.get_selection()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.get_table"><code class="docutils literal notranslate"><span class="pre">MyGrid.get_table()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.hide_columns"><code class="docutils literal notranslate"><span class="pre">MyGrid.hide_columns()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.hide_columns_by_keyword"><code class="docutils literal notranslate"><span class="pre">MyGrid.hide_columns_by_keyword()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.hide_empty_columns"><code class="docutils literal notranslate"><span class="pre">MyGrid.hide_empty_columns()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.is_empty_column"><code class="docutils literal notranslate"><span class="pre">MyGrid.is_empty_column()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.on_cell_right_click"><code class="docutils literal notranslate"><span class="pre">MyGrid.on_cell_right_click()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.on_change"><code class="docutils literal notranslate"><span class="pre">MyGrid.on_change()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.on_hide_columns"><code class="docutils literal notranslate"><span class="pre">MyGrid.on_hide_columns()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.on_key"><code class="docutils literal notranslate"><span class="pre">MyGrid.on_key()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.on_label_right_click"><code class="docutils literal notranslate"><span class="pre">MyGrid.on_label_right_click()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.open_link"><code class="docutils literal notranslate"><span class="pre">MyGrid.open_link()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.paste"><code class="docutils literal notranslate"><span class="pre">MyGrid.paste()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.remove_empty"><code class="docutils literal notranslate"><span class="pre">MyGrid.remove_empty()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.rename_col"><code class="docutils literal notranslate"><span class="pre">MyGrid.rename_col()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.save_file"><code class="docutils literal notranslate"><span class="pre">MyGrid.save_file()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.set_col_headers"><code class="docutils literal notranslate"><span class="pre">MyGrid.set_col_headers()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.set_df"><code class="docutils literal notranslate"><span class="pre">MyGrid.set_df()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.set_row_values"><code class="docutils literal notranslate"><span class="pre">MyGrid.set_row_values()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.show_all_columns"><code class="docutils literal notranslate"><span class="pre">MyGrid.show_all_columns()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.show_columns_by_keyword"><code class="docutils literal notranslate"><span class="pre">MyGrid.show_columns_by_keyword()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.sort_by_column"><code class="docutils literal notranslate"><span class="pre">MyGrid.sort_by_column()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.sort_by_selected_column"><code class="docutils literal notranslate"><span class="pre">MyGrid.sort_by_selected_column()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.isolated_packages.html#unidec.modules.isolated_packages.spreadsheet.MyGrid.undo"><code class="docutils literal notranslate"><span class="pre">MyGrid.undo()</span></code></a></li>
 </ul>
 </li>
@@ -2721,7 +2736,7 @@ Will use kDa if: xvals[int(len(xvals) / 2)] &gt; 100000 or xvals[len(xvals) - 1]
 
 <dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.PlotBase.PlotBase.repaint">
-<span class="sig-name descname"><span class="pre">repaint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">setupzoom</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.PlotBase.PlotBase.repaint" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">repaint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">setupzoom</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resetzoom</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.PlotBase.PlotBase.repaint" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -2833,7 +2848,7 @@ Will use kDa if: xvals[int(len(xvals) / 2)] &gt; 100000 or xvals[len(xvals) - 1]
 <dl class="py class">
 <dt class="sig sig-object py" id="unidec.modules.PlottingWindow.PlottingWindowBase">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.modules.PlottingWindow.</span></span><span class="sig-name descname"><span class="pre">PlottingWindowBase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.PlottingWindow.PlottingWindowBase" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#unidec.modules.PlotBase.PlotBase" title="unidec.modules.PlotBase.PlotBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">PlotBase</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Window</span></code></p>
+<dd><p>Bases: <a class="reference internal" href="#unidec.modules.PlotBase.PlotBase" title="unidec.modules.PlotBase.PlotBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">PlotBase</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Panel</span></code></p>
 <p>Class for wx window with embedded matplotlib plots
 Inherits from PlotBase, which is the core functions stripped of everything interactive</p>
 <dl class="py method">
@@ -2855,6 +2870,14 @@ Inherits from PlotBase, which is the core functions stripped of everything inter
 <dt class="sig sig-object py" id="unidec.modules.PlottingWindow.PlottingWindowBase.on_draw">
 <span class="sig-name descname"><span class="pre">on_draw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.PlottingWindow.PlottingWindowBase.on_draw" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.PlottingWindow.PlottingWindowBase.on_idle">
+<span class="sig-name descname"><span class="pre">on_idle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.PlottingWindow.PlottingWindowBase.on_idle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function triggered on idle event from plot.
+:param event: wx.Event
+:return: None</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.PlottingWindow.PlottingWindowBase.on_key">
@@ -2889,6 +2912,14 @@ Currently wired to trigger on_save_figure_dialog on middle button.
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.PlottingWindow.PlottingWindowBase.on_size">
+<span class="sig-name descname"><span class="pre">on_size</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.PlottingWindow.PlottingWindowBase.on_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resizes the plots
+:param event: wx.Event
+:return: None</p>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.PlottingWindow.PlottingWindowBase.on_write_dialog">
 <span class="sig-name descname"><span class="pre">on_write_dialog</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">evt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.PlottingWindow.PlottingWindowBase.on_write_dialog" title="Permalink to this definition">¶</a></dt>
 <dd><p>Open a save figure dialog for specified plot.
@@ -2898,10 +2929,17 @@ Currently wired to trigger on_save_figure_dialog on middle button.
 
 <dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.PlottingWindow.PlottingWindowBase.repaint">
-<span class="sig-name descname"><span class="pre">repaint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">setupzoom</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.PlottingWindow.PlottingWindowBase.repaint" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">repaint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">setupzoom</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resetzoom</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.PlottingWindow.PlottingWindowBase.repaint" title="Permalink to this definition">¶</a></dt>
 <dd><p>Redraw and refresh the plot.
+:param setupzoom: Boolean, whether to setup zooming
+:param resetzoom: Boolean, whether to reset zooming
 :return: None</p>
 </dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.PlottingWindow.PlottingWindowBase.set_resize">
+<span class="sig-name descname"><span class="pre">set_resize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">newsize</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.PlottingWindow.PlottingWindowBase.set_resize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.PlottingWindow.PlottingWindowBase.setup_zoom">
@@ -2917,7 +2955,7 @@ Currently wired to trigger on_save_figure_dialog on middle button.
 
 <dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.PlottingWindow.PlottingWindowBase.size_handler">
-<span class="sig-name descname"><span class="pre">size_handler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.PlottingWindow.PlottingWindowBase.size_handler" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">size_handler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.PlottingWindow.PlottingWindowBase.size_handler" title="Permalink to this definition">¶</a></dt>
 <dd><p>Resizes the plots
 :param args:
 :param kwargs:
@@ -3312,7 +3350,7 @@ Currently wired to trigger on_save_figure_dialog on middle button.
 
 <dl class="py function">
 <dt class="sig sig-object py" id="unidec.modules.biopolymertools.calc_pep_mass">
-<span class="sig-prename descclassname"><span class="pre">unidec.modules.biopolymertools.</span></span><span class="sig-name descname"><span class="pre">calc_pep_mass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.biopolymertools.calc_pep_mass" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">unidec.modules.biopolymertools.</span></span><span class="sig-name descname"><span class="pre">calc_pep_mass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_float</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remove_nan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_cyst_ox</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.biopolymertools.calc_pep_mass" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
@@ -3808,12 +3846,12 @@ z = (x+i*gam)/(sig*sqrt(2))</p>
 <span id="unidec-modules-html-writer-module"></span><h2>unidec.modules.html_writer module<a class="headerlink" href="#module-unidec.modules.html_writer" title="Permalink to this heading">¶</a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="unidec.modules.html_writer.array_to_html">
-<span class="sig-prename descclassname"><span class="pre">unidec.modules.html_writer.</span></span><span class="sig-name descname"><span class="pre">array_to_html</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">array</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cols</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rows</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.html_writer.array_to_html" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">unidec.modules.html_writer.</span></span><span class="sig-name descname"><span class="pre">array_to_html</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">array</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cols</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rows</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sortable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.html_writer.array_to_html" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="unidec.modules.html_writer.df_to_html">
-<span class="sig-prename descclassname"><span class="pre">unidec.modules.html_writer.</span></span><span class="sig-name descname"><span class="pre">df_to_html</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.html_writer.df_to_html" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">unidec.modules.html_writer.</span></span><span class="sig-name descname"><span class="pre">df_to_html</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sortable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.html_writer.df_to_html" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
@@ -3822,8 +3860,8 @@ z = (x+i*gam)/(sig*sqrt(2))</p>
 <dd></dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="unidec.modules.html_writer.fig_to_html_plotly">
-<span class="sig-prename descclassname"><span class="pre">unidec.modules.html_writer.</span></span><span class="sig-name descname"><span class="pre">fig_to_html_plotly</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.html_writer.fig_to_html_plotly" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="unidec.modules.html_writer.fig_to_html_mpld3">
+<span class="sig-prename descclassname"><span class="pre">unidec.modules.html_writer.</span></span><span class="sig-name descname"><span class="pre">fig_to_html_mpld3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outfile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.html_writer.fig_to_html_mpld3" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
@@ -3854,7 +3892,14 @@ z = (x+i*gam)/(sig*sqrt(2))</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="unidec.modules.html_writer.to_html_collapsible">
 <span class="sig-prename descclassname"><span class="pre">unidec.modules.html_writer.</span></span><span class="sig-name descname"><span class="pre">to_html_collapsible</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Click</span> <span class="pre">to</span> <span class="pre">expand'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">canopen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">htmltext</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.html_writer.to_html_collapsible" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Create HTML collapsible from text.
+:param text: Text to be displayed in collapsible
+:param title: Title of collapsible
+:param canopen: Whether collapsible can be opened or not
+:param outfile: File output
+:param htmltext:
+:return:</p>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="unidec.modules.html_writer.wrap_to_grid">
@@ -3923,6 +3968,20 @@ z = (x+i*gam)/(sig*sqrt(2))</p>
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.modules.mainwindow.</span></span><span class="sig-name descname"><span class="pre">Mainwindow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">iconfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tabbed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.mainwindow.Mainwindow" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.mainwindow_base.MainwindowBase" title="unidec.modules.gui_elements.mainwindow_base.MainwindowBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">MainwindowBase</span></code></a></p>
 <p>Main UniDec GUI Window.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.mainwindow.Mainwindow.resize">
+<span class="sig-name descname"><span class="pre">resize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.mainwindow.Mainwindow.resize" title="Permalink to this definition">¶</a></dt>
+<dd><p>self.plotpanel.SetSize(self.splitterwindow.GetSize())
+self.plotpanel.SetMinSize(self.splitterwindow.GetSize())
+self.plotpanel.SetVirtualSize(self.splitterwindow.GetSize())
+self.plotpanel.SetVirtualSizeWH(<a href="#id1"><span class="problematic" id="id2">*</span></a>self.splitterwindow.GetSize())
+#self.plotpanel.SetBestVirtualSize(self.splitterwindow.GetSize())
+#self.sizerplot.SetMinSize(self.splitterwindow.GetSize())</p>
+<p>self.plotpanel.SetSizer(self.sizerplot)
+self.sizerplot.FitInside(self.splitterwindow)
+self.sizerplot.RepositionChildren(wx.Size(10, 10))</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.mainwindow.Mainwindow.setup_main_panel">
 <span class="sig-name descname"><span class="pre">setup_main_panel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.mainwindow.Mainwindow.setup_main_panel" title="Permalink to this definition">¶</a></dt>
@@ -4493,15 +4552,18 @@ It flags self.pks.changes as 1, which is picked up downstream to say that these 
 <span id="unidec-modules-matchtools-module"></span><h2>unidec.modules.matchtools module<a class="headerlink" href="#module-unidec.modules.matchtools" title="Permalink to this heading">¶</a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="unidec.modules.matchtools.UPP_check_peaks">
-<span class="sig-prename descclassname"><span class="pre">unidec.modules.matchtools.</span></span><span class="sig-name descname"><span class="pre">UPP_check_peaks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pks</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tol</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">moddf</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.matchtools.UPP_check_peaks" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">unidec.modules.matchtools.</span></span><span class="sig-name descname"><span class="pre">UPP_check_peaks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pks</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tol</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vmoddf</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmoddf</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">favor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Closest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.matchtools.UPP_check_peaks" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="unidec.modules.matchtools.calc_pairs">
-<span class="sig-prename descclassname"><span class="pre">unidec.modules.matchtools.</span></span><span class="sig-name descname"><span class="pre">calc_pairs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.matchtools.calc_pairs" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">unidec.modules.matchtools.</span></span><span class="sig-name descname"><span class="pre">calc_pairs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_seqs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remove_zeros</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmoddf</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.matchtools.calc_pairs" title="Permalink to this definition">¶</a></dt>
 <dd><p>For use with UniDec Processing Pipeline
 Calculate the potential pairs from a row.
 :param row: Row from a df with Sequence N in the column heading designating the sequence. Seq N + Seq M will look for a pair.
+:param include_seqs: Boolean to include the isolated sequences in the output. Default is False. If you want to include these sequences, set to True or include Seq1 as a separate incorrect column.
+:param remove_zeros: Boolean to remove the pairs with masses of 0 from the output. Default is True.
+:param fmoddf: DataFrame of the Fixed Modifications to use for the sequences. If None, will not use any.
 :return: Masses of pairs, labels of potential pairs</p>
 </dd></dl>
 
@@ -4512,6 +4574,11 @@ Calculate the potential pairs from a row.
 :param row: Row from a df with Sequence N as a column header for each sequence you want to calculate
 :return: Sequences, Masses, Labels</p>
 </dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.modules.matchtools.check_string_for_seq">
+<span class="sig-prename descclassname"><span class="pre">unidec.modules.matchtools.</span></span><span class="sig-name descname"><span class="pre">check_string_for_seq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">redstring</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pair</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.matchtools.check_string_for_seq" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="unidec.modules.matchtools.file_to_df">
@@ -4544,6 +4611,16 @@ Names is the list of names in each site.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="unidec.modules.matchtools.index_to_sname">
 <span class="sig-prename descclassname"><span class="pre">unidec.modules.matchtools.</span></span><span class="sig-name descname"><span class="pre">index_to_sname</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sitenames</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.matchtools.index_to_sname" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.modules.matchtools.parse_fmoddf">
+<span class="sig-prename descclassname"><span class="pre">unidec.modules.matchtools.</span></span><span class="sig-name descname"><span class="pre">parse_fmoddf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fmoddf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.matchtools.parse_fmoddf" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.modules.matchtools.parse_vmoddf">
+<span class="sig-prename descclassname"><span class="pre">unidec.modules.matchtools.</span></span><span class="sig-name descname"><span class="pre">parse_vmoddf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vmoddf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.matchtools.parse_vmoddf" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
@@ -7157,12 +7234,15 @@ unchanged.
 <li><a class="reference internal" href="#unidec.modules.PlottingWindow.PlottingWindowBase.mouse_activate"><code class="docutils literal notranslate"><span class="pre">PlottingWindowBase.mouse_activate()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.PlottingWindow.PlottingWindowBase.mouse_inactivate"><code class="docutils literal notranslate"><span class="pre">PlottingWindowBase.mouse_inactivate()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.PlottingWindow.PlottingWindowBase.on_draw"><code class="docutils literal notranslate"><span class="pre">PlottingWindowBase.on_draw()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.PlottingWindow.PlottingWindowBase.on_idle"><code class="docutils literal notranslate"><span class="pre">PlottingWindowBase.on_idle()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.PlottingWindow.PlottingWindowBase.on_key"><code class="docutils literal notranslate"><span class="pre">PlottingWindowBase.on_key()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.PlottingWindow.PlottingWindowBase.on_release"><code class="docutils literal notranslate"><span class="pre">PlottingWindowBase.on_release()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.PlottingWindow.PlottingWindowBase.on_save_fig"><code class="docutils literal notranslate"><span class="pre">PlottingWindowBase.on_save_fig()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.PlottingWindow.PlottingWindowBase.on_save_fig_dialog"><code class="docutils literal notranslate"><span class="pre">PlottingWindowBase.on_save_fig_dialog()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.PlottingWindow.PlottingWindowBase.on_size"><code class="docutils literal notranslate"><span class="pre">PlottingWindowBase.on_size()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.PlottingWindow.PlottingWindowBase.on_write_dialog"><code class="docutils literal notranslate"><span class="pre">PlottingWindowBase.on_write_dialog()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.PlottingWindow.PlottingWindowBase.repaint"><code class="docutils literal notranslate"><span class="pre">PlottingWindowBase.repaint()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.PlottingWindow.PlottingWindowBase.set_resize"><code class="docutils literal notranslate"><span class="pre">PlottingWindowBase.set_resize()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.PlottingWindow.PlottingWindowBase.setup_zoom"><code class="docutils literal notranslate"><span class="pre">PlottingWindowBase.setup_zoom()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.PlottingWindow.PlottingWindowBase.size_handler"><code class="docutils literal notranslate"><span class="pre">PlottingWindowBase.size_handler()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.PlottingWindow.PlottingWindowBase.zoomout"><code class="docutils literal notranslate"><span class="pre">PlottingWindowBase.zoomout()</span></code></a></li>
@@ -7353,7 +7433,7 @@ unchanged.
 <li><a class="reference internal" href="#unidec.modules.html_writer.array_to_html"><code class="docutils literal notranslate"><span class="pre">array_to_html()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.html_writer.df_to_html"><code class="docutils literal notranslate"><span class="pre">df_to_html()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.html_writer.dict_to_html"><code class="docutils literal notranslate"><span class="pre">dict_to_html()</span></code></a></li>
-<li><a class="reference internal" href="#unidec.modules.html_writer.fig_to_html_plotly"><code class="docutils literal notranslate"><span class="pre">fig_to_html_plotly()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.html_writer.fig_to_html_mpld3"><code class="docutils literal notranslate"><span class="pre">fig_to_html_mpld3()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.html_writer.html_cleaner"><code class="docutils literal notranslate"><span class="pre">html_cleaner()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.html_writer.html_close"><code class="docutils literal notranslate"><span class="pre">html_close()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.html_writer.html_open"><code class="docutils literal notranslate"><span class="pre">html_open()</span></code></a></li>
@@ -7382,6 +7462,7 @@ unchanged.
 </li>
 <li><a class="reference internal" href="#module-unidec.modules.mainwindow">unidec.modules.mainwindow module</a><ul>
 <li><a class="reference internal" href="#unidec.modules.mainwindow.Mainwindow"><code class="docutils literal notranslate"><span class="pre">Mainwindow</span></code></a><ul>
+<li><a class="reference internal" href="#unidec.modules.mainwindow.Mainwindow.resize"><code class="docutils literal notranslate"><span class="pre">Mainwindow.resize()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.mainwindow.Mainwindow.setup_main_panel"><code class="docutils literal notranslate"><span class="pre">Mainwindow.setup_main_panel()</span></code></a></li>
 </ul>
 </li>
@@ -7486,9 +7567,12 @@ unchanged.
 <li><a class="reference internal" href="#unidec.modules.matchtools.UPP_check_peaks"><code class="docutils literal notranslate"><span class="pre">UPP_check_peaks()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.matchtools.calc_pairs"><code class="docutils literal notranslate"><span class="pre">calc_pairs()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.matchtools.calc_seqmasses"><code class="docutils literal notranslate"><span class="pre">calc_seqmasses()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.matchtools.check_string_for_seq"><code class="docutils literal notranslate"><span class="pre">check_string_for_seq()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.matchtools.file_to_df"><code class="docutils literal notranslate"><span class="pre">file_to_df()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.matchtools.get_sitematch_list"><code class="docutils literal notranslate"><span class="pre">get_sitematch_list()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.matchtools.index_to_sname"><code class="docutils literal notranslate"><span class="pre">index_to_sname()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.matchtools.parse_fmoddf"><code class="docutils literal notranslate"><span class="pre">parse_fmoddf()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.matchtools.parse_vmoddf"><code class="docutils literal notranslate"><span class="pre">parse_vmoddf()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.matchtools.site_match"><code class="docutils literal notranslate"><span class="pre">site_match()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.matchtools.sitematch_to_excel"><code class="docutils literal notranslate"><span class="pre">sitematch_to_excel()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.matchtools.sitematch_to_target"><code class="docutils literal notranslate"><span class="pre">sitematch_to_target()</span></code></a></li>

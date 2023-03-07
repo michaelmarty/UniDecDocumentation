@@ -350,6 +350,18 @@ self.menuSaveState = self.filemenu.Append(wx.ID_ANY, “Save Zip State File     
 <dd></dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.gui_elements.mainwindow_base.MainwindowBase.onIdle">
+<span class="sig-name descname"><span class="pre">onIdle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.onIdle" title="Permalink to this definition">¶</a></dt>
+<dd><p>On Idle, check if a resize has occured</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.gui_elements.mainwindow_base.MainwindowBase.onResize">
+<span class="sig-name descname"><span class="pre">onResize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.onResize" title="Permalink to this definition">¶</a></dt>
+<dd><p>On resize, replot the data</p>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.gui_elements.mainwindow_base.MainwindowBase.on_about">
 <span class="sig-name descname"><span class="pre">on_about</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.on_about" title="Permalink to this definition">¶</a></dt>
 <dd><p>Displays message about program
@@ -432,6 +444,11 @@ self.menuSaveState = self.filemenu.Append(wx.ID_ANY, “Save Zip State File     
 :param e: wx Event
 :return: None</p>
 </dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.gui_elements.mainwindow_base.MainwindowBase.resize">
+<span class="sig-name descname"><span class="pre">resize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.resize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.gui_elements.mainwindow_base.MainwindowBase.save_all_figures">
@@ -1013,6 +1030,8 @@ possible file naming issues are avoided.
 <li><a class="reference internal" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.import_config_to_gui"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.import_config_to_gui()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.launch"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.launch()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.onFocus"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.onFocus()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.onIdle"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.onIdle()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.onResize"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.onResize()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.on_about"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.on_about()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.on_defaults"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.on_defaults()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.on_exit"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.on_exit()</span></code></a></li>
@@ -1024,6 +1043,7 @@ possible file naming issues are avoided.
 <li><a class="reference internal" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.on_save_figure_png"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.on_save_figure_png()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.on_save_figure_small"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.on_save_figure_small()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.reset_zoom"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.reset_zoom()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.resize"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.resize()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.save_all_figures"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.save_all_figures()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.setup_shortcuts"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.setup_shortcuts()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.gui_elements.mainwindow_base.MainwindowBase.shrink_all_figures"><code class="docutils literal notranslate"><span class="pre">MainwindowBase.shrink_all_figures()</span></code></a></li>
