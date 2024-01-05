@@ -1,18 +1,17 @@
-
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-content_root="./">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>UniDec: Universal Deconvolution of Mass and Ion Mobility Spectra &#8212; UniDec 6.0.0.b2 documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/classic.css" />
+    <title>UniDec: Universal Deconvolution of Mass and Ion Mobility Spectra &#8212; UniDec 7.0.0.b1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=514cf933" />
     
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/documentation_options.js?v=8f1bd5a1"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -34,7 +33,7 @@
         <li class="right" >
           <a href="index.html" title="Welcome to UniDec’s documentation!"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">UniDec 6.0.0.b2 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">UniDec 7.0.0.b1 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">UniDec: Universal Deconvolution of Mass and Ion Mobility Spectra</a></li> 
       </ul>
     </div>  
@@ -45,7 +44,7 @@
           <div class="body" role="main">
             
   <section id="unidec-universal-deconvolution-of-mass-and-ion-mobility-spectra">
-<h1>UniDec: Universal Deconvolution of Mass and Ion Mobility Spectra<a class="headerlink" href="#unidec-universal-deconvolution-of-mass-and-ion-mobility-spectra" title="Permalink to this heading">¶</a></h1>
+<h1>UniDec: Universal Deconvolution of Mass and Ion Mobility Spectra<a class="headerlink" href="#unidec-universal-deconvolution-of-mass-and-ion-mobility-spectra" title="Link to this heading">¶</a></h1>
 <p>UniDec’s Mission: Making it easier to do more with your data.</p>
 <p>UniDec is a Bayesian deconvolution program for deconvolution of mass spectra and ion mobility-mass spectra.</p>
 <p>It was originally published in: [M. T. Marty, A. J. Baldwin, E. G. Marklund, G. K. A. Hochberg, J. L. P. Benesch, C. V. Robinson, Anal. Chem. 2015, 87, 4370-4376.](<a class="reference external" href="http://pubs.acs.org/doi/abs/10.1021/acs.analchem.5b00140">http://pubs.acs.org/doi/abs/10.1021/acs.analchem.5b00140</a>)</p>
@@ -61,7 +60,7 @@ Just unzip the folder, put it somewhere convenient, and click the GUI_UniDec.exe
 <p>## Licensing</p>
 <p>UniDec is distributed under a completely open source license. Our hope is that this allows UniDec to be
 more widely used. If you are interested in including UniDec in another academic or commercial software distribution,
-you are welcome to email <a class="reference external" href="mailto:mtmarty&#37;&#52;&#48;email&#46;arizona&#46;edu">mtmarty<span>&#64;</span>email<span>&#46;</span>arizona<span>&#46;</span>edu</a> for more information.</p>
+you are welcome to email <a class="reference external" href="mailto:mtmarty&#37;&#52;&#48;arizona&#46;edu">mtmarty<span>&#64;</span>arizona<span>&#46;</span>edu</a> for more information.</p>
 <p>UniDec source code and compiled binaries are released under a modified BSD License as described below. Note, we ask
 that you cite us in any publications. Quantitative citation metrics will help grant applications to support future development.</p>
 <p>By downloading UniDec, you are agreeing to the UniDec and any third party licensing agreements and all terms therein.</p>
@@ -98,6 +97,8 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
 <p>### Third Party Licenses</p>
 <p>Waters DLLs are distributed under the Waters MassLynxSDK EULA license. The Thermo RawFileReader DLLs are distributed under the RawFileReader.doc license. By downloading and using these DLLs, you are accepting those licenses and these terms. Thermo and Waters are indemnified, defended, and held harmless from any claims, including attorneys’ fees, related to the distribution or use of this software. Redistribution of Waters and Thermo libraries is restricted as described in those licenses. Info on other licenses are provided below.</p>
+<p>Intel libraries from the oneAPI are distributed under licenses found in the bin folder.</p>
+<p>RDKit libraries are gratefully used for LipiDec and are distributed under the CC-SA license. Please [cite them when using these features](<a class="reference external" href="https://www.rdkit.org/docs/Overview.html#citing-the-rdkit">https://www.rdkit.org/docs/Overview.html#citing-the-rdkit</a>).</p>
 <p>## UniDec Compatible File Types</p>
 <p>UniDec is built to open .txt files using [numpy.loadtxt](<a class="reference external" href="http://docs.scipy.org/doc/numpy-1.10.0/reference/generated/numpy.loadtxt.html">http://docs.scipy.org/doc/numpy-1.10.0/reference/generated/numpy.loadtxt.html</a>).</p>
 <p>For MS data, it opens a two-column either a tab or space delimited list of m/z and intensity values.</p>
@@ -182,6 +183,53 @@ eng.pick_peaks()</p>
 </div></blockquote>
 <p>Of course, using the pre-compiled version means you don’t need to know Python at all and can just click the GUI_UniDec.exe icon to launch the program and get started. However you choose to do it, happy deconvolving!</p>
 <p>## Change Log</p>
+<p>v.7.0.0</p>
+<p>Added new module for time domain CD-MS data analysis, UniChromCD. This includes some cool new plotting and analysis features. Most importantly, it also includes our new method for Hadamard Transform analysis of CD-MS spectra. You can use the tools for regular LC-CD-MS or go crazy with HT-LC-CD-MS. More info coming soon on this front…:)</p>
+<p>Fixed deep bug with integration transforms. Improvements and refactoring to support UniChromCD. Fixed execution bug on servers.</p>
+<p>v.6.0.5</p>
+<p>Merged into v.7</p>
+<p>Minor fixes to update compatibility for Python 3.11 and 3.12.</p>
+<p>Fixed common crash bug when isotope mode is on. Added warnings for if isotope mode is on.</p>
+<p>v.6.0.4</p>
+<p>Added “Notes” option to UPP to add notes to the bottom of the report. Added peak and data normalization options to UPP spreadsheet inputs. See help file.</p>
+<p>Added “PyroGlu” option in UPP to automatically account for pyroglutamate formation on sequences that could have it. See help file for more information.</p>
+<p>Printing HTML reports to PDF now looks better, with page breaks and background colors.</p>
+<p>Command line now runs DScore with peak picking, so DScores will now appear in UPP.</p>
+<p>Added del_columns custom field in batch.py for those that want to edit the report fields.</p>
+<p>Fixed bug with CDCReader path in ImportWizard. Fixed weird bug with compressed mzML files. Fixed bug with save figure as and color bars.</p>
+<p>v.6.0.3</p>
+<p>Added global peak output to UPP. Updated documentation and help for UPP to show how to write your own workflows.</p>
+<p>Added cosine similarity to Image Plotter.</p>
+<p>Added “Config Smash File” input to UPP.</p>
+<p>Added DScore to peakparam.dat output.</p>
+<p>Fixed bug with Waters time range on file open.</p>
+<p>Fixed bug with peaks shapes not registering. Note, this fix will break compatiblity for the charge peak shape
+parameter on older config files for UCD. Just change zpsfun to zpsfn on the config file to rescue.</p>
+<p>Fixed bug with PDF saving not working.</p>
+<p>v.6.0.2</p>
+<p><strong>Added a new Drug-to-Antibody Ratio (DAR) calculation mode for UPP.</strong> See help file for the new keywords.</p>
+<p>Other improvements to UPP:
+* Added color to the columns on UPP.
+* Added ability to do peak integration.
+* Added low and high charge config options.
+* Added buttons to open results in Excel or other spreadsheet software.
+* Added global HTML report.
+* Improved file naming of outputs.
+* Added progress bar on the bottom.</p>
+<p>Fixed bug with HTML float sorting as text. Fixed major bugs with file imports.</p>
+<p>v.6.0.1</p>
+<p><strong>Added Noise Removal Tool</strong> to UniDec and UniDecCD. This allows you to select specific noise regions (common in UHMR data) and set them to 0. Try Tools &gt; Select Noise Peaks and the checking “Remove Noise Peaks” in the Advanced Data Processing Parameters.</p>
+<p>UPP Changes:
+* Added “Config m/z Peak FWHM”, “Config m/z Peak Shape”, and “Config Sample Mass Every” parameters. If “Config m/z Peak FWHM” is specified as a float or integer, it will use that and skip the automatic peak width determination.
+* Enabled relative paths.
+* Added “All” or “None” keywords on “Apply Fixed Mods” and “Disulfides Oxidized.”
+* Added “Config File” keyword to load a specific config file.
+* More tolerant of nans and different file extensions
+* Added ability to select files to load to UPP.
+* Added “Global Fixed Mod” to apply the same float value to each pair.
+* Special Bispecific Antibody Pairing Calculations (see Help File)
+* Fixed issues bugs with use_converted, clear all, and resetting the config.</p>
+<p>Fixed major bugs with 2D zooming and plotting.</p>
 <p>v.6.0.0</p>
 <p>Major changes to code structure to enable PyPI distribution. Changed to more conventional Python package structure with unidec top directory. Renamed unidec_modules to modules, unidec_src to src, and unidec_bin to bin. Renamed some top level windows and moved all to main folder. For example, unidectools.py has been moved from modules to the top level and renamed as tools.py, and unidec.py has been renamed as engine.py. The good news is that you can now do <cite>pip install unidec</cite> and <cite>python -m unidec.Launcher</cite> to run UniDec from the command line.</p>
 <p>Improved command line tools. Added -o option for file output in unidec. Included new entry points and smoothed out command line interface. Now you can use unidec to lanuch python -m unidec in the scripts folder. Similarly, gunidec will launch python -m unidec.Launcher. If you have Python and the scripts folder configured in your system path, command line tools will be much easier to use.</p>
@@ -771,13 +819,13 @@ the above. In these cases, copyright and/or license information is inline.</p>
         <li class="right" >
           <a href="index.html" title="Welcome to UniDec’s documentation!"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">UniDec 6.0.0.b2 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">UniDec 7.0.0.b1 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">UniDec: Universal Deconvolution of Mass and Ion Mobility Spectra</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2023, University of Arizona.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.0.0.
+    &#169; Copyright 2024, University of Arizona.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
     </div>
   </body>
 </html>

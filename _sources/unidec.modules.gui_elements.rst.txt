@@ -36,6 +36,14 @@ unidec.modules.gui\_elements.ChromWindow module
    :undoc-members:
    :show-inheritance:
 
+unidec.modules.gui\_elements.HTCD\_ListCtrls module
+---------------------------------------------------
+
+.. automodule:: unidec.modules.gui_elements.HTCD_ListCtrls
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 unidec.modules.gui\_elements.mainwindow\_base module
 ----------------------------------------------------
 

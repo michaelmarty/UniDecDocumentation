@@ -71,6 +71,14 @@ unidec.UniChrom module
    :undoc-members:
    :show-inheritance:
 
+unidec.UniChromCD module
+------------------------
+
+.. automodule:: unidec.UniChromCD
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 unidec.UniDecCD module
 ----------------------
 

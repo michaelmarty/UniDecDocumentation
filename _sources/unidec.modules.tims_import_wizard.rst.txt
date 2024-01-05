@@ -4,14 +4,6 @@ unidec.modules.tims\_import\_wizard package
 Submodules
 ----------
 
-unidec.modules.tims\_import\_wizard.ImporterProgressGauge module
-----------------------------------------------------------------
-
-.. automodule:: unidec.modules.tims_import_wizard.ImporterProgressGauge
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 unidec.modules.tims\_import\_wizard.TagTypes module
 ---------------------------------------------------
 
