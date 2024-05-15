@@ -92,9 +92,11 @@
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.CD_controls.main_controls.on_expand_red"><code class="docutils literal notranslate"><span class="pre">main_controls.on_expand_red()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.CD_controls.main_controls.on_expand_yellow"><code class="docutils literal notranslate"><span class="pre">main_controls.on_expand_yellow()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.CD_controls.main_controls.on_m_smooth"><code class="docutils literal notranslate"><span class="pre">main_controls.on_m_smooth()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.CD_controls.main_controls.on_mousewheel"><code class="docutils literal notranslate"><span class="pre">main_controls.on_mousewheel()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.CD_controls.main_controls.on_p_select"><code class="docutils literal notranslate"><span class="pre">main_controls.on_p_select()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.CD_controls.main_controls.on_z_smooth"><code class="docutils literal notranslate"><span class="pre">main_controls.on_z_smooth()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.CD_controls.main_controls.setup_tool_tips"><code class="docutils literal notranslate"><span class="pre">main_controls.setup_tool_tips()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.CD_controls.main_controls.update_demultiplex_mode"><code class="docutils literal notranslate"><span class="pre">main_controls.update_demultiplex_mode()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.CD_controls.main_controls.update_quick_controls"><code class="docutils literal notranslate"><span class="pre">main_controls.update_quick_controls()</span></code></a></li>
 </ul>
 </li>
@@ -226,6 +228,7 @@
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.ud_controls.main_controls.on_expand_yellow"><code class="docutils literal notranslate"><span class="pre">main_controls.on_expand_yellow()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.ud_controls.main_controls.on_m_smooth"><code class="docutils literal notranslate"><span class="pre">main_controls.on_m_smooth()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.ud_controls.main_controls.on_mass_list"><code class="docutils literal notranslate"><span class="pre">main_controls.on_mass_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.ud_controls.main_controls.on_mousewheel"><code class="docutils literal notranslate"><span class="pre">main_controls.on_mousewheel()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.ud_controls.main_controls.on_open_kernel"><code class="docutils literal notranslate"><span class="pre">main_controls.on_open_kernel()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.ud_controls.main_controls.on_p_select"><code class="docutils literal notranslate"><span class="pre">main_controls.on_p_select()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="unidec.modules.gui_elements.html#unidec.modules.gui_elements.ud_controls.main_controls.on_pw_check"><code class="docutils literal notranslate"><span class="pre">main_controls.on_pw_check()</span></code></a></li>
@@ -768,7 +771,7 @@ Sets the default file names. If it finds raw data already in the numpy compresse
 
 <dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.CDEng.UniDecCD.create_mass_axis">
-<span class="sig-name descname"><span class="pre">create_mass_axis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">harray</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.CDEng.UniDecCD.create_mass_axis" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">create_mass_axis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">harray</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.CDEng.UniDecCD.create_mass_axis" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -1047,7 +1050,7 @@ it can be turned off for speed.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.CDEng.UniDecCD.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">harray</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataobj</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.CDEng.UniDecCD.transform" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">harray</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataobj</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ztab</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mz</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.CDEng.UniDecCD.transform" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -1630,6 +1633,19 @@ Writes 1D output to _WAP_2D_Extract.txt.
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.HTEng.HTEng.ftdecon">
+<span class="sig-name descname"><span class="pre">ftdecon</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flatten</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">apodize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aFT</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nzp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepcomplex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.HTEng.ftdecon" title="Link to this definition">¶</a></dt>
+<dd><p>Perform Fourier Transform Deconvolution
+:param data: 1D data array of y-data only
+:param flatten: Whether to flatten the TIC before demultiplexing to remove low frequency components
+:param apodize: Whether to apodize the data with a Hanning window
+:param aFT: Whether to use Absorption FT mode
+:param normalize: Whether to normalize the output to the maximum value
+:param nzp: Zero padding factor
+:return: 1D array of demultiplexed data. Same length as input.</p>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.HTEng.HTEng.get_cycle_time">
 <span class="sig-name descname"><span class="pre">get_cycle_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cycleindexguess</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">widthguess</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">110</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.HTEng.get_cycle_time" title="Link to this definition">¶</a></dt>
 <dd><p>Get the cycle time from the data. This is the time between the first peak and the next peak.
@@ -1662,12 +1678,9 @@ Also supports “sgsmooth” which smooths the data with a Savitzky-Golay filter
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="unidec.modules.HTEng.HTEng.htdecon_speedy">
-<span class="sig-name descname"><span class="pre">htdecon_speedy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.HTEng.htdecon_speedy" title="Link to this definition">¶</a></dt>
-<dd><p>Deconvolve the data using the HT kernel. Need to call setup_ht first. Currently unused.
-:param data: 1D data array. Should be same dimension as self.htkernel.
-:return: Demultiplexed data. Same length as input.</p>
-</dd></dl>
+<dt class="sig sig-object py" id="unidec.modules.HTEng.HTEng.masked_demultiplex_ht">
+<span class="sig-name descname"><span class="pre">masked_demultiplex_ht</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">win</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">demult</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'rand'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.HTEng.masked_demultiplex_ht" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.HTEng.HTEng.parse_file_name">
@@ -1675,6 +1688,16 @@ Also supports “sgsmooth” which smooths the data with a Savitzky-Golay filter
 <dd><p>Parse the file name to extract relevant parameters for HT processing.
 :param path: File path
 :return: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.HTEng.HTEng.run_demultiplex">
+<span class="sig-name descname"><span class="pre">run_demultiplex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.HTEng.run_demultiplex" title="Link to this definition">¶</a></dt>
+<dd><p>Overarching function to demultiplex data. Calls each demultiplexing type based on config parameter
+:param data: 1D array of data to be deconvolved. Should be same dimension as self.htkernel if HT mode.
+:param mode: Type of demultiplexing. Default is HT.
+:param kwargs: Additional keyword arguments.
+:return: Demultiplexed data. Same length as input.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1686,8 +1709,26 @@ Also supports “sgsmooth” which smooths the data with a Savitzky-Golay filter
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.HTEng.HTEng.setup_demultiplex">
+<span class="sig-name descname"><span class="pre">setup_demultiplex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.HTEng.setup_demultiplex" title="Link to this definition">¶</a></dt>
+<dd><p>Overarching function to set up demultiplexing. Calls each demultiplexing type based on config parameter
+:param mode: Type of demultiplexing. Default is HT.
+:param kwargs: Additional keyword arguments.
+:return: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.HTEng.HTEng.setup_ft">
+<span class="sig-name descname"><span class="pre">setup_ft</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">FTstart</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">FTend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nzp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.HTEng.setup_ft" title="Link to this definition">¶</a></dt>
+<dd><p>Set up the Fourier Transform Deconvolution. Sets self.decontime with drift time axis.
+:param FTstart: Starting frequence (hz)
+:param FTend: Ending frequence (hz)
+:return: None</p>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.HTEng.HTEng.setup_ht">
-<span class="sig-name descname"><span class="pre">setup_ht</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cycleindex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.HTEng.setup_ht" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">setup_ht</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cycleindex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seq</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.HTEng.setup_ht" title="Link to this definition">¶</a></dt>
 <dd><p>Sets up the HT kernel for deconvolution. This is a binary sequence that is convolved with the data to
 deconvolve the data. The sequence is defined by the htseq variable. The timepad and timeshift variables
 shift the sequence in time. The config.HTksmooth variable smooths the kernel to reduce ringing.
@@ -1701,13 +1742,21 @@ If not specified, default is the full number of scans divided by the number of c
 <dl class="py class">
 <dt class="sig sig-object py" id="unidec.modules.HTEng.UniChromHT">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.modules.HTEng.</span></span><span class="sig-name descname"><span class="pre">UniChromHT</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.UniChromHT" title="Link to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#unidec.modules.HTEng.HTEng" title="unidec.modules.HTEng.HTEng"><code class="xref py py-class docutils literal notranslate"><span class="pre">HTEng</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">ChromEngine</span></code></p>
+<dd><p>Bases: <a class="reference internal" href="#unidec.modules.HTEng.HTEng" title="unidec.modules.HTEng.HTEng"><code class="xref py py-class docutils literal notranslate"><span class="pre">HTEng</span></code></a>, <a class="reference internal" href="#unidec.modules.ChromEng.ChromEngine" title="unidec.modules.ChromEng.ChromEngine"><code class="xref py py-class docutils literal notranslate"><span class="pre">ChromEngine</span></code></a></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.HTEng.UniChromHT.eic_ht">
 <span class="sig-name descname"><span class="pre">eic_ht</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">massrange</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.UniChromHT.eic_ht" title="Link to this definition">¶</a></dt>
 <dd><p>Get the EIC and run HT on it.
-:param massrange: Mass range for EIC selection
+:param massrange: Mass range for EIC selection [low, high]
 :return: Demultiplexed data output</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.HTEng.UniChromHT.get_eic">
+<span class="sig-name descname"><span class="pre">get_eic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">massrange</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.UniChromHT.get_eic" title="Link to this definition">¶</a></dt>
+<dd><p>Get the EIC from the chromatogram.
+:param massrange: Mass range for EIC selection [low, high]
+:return:</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1732,13 +1781,32 @@ If not specified, default is the full number of scans divided by the number of c
 <dl class="py class">
 <dt class="sig sig-object py" id="unidec.modules.HTEng.UniDecCDHT">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.modules.HTEng.</span></span><span class="sig-name descname"><span class="pre">UniDecCDHT</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.UniDecCDHT" title="Link to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#unidec.modules.HTEng.HTEng" title="unidec.modules.HTEng.HTEng"><code class="xref py py-class docutils literal notranslate"><span class="pre">HTEng</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">UniDecCD</span></code></p>
+<dd><p>Bases: <a class="reference internal" href="#unidec.modules.HTEng.HTEng" title="unidec.modules.HTEng.HTEng"><code class="xref py py-class docutils literal notranslate"><span class="pre">HTEng</span></code></a>, <a class="reference internal" href="#unidec.modules.CDEng.UniDecCD" title="unidec.modules.CDEng.UniDecCD"><code class="xref py py-class docutils literal notranslate"><span class="pre">UniDecCD</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.HTEng.UniDecCDHT.ccs_transform_stacks">
+<span class="sig-name descname"><span class="pre">ccs_transform_stacks</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.UniDecCDHT.ccs_transform_stacks" title="Link to this definition">¶</a></dt>
+<dd><p>Transform the histogram stacks from drift time to CCS.
+:return: None</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.HTEng.UniDecCDHT.clear_arrays">
 <span class="sig-name descname"><span class="pre">clear_arrays</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">massonly</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.UniDecCDHT.clear_arrays" title="Link to this definition">¶</a></dt>
 <dd><p>Clear arrays to reset.
 :param massonly: Whether to only reset mass arrays. Default False.
 :return: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.HTEng.UniDecCDHT.convert_trace_to_ccs">
+<span class="sig-name descname"><span class="pre">convert_trace_to_ccs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">trace</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mzrange</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">zrange</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sarray</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.UniDecCDHT.convert_trace_to_ccs" title="Link to this definition">¶</a></dt>
+<dd><p>Convert a trace to CCS.
+:param trace: 1D array of intensity
+:param mzrange: m/z range
+:param zrange: charge range
+:param sarray: Swoop array, m/z mid, z mid, z spread (vertical), z width (horizontal), default None
+:param normalize: Whether to normalize the output to the maximum.
+:return: 2D array of CCS (time, intensity)</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1752,12 +1820,41 @@ If not specified, default is the full number of scans divided by the number of c
 
 <dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.HTEng.UniDecCDHT.eic_ht">
-<span class="sig-name descname"><span class="pre">eic_ht</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mzrange</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">zrange</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.UniDecCDHT.eic_ht" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">eic_ht</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mzrange</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">zrange</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sarray</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.UniDecCDHT.eic_ht" title="Link to this definition">¶</a></dt>
 <dd><p>Get the EIC and run HT on it.
 :param mzrange: m/z range
 :param zrange: charge range
+:param sarray: Swoop array, m/z mid, z mid, z spread (vertical), z width (horizontal), default None
 :param kwargs: Keyword arguments. Passed down to create_chrom and htdecon.
 :return: Demultiplexed data output. 2D array (time, intensity)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.HTEng.UniDecCDHT.extract_subdata">
+<span class="sig-name descname"><span class="pre">extract_subdata</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mzrange</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">zrange</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.UniDecCDHT.extract_subdata" title="Link to this definition">¶</a></dt>
+<dd><p>Extract a subdata object based on m/z and charge range.
+:param mzrange: m/z range, [low, high]
+:param zrange: z range, [low, high]
+:return: Data Object</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.HTEng.UniDecCDHT.extract_swoop_subdata">
+<span class="sig-name descname"><span class="pre">extract_swoop_subdata</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sarray</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.UniDecCDHT.extract_swoop_subdata" title="Link to this definition">¶</a></dt>
+<dd><p>Extract a subdata object based on the Swoop selection.
+:param sarray: Swoop array, m/z mid, z mid, z spread (vertical), z width (horizontal)
+:return: Data Object</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.HTEng.UniDecCDHT.get_ccs_eic">
+<span class="sig-name descname"><span class="pre">get_ccs_eic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">massrange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">zrange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mzrange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.UniDecCDHT.get_ccs_eic" title="Link to this definition">¶</a></dt>
+<dd><p>Get the EIC for a mass range after transforming the data to CCS.
+:param massrange: Mass range
+:param zrange: Charge range. Default None sets to full range.
+:param mzrange: m/z range. Default None sets to full range.
+:param normalize: Whether to normalize the output to the maximum.
+:return: 2D array of EIC (time, intensity)</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1772,11 +1869,21 @@ If not specified, default is the full number of scans divided by the number of c
 
 <dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.HTEng.UniDecCDHT.get_mass_eic">
-<span class="sig-name descname"><span class="pre">get_mass_eic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">massrange</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ht</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.UniDecCDHT.get_mass_eic" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get_mass_eic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">massrange</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">zrange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ht</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.UniDecCDHT.get_mass_eic" title="Link to this definition">¶</a></dt>
 <dd><p>Get the EIC for a mass range after transforming the data to mass. Can be either HT or not.
 :param massrange: Mass range
+:param zrange: Charge range. Default None sets to full range.
 :param ht: Boolean whether to use HT or not
 :return: 2D array of EIC (time, intensity)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.HTEng.UniDecCDHT.get_swoop_eic">
+<span class="sig-name descname"><span class="pre">get_swoop_eic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sarray</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.UniDecCDHT.get_swoop_eic" title="Link to this definition">¶</a></dt>
+<dd><p>Extract an EIC based on the Swoop selection.
+:param sarray: Swoop array, m/z mid, z mid, z spread (vertical), z width (horizontal)
+:param kwargs: Keywords to be passed down to create_chrom
+:return: Data Object</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1790,7 +1897,7 @@ If not specified, default is the full number of scans divided by the number of c
 
 <dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.HTEng.UniDecCDHT.histogramLC">
-<span class="sig-name descname"><span class="pre">histogramLC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.UniDecCDHT.histogramLC" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">histogramLC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">w</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.UniDecCDHT.histogramLC" title="Link to this definition">¶</a></dt>
 <dd><p>Histogram function used for LC-CD-MS data.
 :param x: x-axis (m/z)
 :param y: y-axis (charge)
@@ -1857,6 +1964,14 @@ it can be turned off for speed.</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.HTEng.UniDecCDHT.select_raw_range">
+<span class="sig-name descname"><span class="pre">select_raw_range</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.UniDecCDHT.select_raw_range" title="Link to this definition">¶</a></dt>
+<dd><p>Select a range of time from raw data and processes it as a histogram array
+:param range: Time range
+:return: 2D histogram array</p>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.HTEng.UniDecCDHT.tic_ht">
 <span class="sig-name descname"><span class="pre">tic_ht</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.UniDecCDHT.tic_ht" title="Link to this definition">¶</a></dt>
 <dd><p>Get the TIC and run HT on it.
@@ -1866,9 +1981,17 @@ it can be turned off for speed.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.HTEng.UniDecCDHT.transform_array">
-<span class="sig-name descname"><span class="pre">transform_array</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">array</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.UniDecCDHT.transform_array" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">transform_array</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">array</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype=&lt;class</span> <span class="pre">'float'&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.UniDecCDHT.transform_array" title="Link to this definition">¶</a></dt>
 <dd><p>Transforms a histogram stack from m/z to mass
 :param array: Histogram stack. Shape is time vs. charge vs. m/z.
+:return: Transformed array</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.HTEng.UniDecCDHT.transform_dt_ccs_array">
+<span class="sig-name descname"><span class="pre">transform_dt_ccs_array</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">array</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepcomplex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.HTEng.UniDecCDHT.transform_dt_ccs_array" title="Link to this definition">¶</a></dt>
+<dd><p>Transforms a histogram stack from drift time to CCS
+:param array: Histogram Mass stack. Shape is time vs. mass vs. charge.
 :return: Transformed array</p>
 </dd></dl>
 
@@ -1884,6 +2007,16 @@ it can be turned off for speed.</p>
 </section>
 <section id="module-unidec.modules.IM_functions">
 <span id="unidec-modules-im-functions-module"></span><h2>unidec.modules.IM_functions module<a class="headerlink" href="#module-unidec.modules.IM_functions" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.modules.IM_functions.calc_linear_ccs">
+<span class="sig-prename descclassname"><span class="pre">unidec.modules.IM_functions.</span></span><span class="sig-name descname"><span class="pre">calc_linear_ccs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mass</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.IM_functions.calc_linear_ccs" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.modules.IM_functions.calc_linear_ccsconst">
+<span class="sig-prename descclassname"><span class="pre">unidec.modules.IM_functions.</span></span><span class="sig-name descname"><span class="pre">calc_linear_ccsconst</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.IM_functions.calc_linear_ccsconst" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
 <dl class="py function">
 <dt class="sig sig-object py" id="unidec.modules.IM_functions.calc_linear_dt">
 <span class="sig-prename descclassname"><span class="pre">unidec.modules.IM_functions.</span></span><span class="sig-name descname"><span class="pre">calc_linear_dt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mass</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ccs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.IM_functions.calc_linear_dt" title="Link to this definition">¶</a></dt>
@@ -3138,8 +3271,18 @@ If range=(a,b) is specified, adds a line from a to b and vertical lines at a and
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.PlotBase.PlotBase.draw_mz_curve">
+<span class="sig-name descname"><span class="pre">draw_mz_curve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'y'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adduct_mass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">repaint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.PlotBase.PlotBase.draw_mz_curve" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.PlotBase.PlotBase.get_blank_axis">
 <span class="sig-name descname"><span class="pre">get_blank_axis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.PlotBase.PlotBase.get_blank_axis" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.PlotBase.PlotBase.get_limits">
+<span class="sig-name descname"><span class="pre">get_limits</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.PlotBase.PlotBase.get_limits" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -3262,6 +3405,11 @@ Will use kDa if: xvals[int(len(xvals) / 2)] &gt; 100000 or xvals[len(xvals) - 1]
 <dd><p>Remove text and lines previous placed in the self.text and self.lines containers
 :return: None</p>
 </dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.PlotBase.PlotBase.update_style">
+<span class="sig-name descname"><span class="pre">update_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stylefile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.PlotBase.PlotBase.update_style" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.PlotBase.PlotBase.write_data">
@@ -3411,6 +3559,11 @@ Currently wired to trigger on_save_figure_dialog on middle button.
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.PlottingWindow.PlottingWindowBase.on_swoop_drag">
+<span class="sig-name descname"><span class="pre">on_swoop_drag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sarray</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.PlottingWindow.PlottingWindowBase.on_swoop_drag" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.PlottingWindow.PlottingWindowBase.on_write_dialog">
 <span class="sig-name descname"><span class="pre">on_write_dialog</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">evt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.PlottingWindow.PlottingWindowBase.on_write_dialog" title="Link to this definition">¶</a></dt>
 <dd><p>Open a save figure dialog for specified plot.
@@ -3463,6 +3616,12 @@ Currently wired to trigger on_save_figure_dialog on middle button.
 <dl class="py class">
 <dt class="sig sig-object py" id="unidec.modules.PlottingWindow.ScanSelectedEvent">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.modules.PlottingWindow.</span></span><span class="sig-name descname"><span class="pre">ScanSelectedEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">evttype</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smax</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.PlottingWindow.ScanSelectedEvent" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyCommandEvent</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="unidec.modules.PlottingWindow.SwoopDragEvent">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.modules.PlottingWindow.</span></span><span class="sig-name descname"><span class="pre">SwoopDragEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">evttype</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sarray</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.PlottingWindow.SwoopDragEvent" title="Link to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyCommandEvent</span></code></p>
 </dd></dl>
 
@@ -4269,6 +4428,11 @@ z = (x+i*gam)/(sig*sqrt(2))</p>
 <dd></dd></dl>
 
 <dl class="py function">
+<dt class="sig sig-object py" id="unidec.modules.hdf5_tools.get_mass_data">
+<span class="sig-prename descclassname"><span class="pre">unidec.modules.hdf5_tools.</span></span><span class="sig-name descname"><span class="pre">get_mass_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.hdf5_tools.get_mass_data" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
 <dt class="sig sig-object py" id="unidec.modules.hdf5_tools.get_metadata">
 <span class="sig-prename descclassname"><span class="pre">unidec.modules.hdf5_tools.</span></span><span class="sig-name descname"><span class="pre">get_metadata</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.hdf5_tools.get_metadata" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -4439,6 +4603,17 @@ z = (x+i*gam)/(sig*sqrt(2))</p>
 <dt class="sig sig-object py" id="unidec.modules.i2ms_importer.I2MSImporter.grab_data">
 <span class="sig-name descname"><span class="pre">grab_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.i2ms_importer.I2MSImporter.grab_data" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="unidec.modules.i2ms_importer.I2MSImporter.invinjtime">
+<span class="sig-name descname"><span class="pre">invinjtime</span></span><a class="headerlink" href="#unidec.modules.i2ms_importer.I2MSImporter.invinjtime" title="Link to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>try:</dt><dd><p>self.invinjtime = np.where(self.keys[:, 1] == “InverseInjectionTimeSeconds”)[0][0]</p>
+</dd>
+<dt>except:</dt><dd><p>self.invinjtime = None</p>
+</dd>
+</dl>
+</dd></dl>
 
 </dd></dl>
 
@@ -6662,7 +6837,7 @@ If data is None (default), self.data.massdat is used.
 Will plot dots at peak positions.
 If possible, will plot full isolated spectra.
 :param plot: Plot object. Default is None, which will set plot to creating a new plot
-:param data: 2D data with mass in the first column and intensity in the second. Default is self.data.massdat
+:param data: 2D data with m/z in the first column and intensity in the second. Default is self.data.data2
 :param pks: Peaks object. Default is self.pks
 :param config: Config objet. Default is self.config
 :return plot: The Plot object</p>
@@ -7075,6 +7250,11 @@ Hits ok and plots results.</p>
 <dd></dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="unidec.modules.unidec_presbase.UniDecPres.open_most_recent">
+<span class="sig-name descname"><span class="pre">open_most_recent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.unidec_presbase.UniDecPres.open_most_recent" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.unidec_presbase.UniDecPres.peak_plots">
 <span class="sig-name descname"><span class="pre">peak_plots</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.unidec_presbase.UniDecPres.peak_plots" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -7169,7 +7349,7 @@ Hits ok and plots results.</p>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="unidec.modules.unidecstructure.ChromatogramContainer.add_chromatogram">
-<span class="sig-name descname"><span class="pre">add_chromatogram</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'#000000'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mzrange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">zrange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ht</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.unidecstructure.ChromatogramContainer.add_chromatogram" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">add_chromatogram</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decondat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ccsdat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'#000000'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mzrange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">zrange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">massrange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">massmode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'DM'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sarray</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.modules.unidecstructure.ChromatogramContainer.add_chromatogram" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -7611,27 +7791,38 @@ unchanged.
 <li><a class="reference internal" href="#module-unidec.modules.HTEng">unidec.modules.HTEng module</a><ul>
 <li><a class="reference internal" href="#unidec.modules.HTEng.HTEng"><code class="docutils literal notranslate"><span class="pre">HTEng</span></code></a><ul>
 <li><a class="reference internal" href="#unidec.modules.HTEng.HTEng.correct_cycle_time"><code class="docutils literal notranslate"><span class="pre">HTEng.correct_cycle_time()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.HTEng.HTEng.ftdecon"><code class="docutils literal notranslate"><span class="pre">HTEng.ftdecon()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.HTEng.HTEng.get_cycle_time"><code class="docutils literal notranslate"><span class="pre">HTEng.get_cycle_time()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.HTEng.HTEng.get_first_peak"><code class="docutils literal notranslate"><span class="pre">HTEng.get_first_peak()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.HTEng.HTEng.htdecon"><code class="docutils literal notranslate"><span class="pre">HTEng.htdecon()</span></code></a></li>
-<li><a class="reference internal" href="#unidec.modules.HTEng.HTEng.htdecon_speedy"><code class="docutils literal notranslate"><span class="pre">HTEng.htdecon_speedy()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.HTEng.HTEng.masked_demultiplex_ht"><code class="docutils literal notranslate"><span class="pre">HTEng.masked_demultiplex_ht()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.HTEng.HTEng.parse_file_name"><code class="docutils literal notranslate"><span class="pre">HTEng.parse_file_name()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.HTEng.HTEng.run_demultiplex"><code class="docutils literal notranslate"><span class="pre">HTEng.run_demultiplex()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.HTEng.HTEng.set_timepad_index"><code class="docutils literal notranslate"><span class="pre">HTEng.set_timepad_index()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.HTEng.HTEng.setup_demultiplex"><code class="docutils literal notranslate"><span class="pre">HTEng.setup_demultiplex()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.HTEng.HTEng.setup_ft"><code class="docutils literal notranslate"><span class="pre">HTEng.setup_ft()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.HTEng.HTEng.setup_ht"><code class="docutils literal notranslate"><span class="pre">HTEng.setup_ht()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#unidec.modules.HTEng.UniChromHT"><code class="docutils literal notranslate"><span class="pre">UniChromHT</span></code></a><ul>
 <li><a class="reference internal" href="#unidec.modules.HTEng.UniChromHT.eic_ht"><code class="docutils literal notranslate"><span class="pre">UniChromHT.eic_ht()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.HTEng.UniChromHT.get_eic"><code class="docutils literal notranslate"><span class="pre">UniChromHT.get_eic()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.HTEng.UniChromHT.open_file"><code class="docutils literal notranslate"><span class="pre">UniChromHT.open_file()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.HTEng.UniChromHT.tic_ht"><code class="docutils literal notranslate"><span class="pre">UniChromHT.tic_ht()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#unidec.modules.HTEng.UniDecCDHT"><code class="docutils literal notranslate"><span class="pre">UniDecCDHT</span></code></a><ul>
+<li><a class="reference internal" href="#unidec.modules.HTEng.UniDecCDHT.ccs_transform_stacks"><code class="docutils literal notranslate"><span class="pre">UniDecCDHT.ccs_transform_stacks()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.HTEng.UniDecCDHT.clear_arrays"><code class="docutils literal notranslate"><span class="pre">UniDecCDHT.clear_arrays()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.HTEng.UniDecCDHT.convert_trace_to_ccs"><code class="docutils literal notranslate"><span class="pre">UniDecCDHT.convert_trace_to_ccs()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.HTEng.UniDecCDHT.create_chrom"><code class="docutils literal notranslate"><span class="pre">UniDecCDHT.create_chrom()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.HTEng.UniDecCDHT.eic_ht"><code class="docutils literal notranslate"><span class="pre">UniDecCDHT.eic_ht()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.HTEng.UniDecCDHT.extract_subdata"><code class="docutils literal notranslate"><span class="pre">UniDecCDHT.extract_subdata()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.HTEng.UniDecCDHT.extract_swoop_subdata"><code class="docutils literal notranslate"><span class="pre">UniDecCDHT.extract_swoop_subdata()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.HTEng.UniDecCDHT.get_ccs_eic"><code class="docutils literal notranslate"><span class="pre">UniDecCDHT.get_ccs_eic()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.HTEng.UniDecCDHT.get_eic"><code class="docutils literal notranslate"><span class="pre">UniDecCDHT.get_eic()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.HTEng.UniDecCDHT.get_mass_eic"><code class="docutils literal notranslate"><span class="pre">UniDecCDHT.get_mass_eic()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.HTEng.UniDecCDHT.get_swoop_eic"><code class="docutils literal notranslate"><span class="pre">UniDecCDHT.get_swoop_eic()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.HTEng.UniDecCDHT.get_tic"><code class="docutils literal notranslate"><span class="pre">UniDecCDHT.get_tic()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.HTEng.UniDecCDHT.histogramLC"><code class="docutils literal notranslate"><span class="pre">UniDecCDHT.histogramLC()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.HTEng.UniDecCDHT.open_file"><code class="docutils literal notranslate"><span class="pre">UniDecCDHT.open_file()</span></code></a></li>
@@ -7640,14 +7831,18 @@ unchanged.
 <li><a class="reference internal" href="#unidec.modules.HTEng.UniDecCDHT.process_data_scans"><code class="docutils literal notranslate"><span class="pre">UniDecCDHT.process_data_scans()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.HTEng.UniDecCDHT.run_all_ht"><code class="docutils literal notranslate"><span class="pre">UniDecCDHT.run_all_ht()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.HTEng.UniDecCDHT.select_ht_range"><code class="docutils literal notranslate"><span class="pre">UniDecCDHT.select_ht_range()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.HTEng.UniDecCDHT.select_raw_range"><code class="docutils literal notranslate"><span class="pre">UniDecCDHT.select_raw_range()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.HTEng.UniDecCDHT.tic_ht"><code class="docutils literal notranslate"><span class="pre">UniDecCDHT.tic_ht()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.HTEng.UniDecCDHT.transform_array"><code class="docutils literal notranslate"><span class="pre">UniDecCDHT.transform_array()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.HTEng.UniDecCDHT.transform_dt_ccs_array"><code class="docutils literal notranslate"><span class="pre">UniDecCDHT.transform_dt_ccs_array()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.HTEng.UniDecCDHT.transform_stacks"><code class="docutils literal notranslate"><span class="pre">UniDecCDHT.transform_stacks()</span></code></a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li><a class="reference internal" href="#module-unidec.modules.IM_functions">unidec.modules.IM_functions module</a><ul>
+<li><a class="reference internal" href="#unidec.modules.IM_functions.calc_linear_ccs"><code class="docutils literal notranslate"><span class="pre">calc_linear_ccs()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.IM_functions.calc_linear_ccsconst"><code class="docutils literal notranslate"><span class="pre">calc_linear_ccsconst()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.IM_functions.calc_linear_dt"><code class="docutils literal notranslate"><span class="pre">calc_linear_dt()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.IM_functions.calc_native_ccs"><code class="docutils literal notranslate"><span class="pre">calc_native_ccs()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.IM_functions.calc_twave_dt_linear"><code class="docutils literal notranslate"><span class="pre">calc_twave_dt_linear()</span></code></a></li>
@@ -7851,7 +8046,9 @@ unchanged.
 <li><a class="reference internal" href="#unidec.modules.PlotBase.PlotBase.add_title"><code class="docutils literal notranslate"><span class="pre">PlotBase.add_title()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.PlotBase.PlotBase.addtext"><code class="docutils literal notranslate"><span class="pre">PlotBase.addtext()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.PlotBase.PlotBase.clear_plot"><code class="docutils literal notranslate"><span class="pre">PlotBase.clear_plot()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.PlotBase.PlotBase.draw_mz_curve"><code class="docutils literal notranslate"><span class="pre">PlotBase.draw_mz_curve()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.PlotBase.PlotBase.get_blank_axis"><code class="docutils literal notranslate"><span class="pre">PlotBase.get_blank_axis()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.PlotBase.PlotBase.get_limits"><code class="docutils literal notranslate"><span class="pre">PlotBase.get_limits()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.PlotBase.PlotBase.get_linewidth"><code class="docutils literal notranslate"><span class="pre">PlotBase.get_linewidth()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.PlotBase.PlotBase.get_png"><code class="docutils literal notranslate"><span class="pre">PlotBase.get_png()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.PlotBase.PlotBase.get_svg"><code class="docutils literal notranslate"><span class="pre">PlotBase.get_svg()</span></code></a></li>
@@ -7869,6 +8066,7 @@ unchanged.
 <li><a class="reference internal" href="#unidec.modules.PlotBase.PlotBase.set_zoomvals"><code class="docutils literal notranslate"><span class="pre">PlotBase.set_zoomvals()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.PlotBase.PlotBase.setup_zoom"><code class="docutils literal notranslate"><span class="pre">PlotBase.setup_zoom()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.PlotBase.PlotBase.textremove"><code class="docutils literal notranslate"><span class="pre">PlotBase.textremove()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.PlotBase.PlotBase.update_style"><code class="docutils literal notranslate"><span class="pre">PlotBase.update_style()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.PlotBase.PlotBase.write_data"><code class="docutils literal notranslate"><span class="pre">PlotBase.write_data()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.PlotBase.PlotBase.zoomout"><code class="docutils literal notranslate"><span class="pre">PlotBase.zoomout()</span></code></a></li>
 </ul>
@@ -7899,6 +8097,7 @@ unchanged.
 <li><a class="reference internal" href="#unidec.modules.PlottingWindow.PlottingWindowBase.on_save_fig_dialog"><code class="docutils literal notranslate"><span class="pre">PlottingWindowBase.on_save_fig_dialog()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.PlottingWindow.PlottingWindowBase.on_scans_selected"><code class="docutils literal notranslate"><span class="pre">PlottingWindowBase.on_scans_selected()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.PlottingWindow.PlottingWindowBase.on_size"><code class="docutils literal notranslate"><span class="pre">PlottingWindowBase.on_size()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.PlottingWindow.PlottingWindowBase.on_swoop_drag"><code class="docutils literal notranslate"><span class="pre">PlottingWindowBase.on_swoop_drag()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.PlottingWindow.PlottingWindowBase.on_write_dialog"><code class="docutils literal notranslate"><span class="pre">PlottingWindowBase.on_write_dialog()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.PlottingWindow.PlottingWindowBase.repaint"><code class="docutils literal notranslate"><span class="pre">PlottingWindowBase.repaint()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.PlottingWindow.PlottingWindowBase.set_resize"><code class="docutils literal notranslate"><span class="pre">PlottingWindowBase.set_resize()</span></code></a></li>
@@ -7908,6 +8107,7 @@ unchanged.
 </ul>
 </li>
 <li><a class="reference internal" href="#unidec.modules.PlottingWindow.ScanSelectedEvent"><code class="docutils literal notranslate"><span class="pre">ScanSelectedEvent</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.PlottingWindow.SwoopDragEvent"><code class="docutils literal notranslate"><span class="pre">SwoopDragEvent</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#module-unidec.modules.SubDiv">unidec.modules.SubDiv module</a><ul>
@@ -8067,6 +8267,7 @@ unchanged.
 <li><a class="reference internal" href="#module-unidec.modules.hdf5_tools">unidec.modules.hdf5_tools module</a><ul>
 <li><a class="reference internal" href="#unidec.modules.hdf5_tools.get_data"><code class="docutils literal notranslate"><span class="pre">get_data()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.hdf5_tools.get_dataset"><code class="docutils literal notranslate"><span class="pre">get_dataset()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.hdf5_tools.get_mass_data"><code class="docutils literal notranslate"><span class="pre">get_mass_data()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.hdf5_tools.get_metadata"><code class="docutils literal notranslate"><span class="pre">get_metadata()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.hdf5_tools.get_num"><code class="docutils literal notranslate"><span class="pre">get_num()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.hdf5_tools.get_param"><code class="docutils literal notranslate"><span class="pre">get_param()</span></code></a></li>
@@ -8111,6 +8312,7 @@ unchanged.
 <li><a class="reference internal" href="#module-unidec.modules.i2ms_importer">unidec.modules.i2ms_importer module</a><ul>
 <li><a class="reference internal" href="#unidec.modules.i2ms_importer.I2MSImporter"><code class="docutils literal notranslate"><span class="pre">I2MSImporter</span></code></a><ul>
 <li><a class="reference internal" href="#unidec.modules.i2ms_importer.I2MSImporter.grab_data"><code class="docutils literal notranslate"><span class="pre">I2MSImporter.grab_data()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.i2ms_importer.I2MSImporter.invinjtime"><code class="docutils literal notranslate"><span class="pre">I2MSImporter.invinjtime</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -8585,6 +8787,7 @@ unchanged.
 <li><a class="reference internal" href="#unidec.modules.unidec_presbase.UniDecPres.on_timer"><code class="docutils literal notranslate"><span class="pre">UniDecPres.on_timer()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.unidec_presbase.UniDecPres.on_timer2"><code class="docutils literal notranslate"><span class="pre">UniDecPres.on_timer2()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.unidec_presbase.UniDecPres.on_unidec_button"><code class="docutils literal notranslate"><span class="pre">UniDecPres.on_unidec_button()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.modules.unidec_presbase.UniDecPres.open_most_recent"><code class="docutils literal notranslate"><span class="pre">UniDecPres.open_most_recent()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.unidec_presbase.UniDecPres.peak_plots"><code class="docutils literal notranslate"><span class="pre">UniDecPres.peak_plots()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.unidec_presbase.UniDecPres.plot_integral"><code class="docutils literal notranslate"><span class="pre">UniDecPres.plot_integral()</span></code></a></li>
 <li><a class="reference internal" href="#unidec.modules.unidec_presbase.UniDecPres.plot_theo_mass"><code class="docutils literal notranslate"><span class="pre">UniDecPres.plot_theo_mass()</span></code></a></li>
