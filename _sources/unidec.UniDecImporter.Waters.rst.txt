@@ -1,0 +1,61 @@
+unidec.UniDecImporter.Waters package
+====================================
+
+Submodules
+----------
+
+unidec.UniDecImporter.Waters.MassLynxLockMassProcessor module
+-------------------------------------------------------------
+
+.. automodule:: unidec.UniDecImporter.Waters.MassLynxLockMassProcessor
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.UniDecImporter.Waters.MassLynxRawChromatogramReader module
+-----------------------------------------------------------------
+
+.. automodule:: unidec.UniDecImporter.Waters.MassLynxRawChromatogramReader
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.UniDecImporter.Waters.MassLynxRawInfoReader module
+---------------------------------------------------------
+
+.. automodule:: unidec.UniDecImporter.Waters.MassLynxRawInfoReader
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.UniDecImporter.Waters.MassLynxRawReader module
+-----------------------------------------------------
+
+.. automodule:: unidec.UniDecImporter.Waters.MassLynxRawReader
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.UniDecImporter.Waters.MassLynxRawScanReader module
+---------------------------------------------------------
+
+.. automodule:: unidec.UniDecImporter.Waters.MassLynxRawScanReader
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.UniDecImporter.Waters.Waters module
+------------------------------------------
+
+.. automodule:: unidec.UniDecImporter.Waters.Waters
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: unidec.UniDecImporter.Waters
+   :members:
+   :undoc-members:
+   :show-inheritance:

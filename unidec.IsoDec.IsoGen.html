@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>unidec.IsoDec.IsoGen package &#8212; UniDec 8.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=2bf1fcf8" />
+    
+    <script src="_static/documentation_options.js?v=f663eb4a"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="unidec.UniDecImporter package" href="unidec.UniDecImporter.html" />
+    <link rel="prev" title="unidec.IsoDec.IDGUI package" href="unidec.IsoDec.IDGUI.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="unidec.UniDecImporter.html" title="unidec.UniDecImporter package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="unidec.IsoDec.IDGUI.html" title="unidec.IsoDec.IDGUI package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">UniDec 8.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >unidec</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="unidec.html" >unidec package</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="unidec.IsoDec.html" accesskey="U">unidec.IsoDec package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">unidec.IsoDec.IsoGen package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="unidec-isodec-isogen-package">
+<h1>unidec.IsoDec.IsoGen package<a class="headerlink" href="#unidec-isodec-isogen-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-unidec.IsoDec.IsoGen.isogen_base">
+<span id="unidec-isodec-isogen-isogen-base-module"></span><h2>unidec.IsoDec.IsoGen.isogen_base module<a class="headerlink" href="#module-unidec.IsoDec.IsoGen.isogen_base" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_base.HighMassNeuralNetwork">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.IsoDec.IsoGen.isogen_base.</span></span><span class="sig-name descname"><span class="pre">HighMassNeuralNetwork</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">isolen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1024</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vectorlen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_base.HighMassNeuralNetwork" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>Very simple neural net for generating the isotope distirbution.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_base.HighMassNeuralNetwork.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_base.HighMassNeuralNetwork.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_base.IsoGenDatasetBase">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.IsoDec.IsoGen.isogen_base.</span></span><span class="sig-name descname"><span class="pre">IsoGenDatasetBase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inputs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dists</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vectors</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenDatasetBase" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Dataset</span></code></p>
+<p>Dataset class for IsoGen</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_base.IsoGenEngineBase">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.IsoDec.IsoGen.isogen_base.</span></span><span class="sig-name descname"><span class="pre">IsoGenEngineBase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">isolen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenEngineBase" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_base.IsoGenEngineBase.check">
+<span class="sig-name descname"><span class="pre">check</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seq</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenEngineBase.check" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_base.IsoGenEngineBase.create_data_loaders">
+<span class="sig-name descname"><span class="pre">create_data_loaders</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">traindata</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">testdata</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batchsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">32</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">testbatchsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2048</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenEngineBase.create_data_loaders" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_base.IsoGenEngineBase.inputs_to_vectors">
+<span class="sig-name descname"><span class="pre">inputs_to_vectors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inputs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenEngineBase.inputs_to_vectors" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_base.IsoGenEngineBase.predict">
+<span class="sig-name descname"><span class="pre">predict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seq</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenEngineBase.predict" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_base.IsoGenEngineBase.setup_data">
+<span class="sig-name descname"><span class="pre">setup_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dists</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seqs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trainper</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.9</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenEngineBase.setup_data" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_base.IsoGenEngineBase.train">
+<span class="sig-name descname"><span class="pre">train</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_fname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">epochs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forcenew</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inputname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenEngineBase.train" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_base.IsoGenEngineBase.train_multiple">
+<span class="sig-name descname"><span class="pre">train_multiple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_fnames</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">epochs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forcenew</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inputname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenEngineBase.train_multiple" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.IsoDec.IsoGen.isogen_base.</span></span><span class="sig-name descname"><span class="pre">IsoGenModelBase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">working_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isolen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vectorlen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">savename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'isogenpep_model_'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>General model class for isotope distrubution generation.</p>
+<p>Includes functions to train, evaluate, and predict isotope distributions.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.batch_predict">
+<span class="sig-name descname"><span class="pre">batch_predict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vectors</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.batch_predict" title="Link to this definition">¶</a></dt>
+<dd><p>Predict the isotope distribution for a list of masses
+:param masses: List of mass values
+:return: Predicted isotope distribution intensity vectors</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.evaluate_model">
+<span class="sig-name descname"><span class="pre">evaluate_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataloader</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.evaluate_model" title="Link to this definition">¶</a></dt>
+<dd><p>Evaluate the model on a test set.
+:param dataloader: Test DataLoader object
+:return: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.get_model">
+<span class="sig-name descname"><span class="pre">get_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">modelid</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.get_model" title="Link to this definition">¶</a></dt>
+<dd><p>Get the model based on the model ID.
+:param modelid: Model ID integer. Options are 0, 1, and 2.
+:return: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.load_model">
+<span class="sig-name descname"><span class="pre">load_model</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.load_model" title="Link to this definition">¶</a></dt>
+<dd><p>Load model from savepath.
+:return: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.predict">
+<span class="sig-name descname"><span class="pre">predict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vec</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.predict" title="Link to this definition">¶</a></dt>
+<dd><p>Predict the isotope distribution for a given mass
+:param mass: Mass value
+:return: Predicted isotope distribution intensity vector</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.run_training">
+<span class="sig-name descname"><span class="pre">run_training</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_dataloader</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_dataloader</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">epochs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lossfn</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mse'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forcenew</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.run_training" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.save_model">
+<span class="sig-name descname"><span class="pre">save_model</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.save_model" title="Link to this definition">¶</a></dt>
+<dd><p>Save model to savepath.
+:return: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.setup_model">
+<span class="sig-name descname"><span class="pre">setup_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">modelid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forcenew</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.setup_model" title="Link to this definition">¶</a></dt>
+<dd><p>Setup model and load if savepath exists. Set device.
+:param modelid: Model ID passed to self.get_model()
+:param forcenew: Whether to force starting over from scratch on model parameters
+:return: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.setup_training">
+<span class="sig-name descname"><span class="pre">setup_training</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lossfn</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mse'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forcenew</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.setup_training" title="Link to this definition">¶</a></dt>
+<dd><p>”
+Setup loss function, optimizer, and scheduler.
+:param lossfn: Loss function to use. Options are “crossentropy”, “weightedcrossentropy”, and “focal”.
+:return: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.train_model">
+<span class="sig-name descname"><span class="pre">train_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataloader</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lossfn</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mse'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forcenew</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.train_model" title="Link to this definition">¶</a></dt>
+<dd><p>Train the model on a DataLoader object.
+:param dataloader: Training DataLoader object
+:param lossfn: Loss function to use. Options are “crossentropy”, “weightedcrossentropy”, and “focal”.
+:return: None</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_base.IsoGenNeuralNetwork">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.IsoDec.IsoGen.isogen_base.</span></span><span class="sig-name descname"><span class="pre">IsoGenNeuralNetwork</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">isolen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vectorlen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenNeuralNetwork" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>Very simple neural net for generating the isotope distirbution.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_base.IsoGenNeuralNetwork.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenNeuralNetwork.forward" title="Link to this definition">¶</a></dt>
+<dd><p>Define the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_base.save_model_to_binary">
+<span class="sig-prename descclassname"><span class="pre">unidec.IsoDec.IsoGen.isogen_base.</span></span><span class="sig-name descname"><span class="pre">save_model_to_binary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outfile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_base.save_model_to_binary" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-unidec.IsoDec.IsoGen.isogen_tools">
+<span id="unidec-isodec-isogen-isogen-tools-module"></span><h2>unidec.IsoDec.IsoGen.isogen_tools module<a class="headerlink" href="#module-unidec.IsoDec.IsoGen.isogen_tools" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_tools.dnaseq_to_dist">
+<span class="sig-prename descclassname"><span class="pre">unidec.IsoDec.IsoGen.isogen_tools.</span></span><span class="sig-name descname"><span class="pre">dnaseq_to_dist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dnaseq</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isolen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cutoff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.001</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_tools.dnaseq_to_dist" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_tools.dnaseq_to_vector">
+<span class="sig-prename descclassname"><span class="pre">unidec.IsoDec.IsoGen.isogen_tools.</span></span><span class="sig-name descname"><span class="pre">dnaseq_to_vector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dnaseq</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_tools.dnaseq_to_vector" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_tools.formula_to_vector">
+<span class="sig-prename descclassname"><span class="pre">unidec.IsoDec.IsoGen.isogen_tools.</span></span><span class="sig-name descname"><span class="pre">formula_to_vector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">formula</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_tools.formula_to_vector" title="Link to this definition">¶</a></dt>
+<dd><p>Convert a chemical formula to a vector of atom counts
+:param formula: Chemical formula string
+:return: Vector of atom counts</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_tools.get_dist_from_formula">
+<span class="sig-prename descclassname"><span class="pre">unidec.IsoDec.IsoGen.isogen_tools.</span></span><span class="sig-name descname"><span class="pre">get_dist_from_formula</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">formula</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isolen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cutoff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.001</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_tools.get_dist_from_formula" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_tools.isojim">
+<span class="sig-prename descclassname"><span class="pre">unidec.IsoDec.IsoGen.isogen_tools.</span></span><span class="sig-name descname"><span class="pre">isojim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">isolist</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_tools.isojim" title="Link to this definition">¶</a></dt>
+<dd><p>Thanks to Jim Prell for Sketching this Code</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_tools.makemass">
+<span class="sig-prename descclassname"><span class="pre">unidec.IsoDec.IsoGen.isogen_tools.</span></span><span class="sig-name descname"><span class="pre">makemass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">testmass</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_tools.makemass" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_tools.mass_to_dist">
+<span class="sig-prename descclassname"><span class="pre">unidec.IsoDec.IsoGen.isogen_tools.</span></span><span class="sig-name descname"><span class="pre">mass_to_dist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mass</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isolength</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_tools.mass_to_dist" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_tools.mass_to_vector">
+<span class="sig-prename descclassname"><span class="pre">unidec.IsoDec.IsoGen.isogen_tools.</span></span><span class="sig-name descname"><span class="pre">mass_to_vector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_tools.mass_to_vector" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_tools.peptide_to_dist">
+<span class="sig-prename descclassname"><span class="pre">unidec.IsoDec.IsoGen.isogen_tools.</span></span><span class="sig-name descname"><span class="pre">peptide_to_dist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">peptide</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_tools.peptide_to_dist" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_tools.peptide_to_vector">
+<span class="sig-prename descclassname"><span class="pre">unidec.IsoDec.IsoGen.isogen_tools.</span></span><span class="sig-name descname"><span class="pre">peptide_to_vector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">peptide</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_tools.peptide_to_vector" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_tools.rnaseq_to_dist">
+<span class="sig-prename descclassname"><span class="pre">unidec.IsoDec.IsoGen.isogen_tools.</span></span><span class="sig-name descname"><span class="pre">rnaseq_to_dist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnaseq</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isolen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cutoff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.001</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_tools.rnaseq_to_dist" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.IsoDec.IsoGen.isogen_tools.rnaseq_to_vector">
+<span class="sig-prename descclassname"><span class="pre">unidec.IsoDec.IsoGen.isogen_tools.</span></span><span class="sig-name descname"><span class="pre">rnaseq_to_vector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rnaseq</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.IsoDec.IsoGen.isogen_tools.rnaseq_to_vector" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="unidec-isodec-isogen-isogenatom-module">
+<h2>unidec.IsoDec.IsoGen.isogenatom module<a class="headerlink" href="#unidec-isodec-isogen-isogenatom-module" title="Link to this heading">¶</a></h2>
+</section>
+<section id="unidec-isodec-isogen-isogenatom-synthetic-training-module">
+<h2>unidec.IsoDec.IsoGen.isogenatom_synthetic_training module<a class="headerlink" href="#unidec-isodec-isogen-isogenatom-synthetic-training-module" title="Link to this heading">¶</a></h2>
+</section>
+<section id="unidec-isodec-isogen-isogenatom-trainingdata-module">
+<h2>unidec.IsoDec.IsoGen.isogenatom_trainingdata module<a class="headerlink" href="#unidec-isodec-isogen-isogenatom-trainingdata-module" title="Link to this heading">¶</a></h2>
+</section>
+<section id="unidec-isodec-isogen-isogenmass-module">
+<h2>unidec.IsoDec.IsoGen.isogenmass module<a class="headerlink" href="#unidec-isodec-isogen-isogenmass-module" title="Link to this heading">¶</a></h2>
+</section>
+<section id="unidec-isodec-isogen-isogenpep-module">
+<h2>unidec.IsoDec.IsoGen.isogenpep module<a class="headerlink" href="#unidec-isodec-isogen-isogenpep-module" title="Link to this heading">¶</a></h2>
+</section>
+<section id="unidec-isodec-isogen-isogenpep-synthetic-training-module">
+<h2>unidec.IsoDec.IsoGen.isogenpep_synthetic_training module<a class="headerlink" href="#unidec-isodec-isogen-isogenpep-synthetic-training-module" title="Link to this heading">¶</a></h2>
+</section>
+<section id="unidec-isodec-isogen-isogenpep-trainingdata-module">
+<h2>unidec.IsoDec.IsoGen.isogenpep_trainingdata module<a class="headerlink" href="#unidec-isodec-isogen-isogenpep-trainingdata-module" title="Link to this heading">¶</a></h2>
+</section>
+<section id="unidec-isodec-isogen-isogenrna-module">
+<h2>unidec.IsoDec.IsoGen.isogenrna module<a class="headerlink" href="#unidec-isodec-isogen-isogenrna-module" title="Link to this heading">¶</a></h2>
+</section>
+<section id="unidec-isodec-isogen-isogenrna-trainingdata-module">
+<h2>unidec.IsoDec.IsoGen.isogenrna_trainingdata module<a class="headerlink" href="#unidec-isodec-isogen-isogenrna-trainingdata-module" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-unidec.IsoDec.IsoGen">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-unidec.IsoDec.IsoGen" title="Link to this heading">¶</a></h2>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">unidec.IsoDec.IsoGen package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-unidec.IsoDec.IsoGen.isogen_base">unidec.IsoDec.IsoGen.isogen_base module</a><ul>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_base.HighMassNeuralNetwork"><code class="docutils literal notranslate"><span class="pre">HighMassNeuralNetwork</span></code></a><ul>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_base.HighMassNeuralNetwork.forward"><code class="docutils literal notranslate"><span class="pre">HighMassNeuralNetwork.forward()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenDatasetBase"><code class="docutils literal notranslate"><span class="pre">IsoGenDatasetBase</span></code></a></li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenEngineBase"><code class="docutils literal notranslate"><span class="pre">IsoGenEngineBase</span></code></a><ul>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenEngineBase.check"><code class="docutils literal notranslate"><span class="pre">IsoGenEngineBase.check()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenEngineBase.create_data_loaders"><code class="docutils literal notranslate"><span class="pre">IsoGenEngineBase.create_data_loaders()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenEngineBase.inputs_to_vectors"><code class="docutils literal notranslate"><span class="pre">IsoGenEngineBase.inputs_to_vectors()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenEngineBase.predict"><code class="docutils literal notranslate"><span class="pre">IsoGenEngineBase.predict()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenEngineBase.setup_data"><code class="docutils literal notranslate"><span class="pre">IsoGenEngineBase.setup_data()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenEngineBase.train"><code class="docutils literal notranslate"><span class="pre">IsoGenEngineBase.train()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenEngineBase.train_multiple"><code class="docutils literal notranslate"><span class="pre">IsoGenEngineBase.train_multiple()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase"><code class="docutils literal notranslate"><span class="pre">IsoGenModelBase</span></code></a><ul>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.batch_predict"><code class="docutils literal notranslate"><span class="pre">IsoGenModelBase.batch_predict()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.evaluate_model"><code class="docutils literal notranslate"><span class="pre">IsoGenModelBase.evaluate_model()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.get_model"><code class="docutils literal notranslate"><span class="pre">IsoGenModelBase.get_model()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.load_model"><code class="docutils literal notranslate"><span class="pre">IsoGenModelBase.load_model()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.predict"><code class="docutils literal notranslate"><span class="pre">IsoGenModelBase.predict()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.run_training"><code class="docutils literal notranslate"><span class="pre">IsoGenModelBase.run_training()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.save_model"><code class="docutils literal notranslate"><span class="pre">IsoGenModelBase.save_model()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.setup_model"><code class="docutils literal notranslate"><span class="pre">IsoGenModelBase.setup_model()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.setup_training"><code class="docutils literal notranslate"><span class="pre">IsoGenModelBase.setup_training()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenModelBase.train_model"><code class="docutils literal notranslate"><span class="pre">IsoGenModelBase.train_model()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenNeuralNetwork"><code class="docutils literal notranslate"><span class="pre">IsoGenNeuralNetwork</span></code></a><ul>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_base.IsoGenNeuralNetwork.forward"><code class="docutils literal notranslate"><span class="pre">IsoGenNeuralNetwork.forward()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_base.save_model_to_binary"><code class="docutils literal notranslate"><span class="pre">save_model_to_binary()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-unidec.IsoDec.IsoGen.isogen_tools">unidec.IsoDec.IsoGen.isogen_tools module</a><ul>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_tools.dnaseq_to_dist"><code class="docutils literal notranslate"><span class="pre">dnaseq_to_dist()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_tools.dnaseq_to_vector"><code class="docutils literal notranslate"><span class="pre">dnaseq_to_vector()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_tools.formula_to_vector"><code class="docutils literal notranslate"><span class="pre">formula_to_vector()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_tools.get_dist_from_formula"><code class="docutils literal notranslate"><span class="pre">get_dist_from_formula()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_tools.isojim"><code class="docutils literal notranslate"><span class="pre">isojim()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_tools.makemass"><code class="docutils literal notranslate"><span class="pre">makemass()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_tools.mass_to_dist"><code class="docutils literal notranslate"><span class="pre">mass_to_dist()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_tools.mass_to_vector"><code class="docutils literal notranslate"><span class="pre">mass_to_vector()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_tools.peptide_to_dist"><code class="docutils literal notranslate"><span class="pre">peptide_to_dist()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_tools.peptide_to_vector"><code class="docutils literal notranslate"><span class="pre">peptide_to_vector()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_tools.rnaseq_to_dist"><code class="docutils literal notranslate"><span class="pre">rnaseq_to_dist()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.IsoDec.IsoGen.isogen_tools.rnaseq_to_vector"><code class="docutils literal notranslate"><span class="pre">rnaseq_to_vector()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#unidec-isodec-isogen-isogenatom-module">unidec.IsoDec.IsoGen.isogenatom module</a></li>
+<li><a class="reference internal" href="#unidec-isodec-isogen-isogenatom-synthetic-training-module">unidec.IsoDec.IsoGen.isogenatom_synthetic_training module</a></li>
+<li><a class="reference internal" href="#unidec-isodec-isogen-isogenatom-trainingdata-module">unidec.IsoDec.IsoGen.isogenatom_trainingdata module</a></li>
+<li><a class="reference internal" href="#unidec-isodec-isogen-isogenmass-module">unidec.IsoDec.IsoGen.isogenmass module</a></li>
+<li><a class="reference internal" href="#unidec-isodec-isogen-isogenpep-module">unidec.IsoDec.IsoGen.isogenpep module</a></li>
+<li><a class="reference internal" href="#unidec-isodec-isogen-isogenpep-synthetic-training-module">unidec.IsoDec.IsoGen.isogenpep_synthetic_training module</a></li>
+<li><a class="reference internal" href="#unidec-isodec-isogen-isogenpep-trainingdata-module">unidec.IsoDec.IsoGen.isogenpep_trainingdata module</a></li>
+<li><a class="reference internal" href="#unidec-isodec-isogen-isogenrna-module">unidec.IsoDec.IsoGen.isogenrna module</a></li>
+<li><a class="reference internal" href="#unidec-isodec-isogen-isogenrna-trainingdata-module">unidec.IsoDec.IsoGen.isogenrna_trainingdata module</a></li>
+<li><a class="reference internal" href="#module-unidec.IsoDec.IsoGen">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="unidec.IsoDec.IDGUI.html"
+                          title="previous chapter">unidec.IsoDec.IDGUI package</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="unidec.UniDecImporter.html"
+                          title="next chapter">unidec.UniDecImporter package</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/unidec.IsoDec.IsoGen.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="unidec.UniDecImporter.html" title="unidec.UniDecImporter package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="unidec.IsoDec.IDGUI.html" title="unidec.IsoDec.IDGUI package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">UniDec 8.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >unidec</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="unidec.html" >unidec package</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="unidec.IsoDec.html" >unidec.IsoDec package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">unidec.IsoDec.IsoGen package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, University of Arizona.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+  </body>
+</html>

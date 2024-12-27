@@ -1,0 +1,158 @@
+unidec.IsoDec package
+=====================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   unidec.IsoDec.IDGUI
+   unidec.IsoDec.IsoGen
+
+Submodules
+----------
+
+unidec.IsoDec.IsoDecGUI module
+------------------------------
+
+.. automodule:: unidec.IsoDec.IsoDecGUI
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.altdecon module
+-----------------------------
+
+.. automodule:: unidec.IsoDec.altdecon
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.c\_interface module
+---------------------------------
+
+.. automodule:: unidec.IsoDec.c_interface
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.datatools module
+------------------------------
+
+.. automodule:: unidec.IsoDec.datatools
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.encoding module
+-----------------------------
+
+.. automodule:: unidec.IsoDec.encoding
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.engine module
+---------------------------
+
+.. automodule:: unidec.IsoDec.engine
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.example\_single\_run module
+-----------------------------------------
+
+.. automodule:: unidec.IsoDec.example_single_run
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.generate module
+-----------------------------
+
+.. automodule:: unidec.IsoDec.generate
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.isogenwrapper module
+----------------------------------
+
+.. automodule:: unidec.IsoDec.isogenwrapper
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.match module
+--------------------------
+
+.. automodule:: unidec.IsoDec.match
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.models module
+---------------------------
+
+.. automodule:: unidec.IsoDec.models
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.msalign\_export module
+------------------------------------
+
+.. automodule:: unidec.IsoDec.msalign_export
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.oldisodecfunctions module
+---------------------------------------
+
+.. automodule:: unidec.IsoDec.oldisodecfunctions
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.plots module
+--------------------------
+
+.. automodule:: unidec.IsoDec.plots
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.runtime module
+----------------------------
+
+.. automodule:: unidec.IsoDec.runtime
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.train module
+--------------------------
+
+.. automodule:: unidec.IsoDec.train
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.trainingdata module
+---------------------------------
+
+.. automodule:: unidec.IsoDec.trainingdata
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: unidec.IsoDec
+   :members:
+   :undoc-members:
+   :show-inheritance:

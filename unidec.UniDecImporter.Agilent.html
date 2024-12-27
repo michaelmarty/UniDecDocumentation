@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>unidec.UniDecImporter.Agilent package &#8212; UniDec 8.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=2bf1fcf8" />
+    
+    <script src="_static/documentation_options.js?v=f663eb4a"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="unidec.UniDecImporter.I2MS package" href="unidec.UniDecImporter.I2MS.html" />
+    <link rel="prev" title="unidec.UniDecImporter package" href="unidec.UniDecImporter.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="unidec.UniDecImporter.I2MS.html" title="unidec.UniDecImporter.I2MS package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="unidec.UniDecImporter.html" title="unidec.UniDecImporter package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">UniDec 8.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >unidec</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="unidec.html" >unidec package</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="unidec.UniDecImporter.html" accesskey="U">unidec.UniDecImporter package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">unidec.UniDecImporter.Agilent package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="unidec-unidecimporter-agilent-package">
+<h1>unidec.UniDecImporter.Agilent package<a class="headerlink" href="#unidec-unidecimporter-agilent-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-unidec.UniDecImporter.Agilent.AgilentImporter">
+<span id="unidec-unidecimporter-agilent-agilentimporter-module"></span><h2>unidec.UniDecImporter.Agilent.AgilentImporter module<a class="headerlink" href="#module-unidec.UniDecImporter.Agilent.AgilentImporter" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Agilent.AgilentImporter.AgilentImporter">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.UniDecImporter.Agilent.AgilentImporter.</span></span><span class="sig-name descname"><span class="pre">AgilentImporter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Agilent.AgilentImporter.AgilentImporter" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="unidec.UniDecImporter.html#unidec.UniDecImporter.Importer.Importer" title="unidec.UniDecImporter.Importer.Importer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Importer</span></code></a></p>
+<p>Imports Agilent data files.</p>
+<p>Note: Agilent scans are 0 indexed, so the first scan is scan 0, not scan 1.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Agilent.AgilentImporter.AgilentImporter.close">
+<span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Agilent.AgilentImporter.AgilentImporter.close" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Agilent.AgilentImporter.AgilentImporter.get_all_scans">
+<span class="sig-name descname"><span class="pre">get_all_scans</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Agilent.AgilentImporter.AgilentImporter.get_all_scans" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Agilent.AgilentImporter.AgilentImporter.get_avg_scan">
+<span class="sig-name descname"><span class="pre">get_avg_scan</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scan_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mzbins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Agilent.AgilentImporter.AgilentImporter.get_avg_scan" title="Link to this definition">¶</a></dt>
+<dd><p>Returns merged 1D MS data from mzML import
+:return: merged data</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Agilent.AgilentImporter.AgilentImporter.get_ms_order">
+<span class="sig-name descname"><span class="pre">get_ms_order</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Agilent.AgilentImporter.AgilentImporter.get_ms_order" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Agilent.AgilentImporter.AgilentImporter.get_polarity">
+<span class="sig-name descname"><span class="pre">get_polarity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Agilent.AgilentImporter.AgilentImporter.get_polarity" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Agilent.AgilentImporter.AgilentImporter.get_single_scan">
+<span class="sig-name descname"><span class="pre">get_single_scan</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scan</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Agilent.AgilentImporter.AgilentImporter.get_single_scan" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Agilent.AgilentImporter.AgilentImporter.get_tic">
+<span class="sig-name descname"><span class="pre">get_tic</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Agilent.AgilentImporter.AgilentImporter.get_tic" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Agilent.AgilentImporter.AgilentImporter.init_scans">
+<span class="sig-name descname"><span class="pre">init_scans</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Agilent.AgilentImporter.AgilentImporter.init_scans" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-unidec.UniDecImporter.Agilent.MZFILE">
+<span id="unidec-unidecimporter-agilent-mzfile-module"></span><h2>unidec.UniDecImporter.Agilent.MZFILE module<a class="headerlink" href="#module-unidec.UniDecImporter.Agilent.MZFILE" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Agilent.MZFILE.MZFile">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.UniDecImporter.Agilent.MZFILE.</span></span><span class="sig-name descname"><span class="pre">MZFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">datafile</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Agilent.MZFILE.MZFile" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Agilent.MZFILE.MZFile.average_scan">
+<span class="sig-name descname"><span class="pre">average_scan</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scan_range</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scans</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Agilent.MZFILE.MZFile.average_scan" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Agilent.MZFILE.MZFile.close">
+<span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Agilent.MZFILE.MZFile.close" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Agilent.MZFILE.MZFile.cscan">
+<span class="sig-name descname"><span class="pre">cscan</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Agilent.MZFILE.MZFile.cscan" title="Link to this definition">¶</a></dt>
+<dd><p>Calculates a centroided scan from profile-mode data. If a profile
+mode copy of the specified scan is not available, this raises an
+exception; in that case, you can use mzFile.scan() with mode =
+‘centroid’ to return the machine-centroided scan.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Agilent.MZFILE.MZFile.headers">
+<span class="sig-name descname"><span class="pre">headers</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Agilent.MZFILE.MZFile.headers" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Agilent.MZFILE.MZFile.scan">
+<span class="sig-name descname"><span class="pre">scan</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Agilent.MZFILE.MZFile.scan" title="Link to this definition">¶</a></dt>
+<dd><p>Returns a spectrum from the specified scan index, where type is
+controlled by mode argument; defaults to prioiritize Peak (Centroid)
+and then try Profile. If the requested mode is not present, an empty
+spectrum  will be returned. Alternative modes are ‘profile’, ‘centroid’
+or  ‘profileElsePeak’.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Agilent.MZFILE.MZFile.scan_info">
+<span class="sig-name descname"><span class="pre">scan_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_mz</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop_mz</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Agilent.MZFILE.MZFile.scan_info" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Agilent.MZFILE.MZFile.scan_range">
+<span class="sig-name descname"><span class="pre">scan_range</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Agilent.MZFILE.MZFile.scan_range" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Agilent.MZFILE.MZFile.time_range">
+<span class="sig-name descname"><span class="pre">time_range</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Agilent.MZFILE.MZFile.time_range" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Agilent.MZFILE.MZFile.uv_trace">
+<span class="sig-name descname"><span class="pre">uv_trace</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Agilent.MZFILE.MZFile.uv_trace" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Agilent.MZFILE.MZFile.xic">
+<span class="sig-name descname"><span class="pre">xic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_mz</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop_mz</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">UV</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Agilent.MZFILE.MZFile.xic" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Agilent.MZFILE.aggregate_points">
+<span class="sig-prename descclassname"><span class="pre">unidec.UniDecImporter.Agilent.MZFILE.</span></span><span class="sig-name descname"><span class="pre">aggregate_points</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pointlist</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distance_function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">MAX_WIDTH</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.025</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Agilent.MZFILE.aggregate_points" title="Link to this definition">¶</a></dt>
+<dd><p>Given a list of points (which may be floats or tuples with the
+position-relevant value in the first position), returns a list of
+grouped points such that all points within a group are within MAX_WIDTH
+of each other.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Agilent.MZFILE.average">
+<span class="sig-prename descclassname"><span class="pre">unidec.UniDecImporter.Agilent.MZFILE.</span></span><span class="sig-name descname"><span class="pre">average</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weights</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Agilent.MZFILE.average" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-unidec.UniDecImporter.Agilent">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-unidec.UniDecImporter.Agilent" title="Link to this heading">¶</a></h2>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">unidec.UniDecImporter.Agilent package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-unidec.UniDecImporter.Agilent.AgilentImporter">unidec.UniDecImporter.Agilent.AgilentImporter module</a><ul>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Agilent.AgilentImporter.AgilentImporter"><code class="docutils literal notranslate"><span class="pre">AgilentImporter</span></code></a><ul>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Agilent.AgilentImporter.AgilentImporter.close"><code class="docutils literal notranslate"><span class="pre">AgilentImporter.close()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Agilent.AgilentImporter.AgilentImporter.get_all_scans"><code class="docutils literal notranslate"><span class="pre">AgilentImporter.get_all_scans()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Agilent.AgilentImporter.AgilentImporter.get_avg_scan"><code class="docutils literal notranslate"><span class="pre">AgilentImporter.get_avg_scan()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Agilent.AgilentImporter.AgilentImporter.get_ms_order"><code class="docutils literal notranslate"><span class="pre">AgilentImporter.get_ms_order()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Agilent.AgilentImporter.AgilentImporter.get_polarity"><code class="docutils literal notranslate"><span class="pre">AgilentImporter.get_polarity()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Agilent.AgilentImporter.AgilentImporter.get_single_scan"><code class="docutils literal notranslate"><span class="pre">AgilentImporter.get_single_scan()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Agilent.AgilentImporter.AgilentImporter.get_tic"><code class="docutils literal notranslate"><span class="pre">AgilentImporter.get_tic()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Agilent.AgilentImporter.AgilentImporter.init_scans"><code class="docutils literal notranslate"><span class="pre">AgilentImporter.init_scans()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-unidec.UniDecImporter.Agilent.MZFILE">unidec.UniDecImporter.Agilent.MZFILE module</a><ul>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Agilent.MZFILE.MZFile"><code class="docutils literal notranslate"><span class="pre">MZFile</span></code></a><ul>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Agilent.MZFILE.MZFile.average_scan"><code class="docutils literal notranslate"><span class="pre">MZFile.average_scan()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Agilent.MZFILE.MZFile.close"><code class="docutils literal notranslate"><span class="pre">MZFile.close()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Agilent.MZFILE.MZFile.cscan"><code class="docutils literal notranslate"><span class="pre">MZFile.cscan()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Agilent.MZFILE.MZFile.headers"><code class="docutils literal notranslate"><span class="pre">MZFile.headers()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Agilent.MZFILE.MZFile.scan"><code class="docutils literal notranslate"><span class="pre">MZFile.scan()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Agilent.MZFILE.MZFile.scan_info"><code class="docutils literal notranslate"><span class="pre">MZFile.scan_info()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Agilent.MZFILE.MZFile.scan_range"><code class="docutils literal notranslate"><span class="pre">MZFile.scan_range()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Agilent.MZFILE.MZFile.time_range"><code class="docutils literal notranslate"><span class="pre">MZFile.time_range()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Agilent.MZFILE.MZFile.uv_trace"><code class="docutils literal notranslate"><span class="pre">MZFile.uv_trace()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Agilent.MZFILE.MZFile.xic"><code class="docutils literal notranslate"><span class="pre">MZFile.xic()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Agilent.MZFILE.aggregate_points"><code class="docutils literal notranslate"><span class="pre">aggregate_points()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Agilent.MZFILE.average"><code class="docutils literal notranslate"><span class="pre">average()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-unidec.UniDecImporter.Agilent">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="unidec.UniDecImporter.html"
+                          title="previous chapter">unidec.UniDecImporter package</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="unidec.UniDecImporter.I2MS.html"
+                          title="next chapter">unidec.UniDecImporter.I2MS package</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/unidec.UniDecImporter.Agilent.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="unidec.UniDecImporter.I2MS.html" title="unidec.UniDecImporter.I2MS package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="unidec.UniDecImporter.html" title="unidec.UniDecImporter package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">UniDec 8.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >unidec</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="unidec.html" >unidec package</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="unidec.UniDecImporter.html" >unidec.UniDecImporter package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">unidec.UniDecImporter.Agilent package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, University of Arizona.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+  </body>
+</html>

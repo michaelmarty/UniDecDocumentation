@@ -1,0 +1,82 @@
+unidec.UniDecImporter package
+=============================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   unidec.UniDecImporter.Agilent
+   unidec.UniDecImporter.I2MS
+   unidec.UniDecImporter.MZML
+   unidec.UniDecImporter.MZXML
+   unidec.UniDecImporter.Thermo
+   unidec.UniDecImporter.Waters
+
+Submodules
+----------
+
+unidec.UniDecImporter.FileParser module
+---------------------------------------
+
+.. automodule:: unidec.UniDecImporter.FileParser
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.UniDecImporter.ImportTests module
+----------------------------------------
+
+.. automodule:: unidec.UniDecImporter.ImportTests
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.UniDecImporter.ImportTools module
+----------------------------------------
+
+.. automodule:: unidec.UniDecImporter.ImportTools
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.UniDecImporter.Importer module
+-------------------------------------
+
+.. automodule:: unidec.UniDecImporter.Importer
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.UniDecImporter.ImporterFactory module
+--------------------------------------------
+
+.. automodule:: unidec.UniDecImporter.ImporterFactory
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.UniDecImporter.SingleScanImporter module
+-----------------------------------------------
+
+.. automodule:: unidec.UniDecImporter.SingleScanImporter
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.UniDecImporter.reader\_tester module
+-------------------------------------------
+
+.. automodule:: unidec.UniDecImporter.reader_tester
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: unidec.UniDecImporter
+   :members:
+   :undoc-members:
+   :show-inheritance:

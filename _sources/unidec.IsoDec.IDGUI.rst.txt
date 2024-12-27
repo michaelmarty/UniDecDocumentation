@@ -1,0 +1,37 @@
+unidec.IsoDec.IDGUI package
+===========================
+
+Submodules
+----------
+
+unidec.IsoDec.IDGUI.IsoDecControls module
+-----------------------------------------
+
+.. automodule:: unidec.IsoDec.IDGUI.IsoDecControls
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.IDGUI.IsoDecMenu module
+-------------------------------------
+
+.. automodule:: unidec.IsoDec.IDGUI.IsoDecMenu
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.IDGUI.IsoDecView module
+-------------------------------------
+
+.. automodule:: unidec.IsoDec.IDGUI.IsoDecView
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: unidec.IsoDec.IDGUI
+   :members:
+   :undoc-members:
+   :show-inheritance:

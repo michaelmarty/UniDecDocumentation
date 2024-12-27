@@ -1,0 +1,29 @@
+unidec.UniDecImporter.Agilent package
+=====================================
+
+Submodules
+----------
+
+unidec.UniDecImporter.Agilent.AgilentImporter module
+----------------------------------------------------
+
+.. automodule:: unidec.UniDecImporter.Agilent.AgilentImporter
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.UniDecImporter.Agilent.MZFILE module
+-------------------------------------------
+
+.. automodule:: unidec.UniDecImporter.Agilent.MZFILE
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: unidec.UniDecImporter.Agilent
+   :members:
+   :undoc-members:
+   :show-inheritance:

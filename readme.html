@@ -5,12 +5,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>UniDec: Universal Deconvolution of Mass and Ion Mobility Spectra &#8212; UniDec 7.0.0.b1 documentation</title>
+    <title>UniDec: Universal Deconvolution of Mass and Ion Mobility Spectra &#8212; UniDec 8.0.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=514cf933" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=2bf1fcf8" />
     
-    <script src="_static/documentation_options.js?v=8f1bd5a1"></script>
-    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/documentation_options.js?v=f663eb4a"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     
     <link rel="index" title="Index" href="genindex.html" />
@@ -18,7 +18,7 @@
     <link rel="next" title="unidec" href="modules.html" />
     <link rel="prev" title="Welcome to UniDec’s documentation!" href="index.html" /> 
   </head><body>
-    <div class="related" role="navigation" aria-label="related navigation">
+    <div class="related" role="navigation" aria-label="Related">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -33,7 +33,7 @@
         <li class="right" >
           <a href="index.html" title="Welcome to UniDec’s documentation!"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">UniDec 7.0.0.b1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">UniDec 8.0.0 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">UniDec: Universal Deconvolution of Mass and Ion Mobility Spectra</a></li> 
       </ul>
     </div>  
@@ -183,6 +183,32 @@ eng.pick_peaks()</p>
 </div></blockquote>
 <p>Of course, using the pre-compiled version means you don’t need to know Python at all and can just click the GUI_UniDec.exe icon to launch the program and get started. However you choose to do it, happy deconvolving!</p>
 <p>## Change Log</p>
+<p>v.8.0.0</p>
+<p>Added <strong>IsoDec</strong> for isotopic deconvolution. This is a new window that allows you to deconvolve isotopic distributions. It is built using a neural net engine but has a similar interface to conventional UniDec.</p>
+<p>New IsoGen neural net for generating isotopic distributions. Used by IsoDec but also available in Python code and via DLL.</p>
+<p>Complete rewrite and restructuring of Importing code into UniDecImporter library. This should help harmonize and centralize the MS file reading functions. Removed some prior reliance on multiplierz for Agilent data.</p>
+<p>To simplify the import functions, the UniDec GUI has changed slightly such that you need to explicity switch it to ion mobility mode (see Advanced menu) before opening ion mobility files.</p>
+<p>Various other under the hood changes to accomodate new code, and some bug fixes.</p>
+<p>Fixed label for DAR mode in UPP help files.</p>
+<ol class="loweralpha simple" start="22">
+<li><p>7.0.3</p></li>
+</ol>
+<p>Added check box in UPP to allow all PNG images rather than SVG images, which can improve file sizes.</p>
+<p>Added “Config Data Subbuff” to UPP to allow background subtraction with a curved background in the spreadsheet format. Added “Config Data Binevery”, “Config Data Lintype”, and “Config Data Smoothing” to provide access to other data processing parameters in the spreadsheet format.</p>
+<p>v.7.0.2</p>
+<p>Improvements to UPP outputs. Fixed issue with reports getting overwritten if the same file is used in multiple rows with UPP.</p>
+<p>Added new options in MetaUniDec for Average Charge State Plotting. Added exports of text files for fits and fitdata.</p>
+<p>Added new pre-import intensity filter for UCD, which should help with memory crashes on large data files.</p>
+<p>Fixed bug opening mzML files with new build.</p>
+<p>Fixed bug with smashflag on UPP.</p>
+<p>Fixed a few display and interface bugs on UCCD and UCD.</p>
+<p>Fixed Waters Data Conversion Wizard issue with Trapping Collision Energy (eV). Stopped it from closing by default when the conversion is initiated.</p>
+<p>Fixed bug with KD fitting on DataCollector. Fixed bug with UltraMeta.</p>
+<p>Fixed bugs with UCD Thermo imports and with Thermo header information for resolution.</p>
+<p>v.7.0.1</p>
+<p>Continued development and tweaks to UniChromCD. Bug fixes and GUI improvements. Added multiplex spectrum cropping. New HT sequences.</p>
+<p>Switched default font to Arial after years of fighting Illustrator on Deja Vu Sans.</p>
+<p>Bug fixes for file opening on Agilent and mzML.</p>
 <p>v.7.0.0</p>
 <p>Added new module for time domain CD-MS data analysis, UniChromCD. This includes some cool new plotting and analysis features. Most importantly, it also includes our new method for Hadamard Transform analysis of CD-MS spectra. You can use the tools for regular LC-CD-MS or go crazy with HT-LC-CD-MS. More info coming soon on this front…:)</p>
 <p>UPP added NumPeaks output on all to help with catching bad files in the results. Also, fixed bugs to allow files with bad data to proceed relatively unscathed. It should be more error tolerant now for large runs.</p>
@@ -776,7 +802,7 @@ the above. In these cases, copyright and/or license information is inline.</p>
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
     <h4>Previous topic</h4>
@@ -795,7 +821,7 @@ the above. In these cases, copyright and/or license information is inline.</p>
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
-<div id="searchbox" style="display: none" role="search">
+<search id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
@@ -803,13 +829,13 @@ the above. In these cases, copyright and/or license information is inline.</p>
       <input type="submit" value="Go" />
     </form>
     </div>
-</div>
+</search>
 <script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related" role="navigation" aria-label="related navigation">
+    <div class="related" role="navigation" aria-label="Related">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -824,13 +850,13 @@ the above. In these cases, copyright and/or license information is inline.</p>
         <li class="right" >
           <a href="index.html" title="Welcome to UniDec’s documentation!"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">UniDec 7.0.0.b1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">UniDec 8.0.0 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">UniDec: Universal Deconvolution of Mass and Ion Mobility Spectra</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
     &#169; Copyright 2024, University of Arizona.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
     </div>
   </body>
 </html>

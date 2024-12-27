@@ -1,0 +1,101 @@
+unidec.IsoDec.IsoGen package
+============================
+
+Submodules
+----------
+
+unidec.IsoDec.IsoGen.isogen\_base module
+----------------------------------------
+
+.. automodule:: unidec.IsoDec.IsoGen.isogen_base
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.IsoGen.isogen\_tools module
+-----------------------------------------
+
+.. automodule:: unidec.IsoDec.IsoGen.isogen_tools
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.IsoGen.isogenatom module
+--------------------------------------
+
+.. automodule:: unidec.IsoDec.IsoGen.isogenatom
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.IsoGen.isogenatom\_synthetic\_training module
+-----------------------------------------------------------
+
+.. automodule:: unidec.IsoDec.IsoGen.isogenatom_synthetic_training
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.IsoGen.isogenatom\_trainingdata module
+----------------------------------------------------
+
+.. automodule:: unidec.IsoDec.IsoGen.isogenatom_trainingdata
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.IsoGen.isogenmass module
+--------------------------------------
+
+.. automodule:: unidec.IsoDec.IsoGen.isogenmass
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.IsoGen.isogenpep module
+-------------------------------------
+
+.. automodule:: unidec.IsoDec.IsoGen.isogenpep
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.IsoGen.isogenpep\_synthetic\_training module
+----------------------------------------------------------
+
+.. automodule:: unidec.IsoDec.IsoGen.isogenpep_synthetic_training
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.IsoGen.isogenpep\_trainingdata module
+---------------------------------------------------
+
+.. automodule:: unidec.IsoDec.IsoGen.isogenpep_trainingdata
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.IsoGen.isogenrna module
+-------------------------------------
+
+.. automodule:: unidec.IsoDec.IsoGen.isogenrna
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.IsoDec.IsoGen.isogenrna\_trainingdata module
+---------------------------------------------------
+
+.. automodule:: unidec.IsoDec.IsoGen.isogenrna_trainingdata
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: unidec.IsoDec.IsoGen
+   :members:
+   :undoc-members:
+   :show-inheritance:

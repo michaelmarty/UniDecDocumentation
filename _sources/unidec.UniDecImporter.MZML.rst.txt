@@ -1,0 +1,21 @@
+unidec.UniDecImporter.MZML package
+==================================
+
+Submodules
+----------
+
+unidec.UniDecImporter.MZML.mzML module
+--------------------------------------
+
+.. automodule:: unidec.UniDecImporter.MZML.mzML
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: unidec.UniDecImporter.MZML
+   :members:
+   :undoc-members:
+   :show-inheritance:

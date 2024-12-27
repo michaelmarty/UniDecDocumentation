@@ -1,0 +1,29 @@
+unidec.UniDecImporter.Thermo package
+====================================
+
+Submodules
+----------
+
+unidec.UniDecImporter.Thermo.RawFileReader module
+-------------------------------------------------
+
+.. automodule:: unidec.UniDecImporter.Thermo.RawFileReader
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.UniDecImporter.Thermo.Thermo module
+------------------------------------------
+
+.. automodule:: unidec.UniDecImporter.Thermo.Thermo
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: unidec.UniDecImporter.Thermo
+   :members:
+   :undoc-members:
+   :show-inheritance:

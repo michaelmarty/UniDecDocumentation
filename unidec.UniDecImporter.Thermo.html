@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>unidec.UniDecImporter.Thermo package &#8212; UniDec 8.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=2bf1fcf8" />
+    
+    <script src="_static/documentation_options.js?v=f663eb4a"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="unidec.UniDecImporter.Waters package" href="unidec.UniDecImporter.Waters.html" />
+    <link rel="prev" title="unidec.UniDecImporter.MZXML package" href="unidec.UniDecImporter.MZXML.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="unidec.UniDecImporter.Waters.html" title="unidec.UniDecImporter.Waters package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="unidec.UniDecImporter.MZXML.html" title="unidec.UniDecImporter.MZXML package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">UniDec 8.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >unidec</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="unidec.html" >unidec package</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="unidec.UniDecImporter.html" accesskey="U">unidec.UniDecImporter package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">unidec.UniDecImporter.Thermo package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="unidec-unidecimporter-thermo-package">
+<h1>unidec.UniDecImporter.Thermo package<a class="headerlink" href="#unidec-unidecimporter-thermo-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-unidec.UniDecImporter.Thermo.RawFileReader">
+<span id="unidec-unidecimporter-thermo-rawfilereader-module"></span><h2>unidec.UniDecImporter.Thermo.RawFileReader module<a class="headerlink" href="#module-unidec.UniDecImporter.Thermo.RawFileReader" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.RawFileReader.DotNetArrayToNPArray">
+<span class="sig-prename descclassname"><span class="pre">unidec.UniDecImporter.Thermo.RawFileReader.</span></span><span class="sig-name descname"><span class="pre">DotNetArrayToNPArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype=&lt;class</span> <span class="pre">'float'&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.RawFileReader.DotNetArrayToNPArray" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.UniDecImporter.Thermo.RawFileReader.</span></span><span class="sig-name descname"><span class="pre">RawFileReader</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.CalculateMassPrecision">
+<span class="sig-name descname"><span class="pre">CalculateMassPrecision</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scanNumber</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.CalculateMassPrecision" title="Link to this definition">¶</a></dt>
+<dd><p>Calculates the mass precision for a spectrum.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>scanNumber</strong> (<em>int</em>) – the scan to process.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.Close">
+<span class="sig-name descname"><span class="pre">Close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.Close" title="Link to this definition">¶</a></dt>
+<dd><p>Closes a raw file and frees the associated memory.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.GetAverageSpectrum">
+<span class="sig-name descname"><span class="pre">GetAverageSpectrum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scanrange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputData</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FTMS'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.GetAverageSpectrum" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the average spectrum from the RAW file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>chromatogram</strong> (<em>scanrange =</em><em> [ </em><em>start scan for the</em>)</p></li>
+<li><p><strong>chromatogram.</strong><strong>]</strong> (<em>end scan for the</em>)</p></li>
+<li><p><strong>outputData</strong> (<em>bool</em>) – the output data flag.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.GetCentroidArray">
+<span class="sig-name descname"><span class="pre">GetCentroidArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scanNumber</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.GetCentroidArray" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.GetCentroidSpectrum">
+<span class="sig-name descname"><span class="pre">GetCentroidSpectrum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scanNumber</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.GetCentroidSpectrum" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.GetChromatogram">
+<span class="sig-name descname"><span class="pre">GetChromatogram</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scanrange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trace_number</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.GetChromatogram" title="Link to this definition">¶</a></dt>
+<dd><p>Reads the base peak chromatogram for the RAW file.
+:param scanrange = [ start scan for the chromatogram:
+:param end scan for the chromatogram.]:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.GetFilters">
+<span class="sig-name descname"><span class="pre">GetFilters</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.GetFilters" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the list of unique scan filters for the raw file. This function is only supported for MS
+device controllers.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.GetMSOrder">
+<span class="sig-name descname"><span class="pre">GetMSOrder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.GetMSOrder" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.GetScanFilter">
+<span class="sig-name descname"><span class="pre">GetScanFilter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.GetScanFilter" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.GetSeqInfo">
+<span class="sig-name descname"><span class="pre">GetSeqInfo</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.GetSeqInfo" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the sequence row number for this sample in an acquired sequence. The numbering
+starts at 1.
+NOTE : XCALIBUR INTERFACE “View/Report/Sample Information” part</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.GetSpectrum">
+<span class="sig-name descname"><span class="pre">GetSpectrum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scanNumber</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scanFilter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputData</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.GetSpectrum" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the spectrum from the RAW file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>scanNumber</strong> (<em>int</em>) – the scan number being read.</p></li>
+<li><p><strong>scanFilter</strong> (<em>str</em>) – the scan filter for that scan.</p></li>
+<li><p><strong>outputData</strong> (<em>bool</em>) – the output data flag.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.Get_EIC">
+<span class="sig-name descname"><span class="pre">Get_EIC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">massrange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scanrange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trace_number</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.Get_EIC" title="Link to this definition">¶</a></dt>
+<dd><p>Reads the base peak chromatogram for the RAW file.
+:param scanrange = [ start scan for the chromatogram:
+:param end scan for the chromatogram.]:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.Get_Header_Item">
+<span class="sig-name descname"><span class="pre">Get_Header_Item</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.Get_Header_Item" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.ListTrailerExtraFields">
+<span class="sig-name descname"><span class="pre">ListTrailerExtraFields</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scanrange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.ListTrailerExtraFields" title="Link to this definition">¶</a></dt>
+<dd><p>Reads and reports the trailer extra data fields present in the RAW
+file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.PrintInfo">
+<span class="sig-name descname"><span class="pre">PrintInfo</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.PrintInfo" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.ReadScanInformation">
+<span class="sig-name descname"><span class="pre">ReadScanInformation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scanrange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputData</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.ReadScanInformation" title="Link to this definition">¶</a></dt>
+<dd><p>Reads the general scan information for each scan in the RAW file
+using the scan filter object and also the trailer extra data
+section for that same scan.
+:param scanrange = [ start scan for the chromatogram:
+:param end scan for the chromatogram.]:
+:param outputData: the output data flag.
+:type outputData: bool</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.get_scan_header">
+<span class="sig-name descname"><span class="pre">get_scan_header</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scannumber</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.get_scan_header" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.get_status_log">
+<span class="sig-name descname"><span class="pre">get_status_log</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scannumber</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.get_status_log" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.get_tune_data">
+<span class="sig-name descname"><span class="pre">get_tune_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scannumber</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.get_tune_data" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.scan_range">
+<span class="sig-name descname"><span class="pre">scan_range</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.scan_range" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.scan_time_from_scan_name">
+<span class="sig-name descname"><span class="pre">scan_time_from_scan_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scan</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.scan_time_from_scan_name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.time_range">
+<span class="sig-name descname"><span class="pre">time_range</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.time_range" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-unidec.UniDecImporter.Thermo.Thermo">
+<span id="unidec-unidecimporter-thermo-thermo-module"></span><h2>unidec.UniDecImporter.Thermo.Thermo module<a class="headerlink" href="#module-unidec.UniDecImporter.Thermo.Thermo" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.Thermo.ThermoImporter">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">unidec.UniDecImporter.Thermo.Thermo.</span></span><span class="sig-name descname"><span class="pre">ThermoImporter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">silent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="unidec.UniDecImporter.html#unidec.UniDecImporter.Importer.Importer" title="unidec.UniDecImporter.Importer.Importer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Importer</span></code></a></p>
+<p>Imports Thermo data files.</p>
+<p>Note: Thermo scans are 1 indexed, so the first scan is scan 1, not scan 0.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.close">
+<span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.close" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_all_scans">
+<span class="sig-name descname"><span class="pre">get_all_scans</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_all_scans" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_analog_voltage1">
+<span class="sig-name descname"><span class="pre">get_analog_voltage1</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_analog_voltage1" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_analog_voltage2">
+<span class="sig-name descname"><span class="pre">get_analog_voltage2</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_analog_voltage2" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_avg_scan">
+<span class="sig-name descname"><span class="pre">get_avg_scan</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scan_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_avg_scan" title="Link to this definition">¶</a></dt>
+<dd><p>Returns merged 1D MS data from mzML import
+:return: merged data</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_cdms_data">
+<span class="sig-name descname"><span class="pre">get_cdms_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scan_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_cdms_data" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_eic">
+<span class="sig-name descname"><span class="pre">get_eic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mass_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scan_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_eic" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_inj_time_array">
+<span class="sig-name descname"><span class="pre">get_inj_time_array</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_inj_time_array" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_isolation_mz_width">
+<span class="sig-name descname"><span class="pre">get_isolation_mz_width</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_isolation_mz_width" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_ms_order">
+<span class="sig-name descname"><span class="pre">get_ms_order</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_ms_order" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_polarity">
+<span class="sig-name descname"><span class="pre">get_polarity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_polarity" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_single_scan">
+<span class="sig-name descname"><span class="pre">get_single_scan</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_single_scan" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_tic">
+<span class="sig-name descname"><span class="pre">get_tic</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_tic" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.grab_centroid_data">
+<span class="sig-name descname"><span class="pre">grab_centroid_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.grab_centroid_data" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.init_scans">
+<span class="sig-name descname"><span class="pre">init_scans</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.init_scans" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-unidec.UniDecImporter.Thermo">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-unidec.UniDecImporter.Thermo" title="Link to this heading">¶</a></h2>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">unidec.UniDecImporter.Thermo package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-unidec.UniDecImporter.Thermo.RawFileReader">unidec.UniDecImporter.Thermo.RawFileReader module</a><ul>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.RawFileReader.DotNetArrayToNPArray"><code class="docutils literal notranslate"><span class="pre">DotNetArrayToNPArray()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader"><code class="docutils literal notranslate"><span class="pre">RawFileReader</span></code></a><ul>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.CalculateMassPrecision"><code class="docutils literal notranslate"><span class="pre">RawFileReader.CalculateMassPrecision()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.Close"><code class="docutils literal notranslate"><span class="pre">RawFileReader.Close()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.GetAverageSpectrum"><code class="docutils literal notranslate"><span class="pre">RawFileReader.GetAverageSpectrum()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.GetCentroidArray"><code class="docutils literal notranslate"><span class="pre">RawFileReader.GetCentroidArray()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.GetCentroidSpectrum"><code class="docutils literal notranslate"><span class="pre">RawFileReader.GetCentroidSpectrum()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.GetChromatogram"><code class="docutils literal notranslate"><span class="pre">RawFileReader.GetChromatogram()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.GetFilters"><code class="docutils literal notranslate"><span class="pre">RawFileReader.GetFilters()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.GetMSOrder"><code class="docutils literal notranslate"><span class="pre">RawFileReader.GetMSOrder()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.GetScanFilter"><code class="docutils literal notranslate"><span class="pre">RawFileReader.GetScanFilter()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.GetSeqInfo"><code class="docutils literal notranslate"><span class="pre">RawFileReader.GetSeqInfo()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.GetSpectrum"><code class="docutils literal notranslate"><span class="pre">RawFileReader.GetSpectrum()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.Get_EIC"><code class="docutils literal notranslate"><span class="pre">RawFileReader.Get_EIC()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.Get_Header_Item"><code class="docutils literal notranslate"><span class="pre">RawFileReader.Get_Header_Item()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.ListTrailerExtraFields"><code class="docutils literal notranslate"><span class="pre">RawFileReader.ListTrailerExtraFields()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.PrintInfo"><code class="docutils literal notranslate"><span class="pre">RawFileReader.PrintInfo()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.ReadScanInformation"><code class="docutils literal notranslate"><span class="pre">RawFileReader.ReadScanInformation()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.get_scan_header"><code class="docutils literal notranslate"><span class="pre">RawFileReader.get_scan_header()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.get_status_log"><code class="docutils literal notranslate"><span class="pre">RawFileReader.get_status_log()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.get_tune_data"><code class="docutils literal notranslate"><span class="pre">RawFileReader.get_tune_data()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.scan_range"><code class="docutils literal notranslate"><span class="pre">RawFileReader.scan_range()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.scan_time_from_scan_name"><code class="docutils literal notranslate"><span class="pre">RawFileReader.scan_time_from_scan_name()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.RawFileReader.RawFileReader.time_range"><code class="docutils literal notranslate"><span class="pre">RawFileReader.time_range()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-unidec.UniDecImporter.Thermo.Thermo">unidec.UniDecImporter.Thermo.Thermo module</a><ul>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter"><code class="docutils literal notranslate"><span class="pre">ThermoImporter</span></code></a><ul>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.close"><code class="docutils literal notranslate"><span class="pre">ThermoImporter.close()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_all_scans"><code class="docutils literal notranslate"><span class="pre">ThermoImporter.get_all_scans()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_analog_voltage1"><code class="docutils literal notranslate"><span class="pre">ThermoImporter.get_analog_voltage1()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_analog_voltage2"><code class="docutils literal notranslate"><span class="pre">ThermoImporter.get_analog_voltage2()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_avg_scan"><code class="docutils literal notranslate"><span class="pre">ThermoImporter.get_avg_scan()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_cdms_data"><code class="docutils literal notranslate"><span class="pre">ThermoImporter.get_cdms_data()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_eic"><code class="docutils literal notranslate"><span class="pre">ThermoImporter.get_eic()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_inj_time_array"><code class="docutils literal notranslate"><span class="pre">ThermoImporter.get_inj_time_array()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_isolation_mz_width"><code class="docutils literal notranslate"><span class="pre">ThermoImporter.get_isolation_mz_width()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_ms_order"><code class="docutils literal notranslate"><span class="pre">ThermoImporter.get_ms_order()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_polarity"><code class="docutils literal notranslate"><span class="pre">ThermoImporter.get_polarity()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_single_scan"><code class="docutils literal notranslate"><span class="pre">ThermoImporter.get_single_scan()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.get_tic"><code class="docutils literal notranslate"><span class="pre">ThermoImporter.get_tic()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.grab_centroid_data"><code class="docutils literal notranslate"><span class="pre">ThermoImporter.grab_centroid_data()</span></code></a></li>
+<li><a class="reference internal" href="#unidec.UniDecImporter.Thermo.Thermo.ThermoImporter.init_scans"><code class="docutils literal notranslate"><span class="pre">ThermoImporter.init_scans()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-unidec.UniDecImporter.Thermo">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="unidec.UniDecImporter.MZXML.html"
+                          title="previous chapter">unidec.UniDecImporter.MZXML package</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="unidec.UniDecImporter.Waters.html"
+                          title="next chapter">unidec.UniDecImporter.Waters package</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/unidec.UniDecImporter.Thermo.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="unidec.UniDecImporter.Waters.html" title="unidec.UniDecImporter.Waters package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="unidec.UniDecImporter.MZXML.html" title="unidec.UniDecImporter.MZXML package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">UniDec 8.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >unidec</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="unidec.html" >unidec package</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="unidec.UniDecImporter.html" >unidec.UniDecImporter package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">unidec.UniDecImporter.Thermo package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, University of Arizona.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+  </body>
+</html>

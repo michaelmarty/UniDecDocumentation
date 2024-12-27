@@ -1,0 +1,53 @@
+unidec.modules.waters\_import\_wizard package
+=============================================
+
+Submodules
+----------
+
+unidec.modules.waters\_import\_wizard.TagTypes module
+-----------------------------------------------------
+
+.. automodule:: unidec.modules.waters_import_wizard.TagTypes
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.waters\_import\_wizard.data\_importer module
+-----------------------------------------------------------
+
+.. automodule:: unidec.modules.waters_import_wizard.data_importer
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.waters\_import\_wizard.get\_data\_wrapper module
+---------------------------------------------------------------
+
+.. automodule:: unidec.modules.waters_import_wizard.get_data_wrapper
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.waters\_import\_wizard.import\_wizard\_grid module
+-----------------------------------------------------------------
+
+.. automodule:: unidec.modules.waters_import_wizard.import_wizard_grid
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.waters\_import\_wizard.import\_wizard\_treectrl module
+---------------------------------------------------------------------
+
+.. automodule:: unidec.modules.waters_import_wizard.import_wizard_treectrl
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: unidec.modules.waters_import_wizard
+   :members:
+   :undoc-members:
+   :show-inheritance:

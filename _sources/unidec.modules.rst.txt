@@ -9,7 +9,8 @@ Subpackages
 
    unidec.modules.gui_elements
    unidec.modules.isolated_packages
-   unidec.modules.tims_import_wizard
+   unidec.modules.plotting
+   unidec.modules.waters_import_wizard
 
 Submodules
 ----------
@@ -42,14 +43,6 @@ unidec.modules.ChromEng module
 ------------------------------
 
 .. automodule:: unidec.modules.ChromEng
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-unidec.modules.ColorPlot module
--------------------------------
-
-.. automodule:: unidec.modules.ColorPlot
    :members:
    :undoc-members:
    :show-inheritance:
@@ -158,30 +151,6 @@ unidec.modules.NanodiscBuilder module
    :undoc-members:
    :show-inheritance:
 
-unidec.modules.PlotAnimations module
-------------------------------------
-
-.. automodule:: unidec.modules.PlotAnimations
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-unidec.modules.PlotBase module
-------------------------------
-
-.. automodule:: unidec.modules.PlotBase
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-unidec.modules.PlottingWindow module
-------------------------------------
-
-.. automodule:: unidec.modules.PlottingWindow
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 unidec.modules.SubDiv module
 ----------------------------
 
@@ -198,26 +167,10 @@ unidec.modules.UniFit module
    :undoc-members:
    :show-inheritance:
 
-unidec.modules.UniList module
------------------------------
-
-.. automodule:: unidec.modules.UniList
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 unidec.modules.biopolymertools module
 -------------------------------------
 
 .. automodule:: unidec.modules.biopolymertools
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-unidec.modules.data\_reader module
-----------------------------------
-
-.. automodule:: unidec.modules.data_reader
    :members:
    :undoc-members:
    :show-inheritance:
@@ -262,14 +215,6 @@ unidec.modules.html\_writer module
    :undoc-members:
    :show-inheritance:
 
-unidec.modules.i2ms\_importer module
-------------------------------------
-
-.. automodule:: unidec.modules.i2ms_importer
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 unidec.modules.isotopetools module
 ----------------------------------
 
@@ -310,30 +255,6 @@ unidec.modules.miscwindows module
    :undoc-members:
    :show-inheritance:
 
-unidec.modules.mzMLimporter module
-----------------------------------
-
-.. automodule:: unidec.modules.mzMLimporter
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-unidec.modules.mzXML\_importer module
--------------------------------------
-
-.. automodule:: unidec.modules.mzXML_importer
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-unidec.modules.mzmlparse\_auto module
--------------------------------------
-
-.. automodule:: unidec.modules.mzmlparse_auto
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 unidec.modules.nativez module
 -----------------------------
 
@@ -354,46 +275,6 @@ unidec.modules.peakwidthtools module
 ------------------------------------
 
 .. automodule:: unidec.modules.peakwidthtools
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-unidec.modules.plateplot module
--------------------------------
-
-.. automodule:: unidec.modules.plateplot
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-unidec.modules.plot1d module
-----------------------------
-
-.. automodule:: unidec.modules.plot1d
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-unidec.modules.plot2d module
-----------------------------
-
-.. automodule:: unidec.modules.plot2d
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-unidec.modules.plot3d module
-----------------------------
-
-.. automodule:: unidec.modules.plot3d
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-unidec.modules.plot\_waterfall module
--------------------------------------
-
-.. automodule:: unidec.modules.plot_waterfall
    :members:
    :undoc-members:
    :show-inheritance:

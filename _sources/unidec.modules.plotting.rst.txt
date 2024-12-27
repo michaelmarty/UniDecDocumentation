@@ -1,0 +1,117 @@
+unidec.modules.plotting package
+===============================
+
+Submodules
+----------
+
+unidec.modules.plotting.ColorPlot module
+----------------------------------------
+
+.. automodule:: unidec.modules.plotting.ColorPlot
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.plotting.NoZoomSpan module
+-----------------------------------------
+
+.. automodule:: unidec.modules.plotting.NoZoomSpan
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.plotting.PlotAnimations module
+---------------------------------------------
+
+.. automodule:: unidec.modules.plotting.PlotAnimations
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.plotting.PlotBase module
+---------------------------------------
+
+.. automodule:: unidec.modules.plotting.PlotBase
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.plotting.PlottingWindow module
+---------------------------------------------
+
+.. automodule:: unidec.modules.plotting.PlottingWindow
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.plotting.ZoomBox module
+--------------------------------------
+
+.. automodule:: unidec.modules.plotting.ZoomBox
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.plotting.ZoomCommon module
+-----------------------------------------
+
+.. automodule:: unidec.modules.plotting.ZoomCommon
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.plotting.ZoomSpan module
+---------------------------------------
+
+.. automodule:: unidec.modules.plotting.ZoomSpan
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.plotting.plateplot module
+----------------------------------------
+
+.. automodule:: unidec.modules.plotting.plateplot
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.plotting.plot1d module
+-------------------------------------
+
+.. automodule:: unidec.modules.plotting.plot1d
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.plotting.plot2d module
+-------------------------------------
+
+.. automodule:: unidec.modules.plotting.plot2d
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.plotting.plot3d module
+-------------------------------------
+
+.. automodule:: unidec.modules.plotting.plot3d
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+unidec.modules.plotting.plot\_waterfall module
+----------------------------------------------
+
+.. automodule:: unidec.modules.plotting.plot_waterfall
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: unidec.modules.plotting
+   :members:
+   :undoc-members:
+   :show-inheritance:

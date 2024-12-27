@@ -1,0 +1,21 @@
+unidec.UniDecImporter.I2MS package
+==================================
+
+Submodules
+----------
+
+unidec.UniDecImporter.I2MS.I2MS module
+--------------------------------------
+
+.. automodule:: unidec.UniDecImporter.I2MS.I2MS
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: unidec.UniDecImporter.I2MS
+   :members:
+   :undoc-members:
+   :show-inheritance:
